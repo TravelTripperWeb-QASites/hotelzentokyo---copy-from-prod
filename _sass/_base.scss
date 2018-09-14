@@ -132,7 +132,7 @@ a {
 ul li,
 ol li {
   margin-bottom: 12px;
-  font-family: $global-font-family
+  font-family: $global-font-family;
   font-size: $type-size-5;
   line-height: 1.5;
   color: $black;
@@ -142,7 +142,7 @@ ol li {
 
 li ul,
 li ol {
-  margin-top: 0.5rem;
+  margin-top: .5rem;
   list-style: none;
 }
 

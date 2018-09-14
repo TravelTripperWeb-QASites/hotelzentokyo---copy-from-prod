@@ -9,49 +9,100 @@ html {
 body {
   margin: 0;
   padding: 0;
-  color: $text-color;
   font-family: $global-font-family;
   line-height: 1.5;
+  color: $text-color;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  margin: 2rem 0 0.5rem;
-  line-height: 1.2;
+  margin: 0 0 30px;
   font-family: $header-font-family;
-  font-weight: bold;
 }
 
 h1 {
-  margin-top: 0;
-  font-size: $type-size-3;
+  font-size: $type-size-1;
+  font-weight: 400;
+  line-height: 5;
+  color: $white;
+  text-transform: uppercase;
+  letter-spacing: 3;
+
+  &.lowercase {
+    font-size: $type-size-0;
+    text-transform: lowercase;
+  }
 }
 
 h2 {
-  font-size: $type-size-4;
+  font-size: $type-size-2;
+  font-weight: 400;
+  line-height: 2.5;
+  color: $secondary-color;
+  letter-spacing: 1;
 }
 
 h3 {
-  font-size: $type-size-5;
+  font-size: $type-size-3;
+  font-weight: 400;
+  line-height: 2;
+  color: $primary-color;
+  letter-spacing: 1;
+
+  &.italic {
+    font-weight: 500i;
+  }
 }
 
 h4 {
   font-size: $type-size-6;
+  font-weight: 500;
+  color: $dark-gray;
+  text-transform: uppercase;
+  letter-spacing: .5;
 }
 
 h5 {
-  font-size: $type-size-6;
+  font-size: $type-size-4;
+  line-height: 1.75;
+  color: $primary-color;
+  letter-spacing: .5;
 }
 
 h6 {
   font-size: $type-size-6;
 }
 
-small, .small {
+caption {
   font-size: $type-size-6;
+  font-weight: 400;
+  color: $black;
+}
+
+small, .small {
+  font-size: $type-size-7;
+  font-weight: 400;
+  line-height: 1;
+  color: $black;
 }
 
 p {
-  margin-bottom: 1.3rem;
+  margin-bottom: 24px;
+  font-family: $global-font-family
+  font-size: $type-size-5;
+  line-height: 1.5;
+  color: $black;
+  letter-spacing: .5;
+}
+
+
+//For text color light & dark states w.r.t above text options
+
+.dark {
+  color: $black !important;
+}
+
+.light {
+  color: $white !important;
 }
 
 u,
@@ -80,7 +131,12 @@ a {
 
 ul li,
 ol li {
-  margin-bottom: 0.5rem;
+  margin-bottom: 12px;
+  font-family: $global-font-family
+  font-size: $type-size-5;
+  line-height: 1.5;
+  color: $black;
+  letter-spacing: .5;
   list-style: none;
 }
 

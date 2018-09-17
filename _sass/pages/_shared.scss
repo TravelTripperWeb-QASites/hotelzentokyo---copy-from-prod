@@ -7,9 +7,19 @@
   background-size: cover;
 }
 .banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   height: 688px;
   @extend .bg-cover;
+  &:after {
+    @include absolute-position(0,0,0,0,auto,auto);
+    z-index: 1;
+    background-color: rgba($black, .2);
+  }
   .banner-content {
+    position: relative;
+    z-index: 5;
     text-align: center;
   }
 }

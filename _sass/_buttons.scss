@@ -1,2 +1,39 @@
 //Buttons Styles
 //==========================================
+
+
+.primary-btn {
+  display: inline-block;
+  font-family: $header-font-family;
+  font-size: $type-size-5;
+  font-style: italic;
+  color: $white;
+  letter-spacing: .5px;
+  background-color: $black;
+  border: solid 1px $black;
+  @include transition ($global-transition);
+
+  span {
+    display: inline-block;
+    padding: 20px;
+  }
+
+  svg {
+    position: relative;
+    top: 10px;
+    width: 48px !important;
+    height: 36px;
+    padding: 10px 20px 10px 18px;
+    border-left: solid 1px $white;
+  }
+
+  &:hover {
+    color: $black;
+    text-decoration: none;
+    background-color: $white;
+
+    svg {
+      border-left-color: $black;
+    }
+  }
+}

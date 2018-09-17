@@ -1,2 +1,6 @@
 // Temporary Styles
 // ==========================================================================
+
+.typography, .buttons {
+  @include fixed-width-content;
+}

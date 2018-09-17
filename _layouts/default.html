@@ -15,9 +15,11 @@
     {% endcase %}
   {% endif %}
 
+  <a class="sr-only sr-only-focusable" href="#main">Skip to main content</a>
+
   {% include nav-main.html %}
 
-  <div class="container">
+  <div id="main">
     {{ content }}
   </div>
 

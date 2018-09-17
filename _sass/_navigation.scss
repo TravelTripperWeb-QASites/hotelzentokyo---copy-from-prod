@@ -1,8 +1,21 @@
 // Navigation Elements
 // ========================================================================== */
 
+header {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+  background: $white;
+  border-bottom: solid 16px $tertiary-color;
+  @include transition ($global-transition);
+}
+
 // Removes margins, padding, and bullet points from navigation lists
 nav {
+  @include fixed-width-layout;
+  background: $white;
+
   ul {
     margin: 0;
     padding: 0;
@@ -26,5 +39,52 @@ nav {
   li ol,
   li ul {
     margin-top: 0;
+  }
+}
+
+.navbar-brand {
+  width: 140px;
+
+  @include media-breakpoint-up(sm) {
+    width: 235px;
+  }
+}
+
+.navbar {
+  padding: 27px 15px;
+  @include transition ($global-transition);
+
+  .navbar-nav {
+    margin: 0 auto;
+
+    .nav-item {
+      .nav-link {
+        margin: 0 13px;
+        padding: 3px 3px 4px;
+        font-family: $header-font-family;
+        font-size: $type-size-6;
+        color: $black;
+        text-transform: uppercase;
+        letter-spacing: .5px;
+        border-top: solid 1px transparent;
+        border-bottom: solid 1px transparent;
+        @include transition ($global-transition);
+      }
+
+      &.active, &:hover {
+        .nav-link {
+          border-top: solid 1px $black;
+          border-bottom: solid 1px $black;
+        }
+      }
+    }
+  }
+}
+
+.scroll-head {
+  border-bottom: solid 10px $tertiary-color;
+
+  .navbar {
+    padding: 6px 15px;
   }
 }

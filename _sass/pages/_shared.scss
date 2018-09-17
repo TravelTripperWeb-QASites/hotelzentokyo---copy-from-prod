@@ -6,6 +6,10 @@
   background-position: center center;
   background-size: cover;
 }
+.bg-bottom {
+  @extend .bg-cover;
+  background-position: center bottom;
+}
 .banner {
   .carousel-item {
     min-height: 688px;
@@ -47,7 +51,7 @@
         position: relative;
         margin-right: 40px;
         &:after {
-          @include absolute-position(8px,auto,auto,24px,40px,1px);
+          @include absolute-position(14px,auto,auto,24px,40px,1px);
           background-color: $white;
         }
       }

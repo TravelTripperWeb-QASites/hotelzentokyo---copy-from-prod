@@ -10,7 +10,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: $global-font-family;
-  line-height: 1.5;
+  line-height: 1.5rem;
   color: $text-color;
 }
 
@@ -22,10 +22,10 @@ h1, h2, h3, h4, h5, h6 {
 h1 {
   font-size: $type-size-1;
   font-weight: 400;
-  line-height: 5;
+  line-height: 5rem;
   color: $white;
   text-transform: uppercase;
-  letter-spacing: 3;
+  letter-spacing: 3px;
 
   &.lowercase {
     font-size: $type-size-0;
@@ -36,17 +36,17 @@ h1 {
 h2 {
   font-size: $type-size-2;
   font-weight: 400;
-  line-height: 2.5;
+  line-height: 2.5rem;
   color: $secondary-color;
-  letter-spacing: 1;
+  letter-spacing: 1px;
 }
 
 h3 {
   font-size: $type-size-3;
   font-weight: 400;
-  line-height: 2;
+  line-height: 2rem;
   color: $primary-color;
-  letter-spacing: 1;
+  letter-spacing: 1px;
 
   &.italic {
     font-weight: 500i;
@@ -58,14 +58,14 @@ h4 {
   font-weight: 500;
   color: $dark-gray;
   text-transform: uppercase;
-  letter-spacing: .5;
+  letter-spacing: .5px;
 }
 
 h5 {
   font-size: $type-size-4;
   line-height: 1.75;
   color: $primary-color;
-  letter-spacing: .5;
+  letter-spacing: .5px;
 }
 
 h6 {
@@ -81,7 +81,7 @@ caption {
 small, .small {
   font-size: $type-size-7;
   font-weight: 400;
-  line-height: 1;
+  line-height: 1rem;
   color: $black;
 }
 
@@ -89,9 +89,9 @@ p {
   margin-bottom: 24px;
   font-family: $global-font-family;
   font-size: $type-size-5;
-  line-height: 1.5;
+  line-height: 1.5rem;
   color: $black;
-  letter-spacing: .5;
+  letter-spacing: .5px;
 }
 
 
@@ -134,9 +134,9 @@ ol li {
   margin-bottom: 12px;
   font-family: $global-font-family;
   font-size: $type-size-5;
-  line-height: 1.5;
+  line-height: 1.5rem;
   color: $black;
-  letter-spacing: .5;
+  letter-spacing: .5px;
   list-style: none;
 }
 

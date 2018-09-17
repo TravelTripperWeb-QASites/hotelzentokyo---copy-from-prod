@@ -1,2 +1,15 @@
 // Shared Page Elements
 // ==========================================================================
+
+.bg-cover {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+.banner {
+  height: 688px;
+  @extend .bg-cover;
+  .banner-content {
+    text-align: center;
+  }
+}

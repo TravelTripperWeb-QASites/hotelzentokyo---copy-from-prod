@@ -49,7 +49,8 @@ h3 {
   letter-spacing: 1px;
 
   &.italic {
-    font-weight: 500i;
+    font-style: italic;
+    font-weight: 500;
   }
 }
 

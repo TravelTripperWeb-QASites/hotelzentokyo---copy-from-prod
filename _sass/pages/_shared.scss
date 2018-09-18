@@ -6,19 +6,23 @@
   background-position: center center;
   background-size: cover;
 }
+
 .bg-bottom {
   @extend .bg-cover;
   background-position: center bottom;
 }
+
 .banner {
   .carousel-item {
     min-height: 688px;
     @extend .bg-cover;
+
     &:after {
       @include absolute-position(0,0,0,0,auto,auto);
       z-index: 1;
       background-color: rgba($black, .2);
     }
+
     .banner-content {
       @include absolute-position(50%,0,auto,0,auto,auto);
       z-index: 5;
@@ -35,6 +39,7 @@
     margin: 0 auto;
     font-family: $header-font-family;
     background-color: $black;
+
     li {
       width: 24px;
       height: auto;
@@ -47,13 +52,104 @@
       cursor: pointer;
       background-color: transparent;
       transition: $global-transition;
+
       &.active {
         position: relative;
         margin-right: 40px;
+
         &:after {
           @include absolute-position(14px,auto,auto,24px,40px,1px);
           background-color: $white;
         }
+      }
+    }
+  }
+}
+
+// Newsletter signup cross-cell
+.signup {
+  @include fluid-layout;
+  @include bg-cover;
+  height: 480px;
+
+  .wrapper {
+    @include fixed-width-content;
+    @include vertical-center;
+    text-align: center;
+
+    h2 {
+      display: inline-block;
+      padding: 40px 50px;
+      color: $white;
+      text-transform: uppercase;
+      background-color: $black;
+    }
+
+    h3 {
+      display: inline-block;
+      padding: 30px;
+      font-style: italic;
+      color: $white;
+    }
+
+    .input-group {
+      max-width: 288px;
+      margin: 0 auto;
+    }
+
+    input[type='email'] {
+      padding: 12px 60px 12px 20px;
+      font-family: $header-font-family;
+      font-size: $type-size-5;
+      font-style: italic;
+      letter-spacing: .5px;
+      border: 0;
+      border-radius: 0;
+
+      &:focus {
+        z-index: 0;
+      }
+    }
+
+    .custom-checkbox {
+      max-width: 248px;
+      margin: 10px auto;
+      font-family: $header-font-family;
+      font-size: $type-size-7;
+      color: $white;
+
+      input[type='checkbox'] {
+        background-color: transparent;
+        border: solid 1px $white;
+        border-radius: 0;
+      }
+    }
+
+    .custom-control-label {
+      &::before {
+        background-color: transparent;
+        border: solid 1px $white;
+        border-radius: 0;
+      }
+
+      a {
+        color: $white;
+        text-decoration: underline;
+      }
+    }
+
+    button {
+      position: absolute;
+      top: 5px;
+      right: 5px;
+      padding: 6px 15px 6px 20px;
+      background-color: $white;
+      border: 0;
+      border-left: solid 1px $dark-gray;
+
+      &:hover {
+        color: $black;
+        background-color: transparent;
       }
     }
   }

@@ -1,0 +1,171 @@
+// Blog Page Elements
+// ==========================================================================
+
+.blog {
+  @include fixed-width-layout;
+  margin-top: 72px;
+  margin-bottom: 72px;
+  .blog-row {
+    @include make-row;
+  }
+  .blog-content {
+    @include make-col-ready;
+    @include media-breakpoint-up(md) {
+      @include make-col(7.45);
+    }
+    .blog-item {
+      margin-bottom: 70px;
+    }
+    .blog-lead-image {
+      margin: 0 0 35px;
+      img {
+        width: 100%;
+      }
+    }
+    h2 {
+      position: relative;
+      margin-bottom: 15px;
+      padding-bottom: 30px;
+      a {
+        color: $primary-color;
+        &:hover {
+          text-decoration: none;
+        }
+      }
+      &:after {
+        @include absolute-position(auto,auto,0,0,80px,1px);
+        background-color: $black;
+      }
+    }
+    .btn-holder {
+      padding-top: 15px;
+    }
+  }
+
+  .blog-info {
+    margin-bottom: 10px;
+    font-family: $header-font-family;
+    font-size: $type-size-6;
+    color: $dark-gray;
+    letter-spacing: .05rem;
+    .date {
+      display: inline-block;
+    }
+    .cat {
+      position: relative;
+      display: inline-block;
+      margin-left: 10px;
+      padding-left: 10px;
+      color: $black;
+      text-transform: uppercase;
+      &:before {
+        @include absolute-position(5px,auto,4px,0,1px,auto);
+        background-color: $black;
+      }
+      a {
+        color: $black;
+        &:hover {
+          text-decoration: none;
+        }
+      }
+    }
+  }
+
+  .blog-aside {
+    @include make-col-ready;
+    @include media-breakpoint-up(md) {
+      @include make-col(4.15);
+      margin-left: auto;
+    }
+    .blog-search {
+      position: relative;
+      margin-bottom: 45px;
+      .search-box {
+        width: 100%;
+        height: 48px;
+        padding: 12px 20px;
+        font-family: $caption-font-family;
+        font-size: 1rem;
+        font-style: italic;
+        letter-spacing: .05rem;
+        border: solid 1px $black;
+        border-radius: 0;
+        -webkit-appearnce: none;
+        &:focus {
+          outline: none;
+        }
+      }
+      .search-btn {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        padding: 12px 25px;
+        color: $dark-gray;
+        cursor: pointer;
+        background-color: transparent;
+        border: 0;
+        -webkit-appearnce: none;
+        &:focus {
+          outline: none;
+        }
+        .fa {
+          font-weight: 300;
+        }
+      }
+    }
+    .blog-recent {
+      .blog-recent-item {
+        margin-bottom: 25px;
+        a {
+          display: block;
+          overflow: hidden;
+          transition: $global-transition;
+          &:hover {
+            background-color: $lighter-gray;
+          }
+        }
+        figure {
+          float: left;
+          width: 30%;
+          height: 85px;
+          margin: 0;
+          img {
+            width: 100%;
+          }
+        }
+        .recent-item-content {
+          float: left;
+          width: 65%;
+          margin-left: 5%;
+          h5 {
+            margin-top: 8px;
+            color: $black;
+          }
+        }
+      }
+    }
+    h4 {
+      position: relative;
+      margin-bottom: 30px;
+      padding-bottom: 20px;
+      color: $black;
+      &:after {
+        @include absolute-position(auto,auto,0,0,80px,1px);
+        background-color: $black;
+      }
+    }
+    .blog-categories {
+      .categories-list {
+        margin: 0;
+        padding: 0;
+        li {
+          font-family: $header-font-family;
+          font-size: $type-size-5;
+          color: $dark-gray;
+          text-transform: uppercase;
+        }
+      }
+    }
+  }
+}

@@ -17,13 +17,19 @@
 .inner-banner {
   height: 344px;
   margin-bottom: 24px;
+  
   .inner-banner-content {
     @include vertical-center;
-  }
-  h3 {
-    max-width: 715px;
-    margin: 8px auto 0;
-    color: $white;
+
+    h3 {
+      max-width: 715px;
+      margin: 8px auto 0;
+      color: $white;
+    }
+
+    h1 {
+      text-transform: lowercase;
+    }
   }
 }
 

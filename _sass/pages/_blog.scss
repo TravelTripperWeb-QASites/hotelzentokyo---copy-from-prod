@@ -130,6 +130,7 @@
           width: 30%;
           height: 85px;
           margin: 0;
+          @include bg-cover;
           img {
             width: 100%;
           }
@@ -159,12 +160,21 @@
       .categories-list {
         margin: 0;
         padding: 0;
+
         li {
+          margin-bottom: 0;
           a {
+            display: block;
+            padding: 5px 0;
             font-family: $header-font-family;
-            font-size: $type-size-5;
+            font-size: $type-size-6;
             color: $dark-gray;
             text-transform: uppercase;
+            letter-spacing: .05rem;
+            transition: $global-transition;
+            &:hover {
+              color: $black;
+            }
           }
         }
       }

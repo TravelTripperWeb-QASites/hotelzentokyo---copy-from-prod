@@ -5,6 +5,10 @@ facebook:
   username: traveltripper
   app_id:
   publisher:
+instagram:
+  username: traveltripper
+googleplus:
+  username: traveltripper
 og_image: # Open Graph/Twitter default site image
 
 # For specifying social profiles

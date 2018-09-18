@@ -2,9 +2,7 @@
 // ==========================================================================
 
 .bg-cover {
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
+  @include bg-cover;
 }
 
 .bg-bottom {
@@ -13,11 +11,14 @@
 }
 
 // Inner banner styles
-
 .inner-banner {
   height: 344px;
   margin-bottom: 24px;
+<<<<<<< HEAD
 
+=======
+  @include bg-cover;
+>>>>>>> d52a93283cd8f7777feb04262ea489df94dce5c5
   .inner-banner-content {
     @include vertical-center;
 
@@ -30,6 +31,40 @@
     h1 {
       text-transform: lowercase;
     }
+  }
+}
+
+//Full screen banner
+.banner-fullscreen {
+  @include fluid-layout;
+  position: relative;
+  height: calc(100vh - 63px);
+  padding: 0;
+  @include bg-cover;
+
+  @include media-breakpoint-up(lg) {
+    height: calc(100vh - 128px);
+  }
+
+  .wrapper {
+    @include vertical-center;
+    z-index: 2;
+    color: $white;
+    text-align: center;
+
+    h6 {
+      margin-bottom: 40px;
+      text-transform: uppercase;
+    }
+    h1 {
+      margin-bottom: 40px;
+    }
+  }
+
+  &:after {
+    @include absolute-position(0,0,0,0,auto,auto);
+    z-index: 1;
+    background-color: rgba($black, .3);
   }
 }
 

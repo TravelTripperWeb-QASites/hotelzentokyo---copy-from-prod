@@ -58,3 +58,13 @@
     }
   }
 }
+
+// Inner banner styles
+
+.inner-banner {
+  height: 344px;
+  margin-bottom: 24px;
+  .inner-banner-content {
+    @include vertical-center;
+  }
+}

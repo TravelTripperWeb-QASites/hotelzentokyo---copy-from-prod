@@ -1,6 +1,66 @@
 // Home Page Elements
 // ==========================================================================
 
+// Home page carousel styles
+
+.banner {
+  .carousel-item {
+    min-height: 400px;
+    @extend .bg-cover;
+    @include media-breakpoint-up(md) {
+      min-height: 688px;
+    }
+    &:after {
+      @include absolute-position(0,0,0,0,auto,auto);
+      z-index: 1;
+      background-color: rgba($black, .2);
+    }
+
+    .banner-content {
+      @include absolute-position(50%,0,auto,0,auto,auto);
+      z-index: 5;
+      margin: 0 auto;
+      text-align: center;
+      transform: translateY(-50%);
+    }
+  }
+  .carousel-indicators {
+    bottom: 0;
+    align-items: center;
+    width: 240px;
+    height: 48px;
+    margin: 0 auto;
+    font-family: $header-font-family;
+    background-color: $black;
+
+    li {
+      width: 24px;
+      height: auto;
+      margin: 0;
+      font-size: $type-size-5;
+      line-height: normal;
+      color: $white;
+      text-align: center;
+      text-indent: 0;
+      cursor: pointer;
+      background-color: transparent;
+      transition: $global-transition;
+
+      &.active {
+        position: relative;
+        margin-right: 40px;
+
+        &:after {
+          @include absolute-position(14px,auto,auto,24px,40px,1px);
+          background-color: $white;
+        }
+      }
+    }
+  }
+}
+
+// Home page content styles
+
 .twocol {
   @include fluid-layout;
   padding-right: 0;

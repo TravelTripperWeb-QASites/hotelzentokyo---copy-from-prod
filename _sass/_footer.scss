@@ -4,21 +4,40 @@
 // For sticky footer see https://philipwalton.github.io/solved-by-flexbox/demos/sticky-footer/
 
 footer {
+  padding: 0 15px;
   background-color: $black;
 
   .wrapper,.social-terms {
     @include fixed-width-layout;
     padding: 50px 0 20px;
+
+    @include media-breakpoint-down(md) {
+      display: block !important;
+    }
   }
 
   .footer-logo {
     width: 208px;
+    margin: 0 auto 40px;
+
+    @include media-breakpoint-up(lg) {
+      margin: 0;
+    }
   }
 
   .contact {
+    margin: 0 auto 20px;
+    text-align: center;
+
+    @include media-breakpoint-up(lg) {
+      margin: 0;
+      text-align: left;
+    }
+
     h4 {
       margin-bottom: 20px;
     }
+
     p {
       margin-bottom: 10px;
       font-size: $type-size-6;
@@ -34,4 +53,78 @@ footer {
       }
     }
   }
+
+  .links {
+    max-width: 100%;
+    margin: 0 auto;
+    text-align: center;
+
+    @include media-breakpoint-up(lg) {
+      max-width: 416px;
+      margin: 0;
+      text-align: left;
+    }
+
+    h4 {
+      margin-bottom: 20px;
+    }
+
+    ul {
+      margin: 0;
+      padding: 0;
+
+      li {
+        min-width: auto;
+        padding: 0 15px;
+        text-align: center;
+
+        a {
+          font-family: $header-font-family;
+          font-size: $type-size-7;
+          color: $white;
+          text-transform: uppercase;
+
+          &:hover {
+            color: $dark-gray;
+            text-decoration: none;
+          }
+        }
+
+        @include media-breakpoint-up(lg) {
+          min-width: 104px;
+          padding: 0;
+          text-align: left;
+        }
+      }
+    }
+  }
+
+  .social-terms {
+    padding-top: 20px;
+    border-top: solid 1px $dark-gray;
+
+    .social-icons {
+      margin-bottom: 10px;
+      text-align: center;
+
+      @include media-breakpoint-up(lg) {
+        margin-bottom: 0;
+        text-align: left;
+      }
+    }
+    .copyrights {
+      display: block;
+      font-family: $header-font-family;
+      font-size: $type-size-8;
+      color: $white;
+      text-align: center;
+      text-transform: uppercase;
+
+      @include media-breakpoint-up(lg) {
+        text-align: right;
+      }
+    }
+  }
+
+
 }

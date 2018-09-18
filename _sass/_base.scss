@@ -152,3 +152,11 @@ li ol {
 svg:not(:root) {
   overflow: hidden;
 }
+
+#main {
+  margin-top: 63px;
+
+  @include media-breakpoint-up(lg) {
+    margin-top: 128px;
+  }
+}

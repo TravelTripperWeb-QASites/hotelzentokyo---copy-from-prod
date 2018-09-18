@@ -27,11 +27,29 @@
       }
     }
 
-    .item {
+    .item-onethird {
+      @include make-col-ready;
+
+      @include media-breakpoint-up(md) {
+        @include make-col(4);
+        padding: 0;
+      }
+    }
+
+    .item-onefourth {
       @include make-col-ready;
 
       @include media-breakpoint-up(md) {
         @include make-col(3);
+        padding: 0;
+      }
+    }
+
+    .item-onesixth {
+      @include make-col-ready;
+
+      @include media-breakpoint-up(md) {
+        @include make-col(2);
         padding: 0;
       }
     }

@@ -2,3 +2,35 @@
 // ==========================================================================
 
 // For sticky footer see https://philipwalton.github.io/solved-by-flexbox/demos/sticky-footer/
+
+footer {
+  background-color: $black;
+
+  .wrapper,.social-terms {
+    @include fixed-width-layout;
+    padding: 50px 0 20px;
+  }
+
+  .footer-logo {
+    width: 208px;
+  }
+
+  .contact {
+    h4 {
+      margin-bottom: 20px;
+    }
+    p {
+      margin-bottom: 10px;
+      font-size: $type-size-6;
+      color: $white;
+
+      a {
+        color: $white;
+
+        &:hover {
+          color: $dark-gray;
+        }
+      }
+    }
+  }
+}

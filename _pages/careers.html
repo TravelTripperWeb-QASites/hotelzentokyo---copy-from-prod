@@ -13,26 +13,18 @@ meta_tags:
   </div>
 </section>
 
+{% assign careers = site.data._models.careers %}
 <section class="careers-content">
   <h2>Join us for these open positions</h2>
   <p>We’re hiring at hotel zen tokyo! Please see open positions below and send your CV to <a href="mailto:jobs@senrecube.co">jobs@senrecube.com</a></p>
-  <ul class="job-positions">   <li>
-      <a href="" class="active">
-        <i class="fas fa-angle-right"></i>
-        <span>Operation Manager</span>
-      </a>
-    </li>
+  <ul class="job-positions">
+    {% for career in careers %}
     <li>
-      <a href="">
+      <a href="/careers/{{ career.url_friendly_name }}/">
         <i class="fas fa-angle-right"></i>
-        <span> Front Desk Staff</span>
+        <span>{{ career.designation }}</span>
       </a>
     </li>
-    <li>
-      <a href="">
-        <i class="fas fa-angle-right"></i>
-        <span> Marketing Intern</span>
-      </a>
-    </li>
+    {% endfor %}
   </ul>
 </section>

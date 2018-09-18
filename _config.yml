@@ -101,3 +101,6 @@ page_gen: #
   # - data: 'specials'
   #   template: 'special-single'
   #   dir: 'specials'
+    - data: 'careers'
+      template: 'single-careers'
+      dir: 'careers'

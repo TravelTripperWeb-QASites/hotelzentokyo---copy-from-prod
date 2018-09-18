@@ -71,6 +71,9 @@
   margin-bottom: 24px;
   .inner-banner-content {
     @include vertical-center;
+    h1 {
+      text-transform: lowercase;
+    }
   }
 }
 

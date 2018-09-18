@@ -154,5 +154,9 @@ svg:not(:root) {
 }
 
 #main {
-  margin-top: 128px;
+  margin-top: 63px;
+
+  @include media-breakpoint-up(lg) {
+    margin-top: 128px;
+  }
 }

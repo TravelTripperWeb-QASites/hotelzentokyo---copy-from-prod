@@ -21,8 +21,10 @@
         <option {% if site.active_lang == "ja" %} selected="true" {% endif %} value="/ja{{ page | permalink: locale: lang }}">日本語</option>
       </select>
     </div>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-  	  <span class="navbar-toggler-icon"></span>
+    <button class="navbar-toggler collapsed d-md-block d-lg-none" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span> </span>
+      <span> </span>
+      <span> </span>
   	</button>
     <a class="secondary-btn d-none d-md-block" href="javascript:void(0)" show-booking-widget>Book Now</a>
   </nav>

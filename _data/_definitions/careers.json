@@ -1,0 +1,25 @@
+{
+  "designation": {
+    "label": "Designation",
+    "required": true
+  },
+  "url_friendly_name": {
+    "type": "url_slug",
+    "required": true
+  },
+  "job-description": {
+    "label": "Job description",
+    "type": "richtext",
+    "required": true
+  },
+  "requirements": {
+    "label": "Requirements",
+    "type": "richtext",
+    "required": true
+  },
+  "qualifications": {
+    "label": "Qualifications",
+    "type": "richtext",
+    "required": true
+  }
+}

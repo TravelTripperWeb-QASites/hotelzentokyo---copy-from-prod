@@ -1,0 +1,32 @@
+---
+layout: default
+title: Careers
+meta_description:
+permalink: /careers/
+meta_tags:
+  robots:
+---
+
+<!-- Careers Banner -->
+<section class="inner-banner text-center bg-cover mb-5" style="background-image:url('/assets/images/careers/careers-hero.jpg');">
+  <div class="inner-banner-content">
+    <h1>Careers</h1>
+  </div>
+</section>
+
+<!-- Careers Content -->
+{% assign careers = site.data._models.careers %}
+<section class="careers-content">
+  <h2>Join us for these open positions</h2>
+  <p>We’re hiring at hotel zen tokyo! Please see open positions below and send your CV to <a href="mailto:jobs@senrecube.co">jobs@senrecube.com</a></p>
+  <ul class="job-positions">
+    {% for career in careers %}
+    <li>
+      <a href="/careers/{{ career.url_friendly_name }}/">
+        <i class="fas fa-angle-right"></i>
+        <span>{{ career.designation }}</span>
+      </a>
+    </li>
+    {% endfor %}
+  </ul>
+</section>

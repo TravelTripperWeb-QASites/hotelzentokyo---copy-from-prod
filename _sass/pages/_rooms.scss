@@ -1,14 +1,6 @@
 // Rooms & Room Details Page Elements
 // ==========================================================================
 
-.inner-banner {
-  height: 344px;
-  margin-bottom: 24px;
-  h1 {
-    @include vertical-center;
-  }
-}
-
 .rooms-list-wrap {
   @include fixed-width-layout;
   .rooms-list-inner {

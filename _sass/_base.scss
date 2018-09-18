@@ -125,6 +125,7 @@ del a {
 a {
   &:hover,
   &:active {
+    text-decoration: none;
     outline: 0;
   }
 }

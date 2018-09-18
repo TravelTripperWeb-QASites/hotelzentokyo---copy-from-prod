@@ -2,9 +2,7 @@
 // ==========================================================================
 
 .bg-cover {
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
+  @include bg-cover;
 }
 
 .bg-bottom {
@@ -13,11 +11,10 @@
 }
 
 // Inner banner styles
-
 .inner-banner {
   height: 344px;
   margin-bottom: 24px;
-
+  @include bg-cover;
   .inner-banner-content {
     @include vertical-center;
 

@@ -1,3 +1,5 @@
+{% assign footer-links = site.data.navigation.footer %}
+
 <div class="wrapper d-flex justify-content-between">
   <div class="footer-logo">
     <img class="w-100" src="/assets/images/logo-footer.png" alt="Hotel Zen Tokyo">
@@ -7,18 +9,35 @@
     <p>1-5-8 Nihonbashi Ningyocho, Chuoku<br>Tokyo, Japan 103-0013</p>
     <p><a href="mailto:contact@senrecube.com">contact@senrecube.com</a></p>
   </div>
+  <div class="links">
+    <h4>Links</h4>
+    <ul class="d-flex flex-wrap justify-content-center">
+      {% for link in footer-links %}
+        <li>
+          <a href="{{ link.url | absolute_url }}">{{ link.title }}</a>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
 </div>
 <div class="social-terms d-flex justify-content-between">
   <div class="social-icons">
     {% if site.data.ui-text[site.default_lang].follow_label %}
       <strong>{{ site.data.ui-text[site.default_lang].follow_label }}</strong>
     {% endif %}
-    {% if site.data.social.twitter.username %}
-      <a href="https://twitter.com/{{ site.data.social.twitter.username }}"><i class="fab fa-twitter-square" aria-hidden="true"></i> Twitter</a>
-    {% endif %}
     {% if site.data.social.facebook.username %}
-      <a href="https://facebook.com/{{ site.data.social.facebook.username }}"><i class="fab fa-facebook-square" aria-hidden="true"></i> Facebook</a>
+      <a href="https://facebook.com/{{ site.data.social.facebook.username }}" title="Hotel Zen Tokyo Facebook wall" target="_blank"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
     {% endif %}
+    {% if site.data.social.twitter.username %}
+      <a href="https://twitter.com/{{ site.data.social.twitter.username }}" title="Hotel Zen Tokyo Twitter wall" target="_blank"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+    {% endif %}
+    {% if site.data.social.instagram.username %}
+      <a href="https://www.instagram.com/{{ site.data.social.instagram.username }}" title="Hotel Zen Tokyo Insta wall" target="_blank"><i class="fab fa-instagram" aria-hidden="true" ></i></a>
+    {% endif %}
+    {% if site.data.social.googleplus.username %}
+      <a href="https://plus.google.com/{{ site.data.social.googleplus.username }}" title="Hotel Zen Tokyo Google Plus wall" target="_blank" ><i class="fab fa-google-plus-g" aria-hidden="true"></i></a>
+    {% endif %}
+
   </div>
-  <span class="text-muted">&copy; {{ site.time | date: '%Y' }} {{ site.name | default: site.title }}</span>
+  <span class="copyrights">&copy; {{ site.time | date: '%Y' }} {{ site.name | default: site.title }}. All Rights Reserved</span>
 </div>

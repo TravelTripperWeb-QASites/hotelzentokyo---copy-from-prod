@@ -7,3 +7,21 @@ main:
     url: /blog/
   - title: Contact
     url: /contact/
+
+footer:
+  - title: Rooms
+    url: /rooms/
+  - title: Blog
+    url: /blog/
+  - title: Careers
+    url: /careers/
+  - title: Privacy Policy
+    url: /privacy-policy/
+  - title: Location
+    url: /location/
+  - title: Contact
+    url: /contact/
+  - title: FAQ
+    url: /faq/
+  - title: Terms of Use
+    url: /terms-of-use/

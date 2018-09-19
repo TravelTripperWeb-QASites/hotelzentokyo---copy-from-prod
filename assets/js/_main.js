@@ -7,6 +7,9 @@ $(document).ready(function () {
   // Navigation Change on page Scroll
   navOnScroll();
 
+  //Leflet Map trigger
+  $('#leaflet-map').leafMap('mapOptions');
+
 });
 
 //scroll navigation changes function

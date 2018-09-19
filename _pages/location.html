@@ -7,32 +7,18 @@ meta_tags:
   robots:
 ---
 
-{% comment %}
-
-  Name:
-
-    Location Page
-
-  Description:
-
-    Static content that can be modified by editable regions.
-
-  Usage:
-
-    Text   - {% regionblock region_name, type:html %}{% endregionblock %}
-
-    Header - {% regionblock region_name, type:header %}{% endregionblock %}
-
-    Image  - {% regionblock region_name, type:image %}{% endregionblock %}
-
-{% endcomment %}
-
 <!-- Location page banner -->
 <div class="banner-fullscreen" style="background-image:url('/assets/images/location/location-banner.jpg')">
   <div class="wrapper">
-    <h6>Hotel Zen Tokyo</h6>
-    <h1 class="lowercase">Location</h1>
-    <a class="primary-btn" href="#"><span>Get Directions</span><i class="fas fa-angle-right"></i></a>
+    {% regionblock location_tagline, type:header %}
+      <h6>Hotel Zen Tokyo</h6>
+    {% endregionblock %}
+    {% regionblock location_title, type:header %}
+      <h1 class="lowercase">Location</h1>
+    {% endregionblock %}
+    {% regionblock location_url, type:html %}
+      <a class="primary-btn" href="https://goo.gl/maps/3VwoSMEa5Wo" target="_blank"><span>Get Directions</span><i class="fas fa-angle-right"></i></a>
+    {% endregionblock %}
   </div>
 </div>
 
@@ -41,12 +27,20 @@ meta_tags:
   <div class="twocol-row">
     <div class="content">
       <div class="content-wrap">
-        <h4>NIHOMBASHI NINGYOCHO</h4>
-        <h2>Authentic Japan in Modern Tokyo</h2>
-        <p>Our hotel is mere steps away from Ningyocho Station, which offers direct access to both of Tokyo's airports and the city's most exciting destinations. The Ningyocho/Nihonmbashi neighborhood is a historically rich district within Tokyo that has retained much of its traditional charm, architecture and experiences. Take a stroll around the hotel and enjoy some of Tokyo's oldest shops and local foods. </p>
+        {% regionblock ningyocho_tagline, type:header %}
+          <h4>NIHOMBASHI NINGYOCHO</h4>
+        {% endregionblock %}
+        {% regionblock ningyocho_title, type:header %}
+          <h2>Authentic Japan in Modern Tokyo</h2>
+        {% endregionblock %}
+        {% regionblock ningyocho_detail, type:html %}
+          <p>Our hotel is mere steps away from Ningyocho Station, which offers direct access to both of Tokyo's airports and the city's most exciting destinations. The Ningyocho/Nihonmbashi neighborhood is a historically rich district within Tokyo that has retained much of its traditional charm, architecture and experiences. Take a stroll around the hotel and enjoy some of Tokyo's oldest shops and local foods. </p>
+        {% endregionblock %}
       </div>
       <div class="intro-btn-holder">
-        <a class="primary-btn" href="/contact/"><span>Contact Us</span><i class="fas fa-angle-right"></i></a>
+        {% regionblock contact_url, type:html %}
+          <a class="primary-btn" href="/contact/"><span>Contact Us</span><i class="fas fa-angle-right"></i></a>
+        {% endregionblock %}
       </div>
     </div>
     <div class="image bg-bottom" style="background-image: url('/assets/images/location/mifune.jpg');"></div>
@@ -57,16 +51,89 @@ meta_tags:
 <div class="image-collage">
   <div class="wrapper">
     <div class="item-half">
-      <img src="/assets/images/location/loc-pic-2.jpg" alt="Ningyocho neighborhood">
+      {% regionblock location_image_one, type:image %}
+        <img src="/assets/images/location/loc-pic-2.jpg" alt="Ningyocho neighborhood">
+      {% endregionblock %}
     </div>
     <div class="item-onefourth">
-      <img src="/assets/images/location/loc-pic-3.jpg" alt="Ningyocho neighborhood">
+      {% regionblock location_image_two, type:image %}
+        <img src="/assets/images/location/loc-pic-3.jpg" alt="Ningyocho neighborhood">
+      {% endregionblock %}
     </div>
     <div class="item-onefourth">
-      <img src="/assets/images/location/loc-pic-4.jpg" alt="Ningyocho neighborhood">
+      {% regionblock location_image_three, type:image %}
+        <img src="/assets/images/location/loc-pic-4.jpg" alt="Ningyocho neighborhood">
+      {% endregionblock %}
     </div>
   </div>
 </div>
+
+<!-- Directions section -->
+<div class="directions">
+  <div class="wrapper">
+    <div class="content">
+      {% regionblock directions_title, type:header %}
+        <h6 class="hideline">Directions</h6>
+      {% endregionblock %}
+      {% regionblock direction_query, type:header %}
+        <h2>How to find us</h2>
+      {% endregionblock %}
+      {% regionblock direction_url, type:html %}
+        <a class="primary-btn inverse" href="https://goo.gl/maps/3VwoSMEa5Wo" target="_blank"><span>Google Map</span><i class="fas fa-angle-right"></i></a>
+      {% endregionblock %}
+      {% regionblock direction_pdf_download, type:html %}
+        <a class="primary-btn inverse" href="#"><span>Download PDF</span><i class="fas fa-angle-right"></i></a>
+      {% endregionblock %}
+    </div>
+    <div class="content">
+      {% regionblock byplane_title, type:header %}
+        <h6>By Plane</h6>
+      {% endregionblock %}
+      {% regionblock airport_one, type:header %}
+        <h3 class="italic">From Narita Airport</h3>
+      {% endregionblock %}
+      {% regionblock bymetro_one, type:html %}
+        <p>BY METRO:<br><br>Take the Keisei Narita Skyaccess line that directly connects to Asakusa line, no need to transfer. Get off at Ningyocho station, take the exit A6 elevator and you'll see our hotel to your left.</p>
+      {% endregionblock %}
+      {% regionblock bybus_one, type:html %}
+        <p>BY BUS:<br><br>There is a Narita airport limousine bus that leaves the airport and stops at Tokyo City Air Terminal("TCAT") which is a five minute walk away from our hotel.</p>
+      {% endregionblock %}
+    </div>
+    <div class="content">
+      {% regionblock byplane_two_title, type:header %}
+        <h6>By Plane</h6>
+      {% endregionblock %}
+      {% regionblock airport_two, type:header %}
+        <h3 class="italic">From Haneda Airport</h3>
+      {% endregionblock %}
+      {% regionblock bymetro_two, type:html %}
+        <p>BY METRO:<br><br>Take the Keikyu-Kuko line that directly connects to Asakusa line, no need to transfer. Get off at Ningyocho station, take the exit A6 elevator and you'll see our hotel to your left.</p>
+      {% endregionblock %}
+      {% regionblock bybus_two, type:html %}
+        <p>BY BUS:<br><br>There is a Haneda airport limousine bus that leaves the airport and stops at Tokyo City Air Terminal("TCAT") which is a five minute walk away from our hotel. </p>
+      {% endregionblock %}
+    </div>
+    <div class="content">
+      {% regionblock bytrain_title, type:header %}
+        <h6>By Train</h6>
+      {% endregionblock %}
+      {% regionblock bytrain_detail, type:html %}
+        <p>Ningyocho and Suitengumae stations. We are 1 minute walk away from Ningyocho, and 5 minutes walk away from Suitengumae.</p>
+      {% endregionblock %}
+      {% regionblock bymetro_three, type:header %}
+        <h6>By Metro</h6>
+      {% endregionblock %}
+      {% regionblock bymetro_three_detail, type:html %}
+        <p>Nngyocho has Asakusa line, Hibiya line. Suitengumae has Hanzomoline (that directly connects to Denentoshi-line)</p>
+      {% endregionblock %}
+    </div>
+  </div>
+
+  <!-- Leflet Map -->
+  <div class="mt-4" id="leaflet-map"></div>
+
+</div>
+
 
 <!-- Newsletter signup here -->
 {% include forms/jotform/newsletter.html %}

@@ -10,7 +10,9 @@ meta_tags:
 <!-- Page not found Banner -->
 <section class="inner-banner text-center bg-cover mb-5" style="background-image:url('/assets/images/rooms/rooms-banner.jpg');">
   <div class="inner-banner-content">
-    <h1>Page not found</h1>
+    {% regionblock page_bot_found_banner, type:header %}
+      <h1>Page not found</h1>
+    {% endregionblock %}
   </div>
 </section>
 
@@ -19,7 +21,9 @@ meta_tags:
 <!-- Page not found -->
 <section class="static-page-wrap text-center">
   <div class="sitemap">
-    <h3>Sitemap</h3>
+    {% regionblock page_bot_found_sitemap, type:header %}
+      <h3>Sitemap</h3>
+    {% endregionblock %}
     <ul>
       {% for link in links %}
         <li>

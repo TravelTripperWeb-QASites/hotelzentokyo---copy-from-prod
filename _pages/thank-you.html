@@ -10,11 +10,15 @@ meta_tags:
 <!-- Thankyou Banner -->
 <section class="inner-banner text-center bg-cover" style="background-image:url('/assets/images/rooms/rooms-banner.jpg');">
   <div class="inner-banner-content">
-    <h1>Thank you</h1>
+    {% regionblock thankyou_banner, type:header %}
+      <h1>Thank you</h1>
+    {% endregionblock %}
   </div>
 </section>
 
 <!-- Content -->
 <section class="static-page-wrap text-center">
-  <h2 class="mt-5">We will get in touch with you soon...</h2>
+  {% regionblock thankyou_text, type:header %}
+    <h2 class="mt-5">We will get in touch with you soon...</h2>
+  {% endregionblock %}
 </section>

@@ -109,7 +109,7 @@
   }
 }
 
-disabled,.disabled {
-  cursor: not-allowed;
+[disabled],disabled,.disabled {
+  cursor: not-allowed !important;
   opacity: .3;
 }

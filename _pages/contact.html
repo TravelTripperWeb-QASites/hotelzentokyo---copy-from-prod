@@ -7,22 +7,21 @@ meta_tags:
   robots:
 ---
 
-{% comment %}
+<!-- Contact Banner -->
+<section class="inner-banner text-center bg-cover mb-5" style="background-image:url('/assets/images/contact/contact-hero.jpg');">
+  <div class="inner-banner-content">
+    {% regionblock contact_banner, type:header %}
+      <h1>contact</h1>
+    {% endregionblock %}
+  </div>
+</section>
 
-  Name:
+<!-- Contact Form -->
+<section class="contact-form">
+  {% regionblock form_title, type:header %}
+    <h2>We’re at your service</h2>
+  {% endregionblock %}
+  {% include forms/jotform/contact.html %}
+</section>
 
-    Contact Page
-
-  Description:
-
-    Static content that can be modified by editable regions.
-
-  Usage:
-
-    Text   - {% regionblock region_name, type:html %}{% endregionblock %}
-
-    Header - {% regionblock region_name, type:header %}{% endregionblock %}
-
-    Image  - {% regionblock region_name, type:image %}{% endregionblock %}
-
-{% endcomment %}
+{% include forms/jotform/newsletter.html %}

@@ -1,16 +1,6 @@
 // Navigation Elements
 // ========================================================================== */
 
-header {
-  position: fixed;
-  top: 0;
-  z-index: 99;
-  width: 100%;
-  background: $white;
-  border-bottom: solid 16px $tertiary-color;
-  @include transition ($global-transition);
-}
-
 // Removes margins, padding, and bullet points from navigation lists
 nav {
   @include fixed-width-layout;

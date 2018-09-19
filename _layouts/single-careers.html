@@ -5,7 +5,9 @@ layout: default
 <!-- Careers Banner -->
 <section class="inner-banner text-center bg-cover mb-5" style="background-image:url('/assets/images/careers/careers-hero.jpg');">
   <div class="inner-banner-content">
-    <h1>Careers</h1>
+    {% regionblock careers_details_banner, type:header %}
+      <h1>Careers</h1>
+    {% endregionblock %}
   </div>
 </section>
 
@@ -13,7 +15,9 @@ layout: default
 {% assign careers = site.data._models.careers %}
 <section class="careers-content">
   <h2>{{ page.designation }}</h2>
-  <p class="mb-40">To apply: Please send your CV to <a href="mailto:jobs@senrecube.co">jobs@senrecube.com</a></p>
+  {% regionblock careers_details_text, type:html %}
+    <p class="mb-40">To apply: Please send your CV to <a href="mailto:jobs@senrecube.co">jobs@senrecube.com</a></p>
+  {% endregionblock %}
   <div class="content-block">
     <h5 class="dark">Job description</h5>
     {{ page.job-description }}

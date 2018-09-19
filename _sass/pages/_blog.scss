@@ -208,66 +208,68 @@
       .blog-info {
         margin-bottom: 35px;
       }
-    }
 
-    .blog-image-twocol {
-      @include make-row;
-      padding-top: 20px;
-      padding-bottom: 20px;
-      .image-col {
-        @include make-col-ready;
-        margin-bottom: 20px;
-        @include media-breakpoint-up(md) {
-          @include make-col(6.7);
-          margin-bottom: 0;
+      .blog-image-twocol {
+        @include make-row;
+        padding-top: 20px;
+        padding-bottom: 20px;
+
+        .image-col {
+          @include make-col-ready;
+          margin-bottom: 20px;
+          @include media-breakpoint-up(md) {
+            @include make-col(6.7);
+            margin-bottom: 0;
+          }
+          
+          &:nth-child(even) {
+            @include make-col(5.3);
+          }
         }
-        &:nth-child(even) {
-          @include make-col(5.3);
+
+        .blog-body-image {
+          height: 255px;
+          margin-bottom: 10px;
+          @include bg-cover;
         }
       }
 
-      .blog-body-image {
-        height: 255px;
-        margin-bottom: 10px;
-        @include bg-cover;
-      }
-    }
-
-    .caption {
-      font-size: $type-size-6;
-      color: $black;
-    }
-
-    h4 {
-      margin-bottom: 10px;
-      font-size: $type-size-4;
-      font-weight: 400;
-      color: $black;
-      text-transform: none;
-    }
-
-    .blog-share {
-      margin-top: 60px;
-      margin-bottom: 20px;
-      padding: 10px 0;
-      border-top: solid 2px $dark-gray;
-
-      .share {
-        display: inline-block;
-        margin-right: 15px;
-        font-family: $header-font-family;
+      .caption {
         font-size: $type-size-6;
         color: $black;
-        text-transform: uppercase;
       }
 
-      a {
-        padding: 0 10px;
-        font-size: $type-size-9;
-        color: $dark-gray;
-        transition: $global-transition;
-        &:hover {
+      h4 {
+        margin-bottom: 10px;
+        font-size: $type-size-4;
+        font-weight: 400;
+        color: $black;
+        text-transform: none;
+      }
+
+      .blog-share {
+        margin-top: 60px;
+        margin-bottom: 20px;
+        padding: 10px 0;
+        border-top: solid 2px $dark-gray;
+
+        .share {
+          display: inline-block;
+          margin-right: 15px;
+          font-family: $header-font-family;
+          font-size: $type-size-6;
           color: $black;
+          text-transform: uppercase;
+        }
+
+        a {
+          padding: 0 10px;
+          font-size: $type-size-9;
+          color: $dark-gray;
+          transition: $global-transition;
+          &:hover {
+            color: $black;
+          }
         }
       }
     }

@@ -7,22 +7,30 @@ meta_tags:
   robots:
 ---
 
-{% comment %}
+<!-- Page not found Banner -->
+<section class="inner-banner text-center bg-cover mb-5" style="background-image:url('/assets/images/rooms/rooms-banner.jpg');">
+  <div class="inner-banner-content">
+    <h1>Page not found</h1>
+  </div>
+</section>
 
-  Name:
-
-    404 (Page Not Found)
-
-  Description:
-
-    Static content that can be modified by editable regions.
-
-  Usage:
-
-    Text   - {% regionblock region_name, type:html %}{% endregionblock %}
-
-    Header - {% regionblock region_name, type:header %}{% endregionblock %}
-
-    Image  - {% regionblock region_name, type:image %}{% endregionblock %}
-
-{% endcomment %}
+{% assign links = site.data.navigation.main %}
+{% assign footer-links = site.data.navigation.footer %}
+<!-- Page not found -->
+<section class="static-page-wrap text-center">
+  <div class="sitemap">
+    <h3>Sitemap</h3>
+    <ul>
+      {% for link in links %}
+        <li>
+          <a href="{{ link.url | absolute_url }}">{{ link.title }}{% if page.url == link.url %}<span class="sr-only">(current)</span>{% endif%}</a>
+        </li>
+      {% endfor %}
+      {% for link in footer-links %}
+        <li>
+          <a href="{{ link.url | absolute_url }}">{{ link.title }}</a>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+</section>

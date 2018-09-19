@@ -7,26 +7,29 @@ meta_tags:
   robots: noindex, follow
 ---
 
-{% comment %}
+<!-- Sitemap Banner -->
+<section class="inner-banner text-center bg-cover mb-5" style="background-image:url('/assets/images/rooms/rooms-banner.jpg');">
+  <div class="inner-banner-content">
+    <h1>Sitemap</h1>
+  </div>
+</section>
 
-  Name:
-
-    Sitemap Page
-
-  Description:
-
-    Dynamically generated content from navigation.yml file.
-
-  Usage:
-
-    {% assign links = site.data.navigation.main %}
-
+{% assign links = site.data.navigation.main %}
+{% assign footer-links = site.data.navigation.footer %}
+<!-- Sitemap -->
+<section class="static-page-wrap text-center">
+  <div class="sitemap">
     <ul>
       {% for link in links %}
+        <li>
+          <a href="{{ link.url | absolute_url }}">{{ link.title }}{% if page.url == link.url %}<span class="sr-only">(current)</span>{% endif%}</a>
+        </li>
+      {% endfor %}
+      {% for link in footer-links %}
         <li>
           <a href="{{ link.url | absolute_url }}">{{ link.title }}</a>
         </li>
       {% endfor %}
     </ul>
-
-{% endcomment %}
+  </div>
+</section>

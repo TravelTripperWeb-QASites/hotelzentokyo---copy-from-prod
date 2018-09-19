@@ -2,14 +2,14 @@
 title: "Tokyo Hotels"
 title_separator: "|"
 name: "Hotel Zen Tokyo"
-description: "Site default description."
+description: "Hotel Zen Tokyo"
 url: "https://www.hotelzentokyo.com"
 repository: "TravelTripperWeb-Sites/hotelzentokyo"
 
 # Language Settings
 default_lang: 'en'
-languages: ['en']
-
+languages: ['en','ja']
+exclude_from_localizations: ["assets", "CNAME"]
 # Reading Files
 include:
   - _pages
@@ -44,7 +44,9 @@ keep_files:
   - .git
   - assets
 rsync_copy:
-  - _assets
+  - assets
+  - _pages
+  - _sass
 encoding: "utf-8"
 markdown_ext: "markdown,mkdown,mkdn,mkd,md"
 

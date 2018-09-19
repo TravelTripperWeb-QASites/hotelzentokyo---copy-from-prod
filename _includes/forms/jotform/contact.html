@@ -3,28 +3,28 @@
     <input type="hidden" name="formID" value="{{ site.data.forms.jotform.contact-id }}">
     <div class="form-group two">
       <div class="input-block">
-        <input type="text" class="form-control" placeholder="First Name *" aria-label="First Name" title="First Name">
+        <input type="text" class="form-control" placeholder="First Name *" aria-label="First Name" title="First Name" id="input_3" name="q3_firstName" required>
       </div>
       <div class="input-block">
-        <input type="text" class="form-control" placeholder="Please enter your Surname" aria-label="Please enter your Surname" title="Please enter your Surname">
+        <input type="text" class="form-control" placeholder="Please enter your Surname" aria-label="Please enter your Surname" title="Please enter your Surname" id="input_6" name="q6_enterYour">
       </div>
       <div class="input-block">
-        <input type="email" class="form-control" placeholder="Please enter your Email *" aria-label="Please enter your Email" title="Please enter your Email">
+        <input type="email" class="form-control" placeholder="Please enter your Email *" aria-label="Please enter your Email" title="Please enter your Email" id="input_4" name="q4_email" required>
       </div>
       <div class="input-block">
-        <input type="text" class="form-control" placeholder="Subject *" aria-label="Subject" title="Subject">
+        <input type="text" class="form-control" placeholder="Subject *" aria-label="Subject" title="Subject" id="input_7" name="q7_subject" required>
       </div>
     </div>
     <div class="form-group">
-      <textarea placeholder="Your Message *"></textarea>
+      <textarea placeholder="Your Message *" id="input_5" name="q5_message" required></textarea>
     </div>
     <div class="form-check custom-checkbox">
-      <input class="custom-control-input" type="checkbox" value="" id="tnc">
+      <input class="custom-control-input" type="checkbox" value="Accept" id="tnc" name="q8_terms[]" required>
       <label class="custom-control-label" for="tnc">
          I agree to the <a href="/terms-of-service/" target="_blank">Terms of Service</a> and <a href="/privacy-policy/" target="_blank">Privacy Policy</a>.
       </label>
     </div>
-    <button class="primary-btn disabled" id="" type="submit"><span>Submit</span><i class="fas fa-angle-right"></i></button>
+    <button class="primary-btn" id="contact-btn" type="submit" disabled><span>Submit</span><i class="fas fa-angle-right"></i></button>
     <input type="hidden" id="simple_spc" name="simple_spc" value="{{ site.data.forms.jotform.contact-id }}">
 
     <script type="text/javascript">

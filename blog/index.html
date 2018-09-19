@@ -48,53 +48,34 @@ meta_tags:
       </div>
       {% endfor %}
 
-      <div class="blog-item">
-        <figure class="blog-lead-image">
-          <a href="">
-            <img src="/assets/images/blog/post-2.jpg" alt="">
-          </a>
-        </figure>
-        <h2><a href="">Aenean commodo scelerisque mi sed imperdiet</a></h2>
-        <div class="blog-info">
-          <span class="date">September 5th, 2018 </span><span class="cat"><a href="">Eat & Drink</a></span>
-        </div>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras dapibus vulputate diam eu pretium. Mauris elit orci, ultricies id fermentum vel, porta et eros.</p>
-        <div class="btn-holder">
-          <a class="primary-btn inverse" href="#"><span>Read More</span><i class="fas fa-angle-right"></i></a>
-        </div>
+      {% if data_paginator.total_pages > 1 %}
+
+      <div class="pagination-counter">
+        <p>Page: {{ data_paginator.page }} of {{ data_paginator.total_pages }}</p>
       </div>
 
-      <div class="blog-item">
-        <figure class="blog-lead-image">
-          <a href="">
-            <img src="/assets/images/blog/post-3.jpg" alt="">
-          </a>
-        </figure>
-        <h2><a href="">Aenean commodo scelerisque mi sed imperdiet</a></h2>
-        <div class="blog-info">
-          <span class="date">September 5th, 2018 </span><span class="cat"><a href="">Eat & Drink</a></span>
-        </div>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras dapibus vulputate diam eu pretium. Mauris elit orci, ultricies id fermentum vel, porta et eros.</p>
-        <div class="btn-holder">
-          <a class="primary-btn inverse" href="#"><span>Read More</span><i class="fas fa-angle-right"></i></a>
-        </div>
-      </div>
+      <div class="pagination">
+        {% if data_paginator.previous_page %}
+          {% if data_paginator.page %}
+            <a name="previous" title="previous" class="primary-btn inverse left-arrow align-self-center" href="{{ data_paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">
+              <i class="fas fa-angle-left"></i><span>Prev</span>
+            </a>
+          {% else %}
+            <a href="{{ data_paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}"> {{ page }} </a>
+          {% endif %}
 
-      <div class="blog-item">
-        <figure class="blog-lead-image">
-          <a href="">
-            <img src="/assets/images/blog/post-4.jpg" alt="">
-          </a>
-        </figure>
-        <h2><a href="">Aenean commodo scelerisque mi sed imperdiet</a></h2>
-        <div class="blog-info">
-          <span class="date">September 5th, 2018 </span><span class="cat"><a href="">Eat & Drink</a></span>
-        </div>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras dapibus vulputate diam eu pretium. Mauris elit orci, ultricies id fermentum vel, porta et eros.</p>
-        <div class="btn-holder">
-          <a class="primary-btn inverse" href="#"><span>Read More</span><i class="fas fa-angle-right"></i></a>
-        </div>
+        {% else %}
+          <a name="previous" title="previous" class="primary-btn inverse left-arrow align-self-center"><i class="fas fa-angle-left"></i><span>Prev</span></a>
+        {% endif %}
+
+        {% if data_paginator.next_page %}
+          <a  name="next" title="next" class="primary-btn inverse align-self-center border-left-0" href="{{ data_paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}"><span>Next</span><i class="fas fa-angle-right"></i></a>
+        {% else %}
+          <a name="next" title="next" class="primary-btn inverse align-self-center border-left-0"><span>Next</span><i class="fas fa-angle-right"></i></a>
+        {% endif %}
       </div>
+    {% endif %}
+
     </div>
   </div>
 </section>

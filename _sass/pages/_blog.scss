@@ -214,18 +214,14 @@
       @include make-row;
       padding-top: 20px;
       padding-bottom: 20px;
-      .left {
+      .image-col {
         @include make-col-ready;
         margin-bottom: 20px;
         @include media-breakpoint-up(md) {
           @include make-col(6.7);
           margin-bottom: 0;
         }
-      }
-
-      .right {
-        @include make-col-ready;
-        @include media-breakpoint-up(md) {
+        &:nth-child(even) {
           @include make-col(5.3);
         }
       }
@@ -242,22 +238,31 @@
       color: $black;
     }
 
-    h5 {
-      margin-bottom: 5px;
+    h4 {
+      margin-bottom: 10px;
+      font-size: $type-size-4;
       font-weight: 400;
       color: $black;
+      text-transform: none;
     }
+
     .blog-share {
       margin-top: 60px;
       margin-bottom: 20px;
       padding: 10px 0;
       border-top: solid 2px $dark-gray;
-      h4 {
+
+      .share {
         display: inline-block;
+        margin-right: 15px;
+        font-family: $header-font-family;
+        font-size: $type-size-6;
         color: $black;
+        text-transform: uppercase;
       }
+
       a {
-        margin-left: 18px;
+        padding: 0 10px;
         font-size: $type-size-9;
         color: $dark-gray;
         transition: $global-transition;

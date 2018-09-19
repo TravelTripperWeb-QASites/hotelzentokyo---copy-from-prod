@@ -36,6 +36,10 @@
     "type": "richtext",
     "required": true
   },
+  "more_post_content": {
+    "label": "Post More Content",
+    "type": "richtext"
+  },
   "image": {
     "label": "Featured Image",
     "type": "image",
@@ -51,12 +55,5 @@
     "type": "model",
     "display_field": "title",
     "model_name": "categories"
-  },
-  "tags": {
-    "label": "Choose Tags",
-    "type": "model",
-    "display_field": "title",
-    "multiple": true,
-    "model_name": "tags"
   }
 }

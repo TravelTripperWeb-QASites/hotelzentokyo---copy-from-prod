@@ -2,7 +2,6 @@
 layout: default
 title: Blog Posts
 meta_description: Blog Posts
-permalink: /blog/
 meta_tags:
   robots:
 ---
@@ -23,21 +22,31 @@ meta_tags:
     </div>
     <div class="blog-content">
       <!-- Blog individual post -->
+      {% for post in data_paginator.posts %}
       <div class="blog-item">
         <figure class="blog-lead-image">
-          <a href="">
-            <img src="/assets/images/blog/post-1.jpg" alt="">
+          <a href="/blog/{{ post.url_friendly_name }}/">
+            <img src="{{ post.image.url_medium }}" alt="{{ post.title }}">
           </a>
         </figure>
-        <h2><a href="">Aenean commodo scelerisque mi sed imperdiet</a></h2>
+        <h2><a href="/blog/{{ post.url_friendly_name }}/">{{ post.title }}</a></h2>
         <div class="blog-info">
-          <span class="date">September 5th, 2018 </span><span class="cat"><a href="">Eat & Drink</a></span>
+          <span class="date">
+            {% assign d = post.date | date: "%-d" %}
+            {{ post.date | date: "%B" }}
+            {% case d %}{% when "1" or "21" or "31" %}{{ d }}st{% when "2" or "22" %}{{ d }}nd{% when "3" or "23" %}{{ d }}rd{% else %}{{ d }}th{% endcase %},
+            {{ post.date | date: "%Y" }}
+          </span>
+          <span class="cat">
+            <a href="/blog/category/{{ post.category.url_friendly_name }}/">{{ post.category.title }}</a>
+          </span>
         </div>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras dapibus vulputate diam eu pretium. Mauris elit orci, ultricies id fermentum vel, porta et eros.</p>
         <div class="btn-holder">
-          <a class="primary-btn inverse" href="#"><span>Read More</span><i class="fas fa-angle-right"></i></a>
+          <a class="primary-btn inverse" href="/blog/{{ post.url_friendly_name }}/"><span>Read More</span><i class="fas fa-angle-right"></i></a>
         </div>
       </div>
+      {% endfor %}
 
       <div class="blog-item">
         <figure class="blog-lead-image">

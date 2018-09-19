@@ -16,7 +16,7 @@ footer:
   - title: Careers
     url: /careers/
   - title: Privacy Policy
-    url: /privacy-policy/
+    url: /privacy/
   - title: Location
     url: /location/
   - title: Contact
@@ -24,4 +24,4 @@ footer:
   - title: FAQ
     url: /faq/
   - title: Terms of Use
-    url: /terms-of-use/
+    url: /terms/

@@ -4,6 +4,7 @@ ja:
   rooms_stay: 禅ポッド 部屋
   view_this_room: この部屋を見る
   book_now: 空室検索
+  book_room: 空室検索
   contact: お問い合わせ
   discover_more: 部屋一覧へ
   stay_in_the_know: 「ニュースレター」
@@ -23,3 +24,11 @@ ja:
   careers: 採用情報
   privacy_policy: プライバシーポリシー
   thank_you: ありがとうございました
+  address: 〒103-0013 東京都中央区 日本橋人形町1-5-8
+  go_room_link: ...and more  (Go to reservation page for full details)
+  within_the_pod: Within the pod
+  access_to_facilities: Access to facilities
+  amenities: Amenities
+  book_your_stay: Book Your Stay
+  urban_tranquility: urban tranquility
+  stay_zen: stay zen

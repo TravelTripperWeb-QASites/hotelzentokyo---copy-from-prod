@@ -4,6 +4,7 @@ ja:
   rooms_stay: 禅ポッド 部屋
   view_this_room: この部屋を見る
   book_now: 空室検索
+  book_room: 空室検索
   contact: お問い合わせ
   discover_more: 部屋一覧へ
   stay_in_the_know: EMAIL NEWSLETTER
@@ -16,3 +17,4 @@ ja:
   subject: 件名
   your_message: メッセージをご入力ください
   address: 〒103-0013 東京都中央区 日本橋人形町1-5-8
+  go_room_link: ...and more  (Go to reservation page for full details)

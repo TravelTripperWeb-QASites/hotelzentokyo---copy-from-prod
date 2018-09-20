@@ -4,6 +4,7 @@ en:
   rooms_stay: ZEN PODS & ROOMS
   view_this_room: View this Room
   book_now: Book Now
+  book_room: Book Room
   contact: contact
   discover_more: Discover More
   stay_in_the_know: stay in the know
@@ -16,3 +17,4 @@ en:
   subject: Subject
   your_message: Your message
   address: 1-5-8 Nihonbashi Ningyocho, Chuoko Tokyo, Japan 103-0013
+  go_room_link: ...and more  (Go to reservation page for full details)

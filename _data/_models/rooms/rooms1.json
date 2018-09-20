@@ -107,5 +107,6 @@
   },
   "room_type_localized": {
     "en": "SINGLE BED POD"
-  }
+  },
+  "order": 1
 }

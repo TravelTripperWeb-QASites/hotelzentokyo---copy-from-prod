@@ -107,5 +107,6 @@
   },
   "room_type_localized": {
     "en": "SEMIDOUBLE BED WITH EXTRA ROOM"
-  }
+  },
+  "order": 3
 }

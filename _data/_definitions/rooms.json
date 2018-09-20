@@ -77,5 +77,8 @@
 		"required": false,
 		"type": "richtext",
     "localizable": true
-	}
+	},
+  "order": {
+    "type": "integer"
+  }
 }

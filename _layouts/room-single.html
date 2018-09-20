@@ -2,7 +2,11 @@
 layout: default
 ---
 
-{% assign rooms = site.data._models.rooms %}
+{% if site.active_lang == "ja" %}
+ {% assign lang_url = '/ja' %}
+{% endif %}
+
+{% assign rooms = site.data._models.rooms | sort: 'order' reverse %}
 <!-- Room Banner -->
 <section class="inner-banner text-center bg-cover" style="background-image:url('{{ page.banner_image.url }}');">
   <div class="inner-banner-content">
@@ -28,7 +32,7 @@ layout: default
       <p>{{ page.long_info }}</p>
     </div>
     {% if page.book_room != "" %}
-    <a class="primary-btn" href="{{ page.book_room }}" target="_blank"><span>Book Room</span><i class="fas fa-angle-right"></i></a>
+    <a class="primary-btn" href="{{ page.book_room }}" target="_blank"><span>{% t 'book_room' %}</span><i class="fas fa-angle-right"></i></a>
     {% endif %}
   </div>
   <div class="image bg-cover" style="background-image:url('{{ page.intro_image.url }}');">
@@ -50,7 +54,7 @@ layout: default
       <div class="right">
         <p>Access to facilities: </p>
         {{ page.amenities_access_facilities }}
-        <p>...and more  (Go to reservation page for full details)</p>
+        <p>{% t 'go_room_link' %}</p>
       </div>
     </div>
   </div>

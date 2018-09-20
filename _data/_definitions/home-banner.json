@@ -8,14 +8,12 @@
     "label": "Banner Image",
     "type": "image",
     "multiple": true,
-    "localizable": true,
     "required": true
   },
   "imageja": {
-    "label": "Banner Image",
+    "label": "Banner Image for JA",
     "type": "image",
     "multiple": true,
-    "localizable": true,
     "required": true
   }
 }

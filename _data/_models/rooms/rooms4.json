@@ -1,0 +1,121 @@
+{
+  "amenities_access_facilities_localized": {
+    "en": "<ul>\n<li>Locker for big luggage&nbsp;(on the same floor)&nbsp;</li>\n<li>Coin laundry</li>\n<li>Bar / cafe \"NAME\"</li>\n<li>Work &amp; study lounge</li>\n<li>Communal shower &amp; bathrooms</li>\n</ul>",
+    "ja": "<p><span style=\"font-family: Arial; font-size: 13px; white-space: pre-wrap;\">・荷物用個別ロッカー（同フロア・カプセル外） ・共用シャワー・バスルーム ・コインランドリー ・ワーク・スタディラウンジ ・バー・カフェ</span></p>"
+  },
+  "image": {
+    "name": "room-list-thumb",
+    "file_name": "room-list-thumb.jpg",
+    "url": "//cdn.traveltripper.io/site-assets/32_913_19117/media/2018-09-20-030104/room-list-thumb.jpg",
+    "tags": "",
+    "description": "",
+    "date_added": "2018-09-20-030104",
+    "file_type": "image/jpeg",
+    "width": 392,
+    "height": 224,
+    "file_size": 37907,
+    "url_large": "//cdn.traveltripper.io/site-assets/32_913_19117/media/2018-09-20-030104/large_room-list-thumb.jpg",
+    "url_medium": "//cdn.traveltripper.io/site-assets/32_913_19117/media/2018-09-20-030104/medium_room-list-thumb.jpg",
+    "url_small": "//cdn.traveltripper.io/site-assets/32_913_19117/media/2018-09-20-030104/small_room-list-thumb.jpg",
+    "url_xsmall": "//cdn.traveltripper.io/site-assets/32_913_19117/media/2018-09-20-030104/xsmall_room-list-thumb.jpg",
+    "url_thumb": "//cdn.traveltripper.io/site-assets/32_913_19117/media/2018-09-20-030104/thumb_room-list-thumb.jpg",
+    "path": "//cdn.traveltripper.io/site-assets/32_913_19117/media/2018-09-20-030104/room-list-thumb.jpg",
+    "alt": "room-list-thumb",
+    "caption": ""
+  },
+  "banner_image": {
+    "name": "rooms-banner",
+    "file_name": "rooms-banner.jpg",
+    "url": "//cdn.traveltripper.io/site-assets/32_913_19117/media/2018-09-20-030126/rooms-banner.jpg",
+    "tags": "",
+    "description": "",
+    "date_added": "2018-09-20-030126",
+    "file_type": "image/jpeg",
+    "width": 1440,
+    "height": 344,
+    "file_size": 223798,
+    "url_large": "//cdn.traveltripper.io/site-assets/32_913_19117/media/2018-09-20-030126/large_rooms-banner.jpg",
+    "url_medium": "//cdn.traveltripper.io/site-assets/32_913_19117/media/2018-09-20-030126/medium_rooms-banner.jpg",
+    "url_small": "//cdn.traveltripper.io/site-assets/32_913_19117/media/2018-09-20-030126/small_rooms-banner.jpg",
+    "url_xsmall": "//cdn.traveltripper.io/site-assets/32_913_19117/media/2018-09-20-030126/xsmall_rooms-banner.jpg",
+    "url_thumb": "//cdn.traveltripper.io/site-assets/32_913_19117/media/2018-09-20-030126/thumb_rooms-banner.jpg",
+    "path": "//cdn.traveltripper.io/site-assets/32_913_19117/media/2018-09-20-030126/rooms-banner.jpg",
+    "alt": "rooms-banner",
+    "caption": ""
+  },
+  "intro_image": {
+    "name": "room-details-intro",
+    "file_name": "room-details-intro.jpg",
+    "url": "//cdn.traveltripper.io/site-assets/32_913_19117/media/2018-09-20-030159/room-details-intro.jpg",
+    "tags": "",
+    "description": "",
+    "date_added": "2018-09-20-030159",
+    "file_type": "image/jpeg",
+    "width": 712,
+    "height": 560,
+    "file_size": 246257,
+    "url_large": "//cdn.traveltripper.io/site-assets/32_913_19117/media/2018-09-20-030159/large_room-details-intro.jpg",
+    "url_medium": "//cdn.traveltripper.io/site-assets/32_913_19117/media/2018-09-20-030159/medium_room-details-intro.jpg",
+    "url_small": "//cdn.traveltripper.io/site-assets/32_913_19117/media/2018-09-20-030159/small_room-details-intro.jpg",
+    "url_xsmall": "//cdn.traveltripper.io/site-assets/32_913_19117/media/2018-09-20-030159/xsmall_room-details-intro.jpg",
+    "url_thumb": "//cdn.traveltripper.io/site-assets/32_913_19117/media/2018-09-20-030159/thumb_room-details-intro.jpg",
+    "path": "//cdn.traveltripper.io/site-assets/32_913_19117/media/2018-09-20-030159/room-details-intro.jpg",
+    "alt": "room-details-intro",
+    "caption": ""
+  },
+  "amenities_image": {
+    "name": "room-amenities",
+    "file_name": "room-amenities.jpg",
+    "url": "//cdn.traveltripper.io/site-assets/32_913_19117/media/2018-09-20-030218/room-amenities.jpg",
+    "tags": "",
+    "description": "",
+    "date_added": "2018-09-20-030218",
+    "file_type": "image/jpeg",
+    "width": 728,
+    "height": 504,
+    "file_size": 159636,
+    "url_large": "//cdn.traveltripper.io/site-assets/32_913_19117/media/2018-09-20-030218/large_room-amenities.jpg",
+    "url_medium": "//cdn.traveltripper.io/site-assets/32_913_19117/media/2018-09-20-030218/medium_room-amenities.jpg",
+    "url_small": "//cdn.traveltripper.io/site-assets/32_913_19117/media/2018-09-20-030218/small_room-amenities.jpg",
+    "url_xsmall": "//cdn.traveltripper.io/site-assets/32_913_19117/media/2018-09-20-030218/xsmall_room-amenities.jpg",
+    "url_thumb": "//cdn.traveltripper.io/site-assets/32_913_19117/media/2018-09-20-030218/thumb_room-amenities.jpg",
+    "path": "//cdn.traveltripper.io/site-assets/32_913_19117/media/2018-09-20-030218/room-amenities.jpg",
+    "alt": "room-amenities",
+    "caption": ""
+  },
+  "url_friendly_name": "ume-copy",
+  "book_room": "",
+  "title_localized": {
+    "en": "UME - SINGLE BED POD",
+    "ja": "UME - SINGLE BED POD"
+  },
+  "short_info_localized": {
+    "en": "<p>Spacious pod with a comfortable, western-style Single-sized (100cm) bed for one person only. Pod height reaches all the way to the ceiling. Comes with a safe, free-wifi, clothes hanger, towel and full amenities.&nbsp;</p>",
+    "ja": "<p><span style=\"font-family: Arial; font-size: 13px; white-space: pre-wrap;\">天井まで届く広々としたカプセルに、シングル（100cm）のSimmonsベッド。カプセル内金庫、フリーWifi、ハンガー、タオル、 フル・アメニティセットが付いています。</span></p>"
+  },
+  "long_info_localized": {
+    "en": "<p>Spacious pod with a comfortable, western-style Single-sized (100cm) bed for one person only. Pod height reaches all the way to the ceiling. Comes with a safe, free-wifi, clothes hanger, towel and full amenities.&nbsp;</p>",
+    "ja": "<p><span style=\"font-family: Arial; font-size: 13px; white-space: pre-wrap;\">天井まで届く広々としたカプセルに、シングル（100cm）のSimmonsベッド。カプセル内金庫、フリーWifi、ハンガー、タオル、 フル・アメニティセットが付いています。</span></p>"
+  },
+  "bed_info_localized": {
+    "en": "1 Single (100cm) sized bed",
+    "ja": "100cm"
+  },
+  "amenities_text_localized": {
+    "en": "A night&rsquo;s stay at this pod comes with...",
+    "ja": "A night’s stay at this pod comes with..."
+  },
+  "amenities_within_pod_localized": {
+    "en": "<ul>\n<li>Free Wi-fi</li>\n<li>In-room Safes</li>\n<li>In-room Hanger</li>\n<li>Two outlets</li>\n<li>Full bathroom amenities&nbsp;</li>\n<li>Towels</li>\n</ul>",
+    "ja": "<p><span style=\"font-family: Arial; font-size: 13px; white-space: pre-wrap;\">・無料Wi-Fi ・鍵付きセーフティボックス ・衣服ハンガー ・電源コンセント2口 ・アメニティフルセット ・タオル</span></p>"
+  },
+  "room_title_localized": {
+    "en": "UME",
+    "ja": "UME"
+  },
+  "room_type_localized": {
+    "en": "SINGLE BED POD",
+    "ja": "SINGLE BED POD"
+  },
+  "order": 1
+}

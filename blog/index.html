@@ -57,7 +57,7 @@ meta_tags:
       <div class="pagination">
         {% if data_paginator.previous_page %}
           {% if data_paginator.page %}
-            <a name="previous" title="previous" class="primary-btn inverse left-arrow align-self-center" href="{{ data_paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">
+            <a name="previous" title="previous" class="primary-btn inverse previous align-self-center" href="{{ data_paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">
               <i class="fas fa-angle-left"></i><span>Prev</span>
             </a>
           {% else %}
@@ -65,7 +65,7 @@ meta_tags:
           {% endif %}
 
         {% else %}
-          <a name="previous" title="previous" class="primary-btn inverse left-arrow align-self-center"><i class="fas fa-angle-left"></i><span>Prev</span></a>
+          <a name="previous" title="previous" class="primary-btn inverse previous align-self-center"><i class="fas fa-angle-left"></i><span>Prev</span></a>
         {% endif %}
 
         {% if data_paginator.next_page %}

@@ -68,24 +68,18 @@
         border-left-color: $white;
       }
     }
-    &.left-arrow {
+    &.previous {
       svg {
         border-right: solid 1px $black;
-        border-left: 0;
       }
 
       &:hover {
-        color: $white !important;
-        background-color: $black;
-
         svg {
           border-right-color: $white;
-          border-left-color: 0;
         }
       }
     }
   }
-
 }
 
 .secondary-btn {

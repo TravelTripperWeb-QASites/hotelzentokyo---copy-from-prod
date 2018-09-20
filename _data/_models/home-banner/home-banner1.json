@@ -67,5 +67,70 @@
       "caption": "stay zen"
     }
   ],
-  "order": 1
+  "order": 1,
+  "imageja": [
+    {
+      "name": "home-banner-1",
+      "file_name": "home-banner-1.jpg",
+      "url": "//cdn.traveltripper.io/site-assets/32_913_18984/media/2018-09-20-031711/home-banner-1.jpg",
+      "tags": "",
+      "description": "",
+      "date_added": "2018-09-20-031711",
+      "file_type": "image/jpeg",
+      "width": 2880,
+      "height": 1376,
+      "file_size": 506507,
+      "url_large": "//cdn.traveltripper.io/site-assets/32_913_18984/media/2018-09-20-031711/large_home-banner-1.jpg",
+      "url_medium": "//cdn.traveltripper.io/site-assets/32_913_18984/media/2018-09-20-031711/medium_home-banner-1.jpg",
+      "url_small": "//cdn.traveltripper.io/site-assets/32_913_18984/media/2018-09-20-031711/small_home-banner-1.jpg",
+      "url_xsmall": "//cdn.traveltripper.io/site-assets/32_913_18984/media/2018-09-20-031711/xsmall_home-banner-1.jpg",
+      "url_thumb": "//cdn.traveltripper.io/site-assets/32_913_18984/media/2018-09-20-031711/thumb_home-banner-1.jpg",
+      "git_file_name": "_assets/image_data/home-banner-1.json",
+      "path": "//cdn.traveltripper.io/site-assets/32_913_18984/media/2018-09-20-031711/home-banner-1.jpg",
+      "alt": "stay zen",
+      "caption": "stay zen"
+    },
+    {
+      "name": "home-banner-2",
+      "file_name": "home-banner-2.jpg",
+      "url": "//cdn.traveltripper.io/site-assets/32_913_18984/media/2018-09-20-031712/home-banner-2.jpg",
+      "tags": "",
+      "description": "",
+      "date_added": "2018-09-20-031712",
+      "file_type": "image/jpeg",
+      "width": 2880,
+      "height": 1376,
+      "file_size": 570093,
+      "url_large": "//cdn.traveltripper.io/site-assets/32_913_18984/media/2018-09-20-031712/large_home-banner-2.jpg",
+      "url_medium": "//cdn.traveltripper.io/site-assets/32_913_18984/media/2018-09-20-031712/medium_home-banner-2.jpg",
+      "url_small": "//cdn.traveltripper.io/site-assets/32_913_18984/media/2018-09-20-031712/small_home-banner-2.jpg",
+      "url_xsmall": "//cdn.traveltripper.io/site-assets/32_913_18984/media/2018-09-20-031712/xsmall_home-banner-2.jpg",
+      "url_thumb": "//cdn.traveltripper.io/site-assets/32_913_18984/media/2018-09-20-031712/thumb_home-banner-2.jpg",
+      "git_file_name": "_assets/image_data/home-banner-2.json",
+      "path": "//cdn.traveltripper.io/site-assets/32_913_18984/media/2018-09-20-031712/home-banner-2.jpg",
+      "alt": "stay zen",
+      "caption": ""
+    },
+    {
+      "name": "home-banner-3",
+      "file_name": "home-banner-3.jpg",
+      "url": "//cdn.traveltripper.io/site-assets/32_913_18984/media/2018-09-20-031714/home-banner-3.jpg",
+      "tags": "",
+      "description": "",
+      "date_added": "2018-09-20-031714",
+      "file_type": "image/jpeg",
+      "width": 2880,
+      "height": 1376,
+      "file_size": 488076,
+      "url_large": "//cdn.traveltripper.io/site-assets/32_913_18984/media/2018-09-20-031714/large_home-banner-3.jpg",
+      "url_medium": "//cdn.traveltripper.io/site-assets/32_913_18984/media/2018-09-20-031714/medium_home-banner-3.jpg",
+      "url_small": "//cdn.traveltripper.io/site-assets/32_913_18984/media/2018-09-20-031714/small_home-banner-3.jpg",
+      "url_xsmall": "//cdn.traveltripper.io/site-assets/32_913_18984/media/2018-09-20-031714/xsmall_home-banner-3.jpg",
+      "url_thumb": "//cdn.traveltripper.io/site-assets/32_913_18984/media/2018-09-20-031714/thumb_home-banner-3.jpg",
+      "git_file_name": "_assets/image_data/home-banner-3.json",
+      "path": "//cdn.traveltripper.io/site-assets/32_913_18984/media/2018-09-20-031714/home-banner-3.jpg",
+      "alt": "stay zen 2",
+      "caption": ""
+    }
+  ]
 }

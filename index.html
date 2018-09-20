@@ -15,7 +15,9 @@ published_localized:
 meta_tags:
   robots:
 ---
-
+{% if site.active_lang == "ja" %}
+ {% assign lang_url = "/ja" %}
+{% endif %}
 <!--Home carousel banner here -->
 <section class="banner">
   <div id="home-carousel" class="carousel slide" data-ride="carousel">
@@ -108,7 +110,7 @@ meta_tags:
         {% endregionblock %}
         <div class="btn-holder">
           {% regionblock location_link, type:html %}
-           <a class="primary-btn" href="#"><span>{% t 'discover_more' %}</span><i class="fas fa-angle-right"></i></a>
+           <a class="primary-btn" href="{{ lang_url }}/location/"><span>{% t 'discover_more' %}</span><i class="fas fa-angle-right"></i></a>
            {% endregionblock %}
         </div>
         {% regionblock location_detail, type:html %}

@@ -5,15 +5,15 @@
     <img class="w-100" src="/assets/images/logo-footer.png" alt="Hotel Zen Tokyo">
   </div>
   <div class="contact">
-    <h4>Contact</h4>
-    <p>1-5-8 Nihonbashi Ningyocho, Chuoku<br>Tokyo, Japan 103-0013</p>
-    <p><a href="mailto:contact@senrecube.com">contact@senrecube.com</a></p>
+    <h4>{% t 'contact' %}</h4>
+    <p>{% t 'address' %}</p>
+    <p><a href="mailto:{{ site.email }}" title="{% t 'email' %}">{{ site.email }}</a></p>
   </div>
   <div class="links">
-    <h4>Links</h4>
-    <ul class="d-flex flex-wrap justify-content-center">
+    <h4>{% t 'links' %}</h4>
+    <ul class="d-flex flex-wrap">
       {% for link in footer-links %}
-        <li>
+        <li class="flex-column">
           <a href="{{ link.url | absolute_url }}">{{ link.title }}</a>
         </li>
       {% endfor %}

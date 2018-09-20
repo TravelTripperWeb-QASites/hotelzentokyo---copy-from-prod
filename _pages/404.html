@@ -7,6 +7,9 @@ meta_tags:
   robots:
 ---
 
+{% if site.active_lang == "ja" %}
+ {% assign lang_url = "/ja" %}
+{% endif %}
 <!-- Page not found Banner -->
 <section class="inner-banner text-center bg-cover mb-5" style="background-image:url('/assets/images/rooms/rooms-banner.jpg');">
   <div class="inner-banner-content">

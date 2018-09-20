@@ -5,7 +5,8 @@
   },
   "designation": {
     "label": "Designation",
-    "required": true
+    "required": true,
+    "localizable": true
   },
   "url_friendly_name": {
     "type": "url_slug",
@@ -14,16 +15,29 @@
   "job-description": {
     "label": "Job description",
     "type": "richtext",
-    "required": true
+    "required": true,
+    "localizable": true
   },
   "requirements": {
     "label": "Requirements",
     "type": "richtext",
-    "required": true
+    "required": true,
+    "localizable": true
   },
   "qualifications": {
     "label": "Qualifications",
     "type": "richtext",
-    "required": true
+    "required": true,
+    "localizable": true
+  },
+  "title": {
+    "label": "Meta Title",
+    "required": true,
+    "localizable": true
+  },
+  "meta_description": {
+    "label": "Meta Description",
+    "required": true,
+    "localizable": true
   }
 }

@@ -2,8 +2,8 @@
 
 <div class="signup" style="background-image:url('/assets/images/newsletter-banner.jpg')">
   <div class="wrapper">
-    <h2>stay in the know</h2>
-    <h3>Get our free email newsletter for exclusive promos, events and more.</h3>
+    <h2>{% t 'stay_in_the_know' %}</h2>
+    <h3>{% t 'newsletter_sign_text' %}</h3>
     <form action="https://submit.jotform.me/submit/{{ site.data.forms.jotform.newsletter-id }}/" method="post" name="form_{{ site.data.forms.jotform.newsletter-id }}"
         id="{{ site.data.forms.jotform.newsletter-id }}" accept-charset="utf-8">
         <input type="hidden" name="formID" value="{{ site.data.forms.jotform.newsletter-id }}">
@@ -15,7 +15,7 @@
         </div>
         <div class="custom-control custom-checkbox">
           <input type="checkbox" name="q2_typeA[]" class="custom-control-input" id="signup-terms" required>
-          <label class="custom-control-label" for="signup-terms">I agree to the <a href="/terms/" target="_blank">Terms of Service</a> and <a href="/privacy/" target="_blank">Privacy Policy.</a></label>
+          <label class="custom-control-label" for="signup-terms">{% t 'privacy_text' %}</label>
         </div>
         <input type="hidden" id="simple_spc" name="simple_spc" value="{{ site.data.forms.jotform.newsletter-id }}">
 

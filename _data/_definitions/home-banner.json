@@ -10,5 +10,12 @@
     "multiple": true,
     "localizable": true,
     "required": true
+  },
+  "image_ja": {
+    "label": "Banner Image",
+    "type": "image",
+    "multiple": true,
+    "localizable": true,
+    "required": true
   }
 }

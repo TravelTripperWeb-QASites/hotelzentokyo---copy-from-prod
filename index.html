@@ -19,13 +19,19 @@ meta_tags:
  {% assign lang_url = "/ja" %}
 {% endif %}
 <!--Home carousel banner here -->
+{% assign homebanner = site.data._models.home-banner %}
+{% if site.active_lang == 'ja' %}
+  {% assign banners = homebanner[0].image_ja %}
+ {% else %}
+  {% assign banners = homebanner[0].image %}
+ {% endif %}
 <section class="banner">
   <div id="home-carousel" class="carousel slide" data-ride="carousel">
     <div class="indicators-control">
       <ol class="carousel-indicators">
-        <li data-target="#home-carousel" data-slide-to="0" class="active">1</li>
-        <li data-target="#home-carousel" data-slide-to="1">2</li>
-        <li data-target="#home-carousel" data-slide-to="2">3</li>
+        {% for banner in banners %}
+        <li data-target="#home-carousel" data-slide-to="{{ forloop.index0 }}" {% if forloop.first %}class="active"{% endif %}>{{ forloop.index }}</li>
+        {% endfor %}
       </ol>
       <a class="carousel-control-prev primary-btn previous" href="#home-carousel" role="button" data-slide="prev">
         <i class="fas fa-angle-left"></i>
@@ -35,21 +41,14 @@ meta_tags:
       </a>
     </div>
     <div class="carousel-inner">
-      <div class="carousel-item active" style="background-image: url('/assets/images/home-banner-1.jpg');">
+
+      {% for banner in banners %}
+      <div class="carousel-item {% if forloop.first %}active{% endif %}" style="background-image: url('{{ banner.url_large }}');">
         <div class="banner-content">
-          <h1 class="lowercase">{% t 'welcome' %}</h1>
+          <h1 class="lowercase">{{ banner.caption }}</h1>
         </div>
       </div>
-      <div class="carousel-item" style="background-image: url('/assets/images/home-banner-2.jpg');">
-        <div class="banner-content">
-          <h1 class="lowercase">{% t 'welcome' %}</h1>
-        </div>
-      </div>
-      <div class="carousel-item" style="background-image: url('/assets/images/home-banner-3.jpg');">
-        <div class="banner-content">
-          <h1 class="lowercase">{% t 'welcome' %}</h1>
-        </div>
-      </div>
+      {% endfor %}
     </div>
 
   </div>

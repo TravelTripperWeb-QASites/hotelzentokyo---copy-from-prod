@@ -44,15 +44,15 @@ layout: default
   <div class="image bg-cover" style="background-image:url('{{ page.amenities_image.url }}');">
   </div>
   <div class="content">
-    <h4>amenities</h4>
+    <h4>{% t 'amenities' %}</h4>
     <h3 class="italic">{{ page.amenities_text }}</span></h3>
     <div class="inner-row m-0">
       <div class="left">
-        <p>Within the pod: </p>
+        <p>{% t 'within_the_pod' %}:</p>
         {{ page.amenities_within_pod }}
       </div>
       <div class="right">
-        <p>Access to facilities: </p>
+        <p>{% t 'access_to_facilities' %}:</p>
         {{ page.amenities_access_facilities }}
         <p>{% t 'go_room_link' %}</p>
       </div>
@@ -73,7 +73,7 @@ layout: default
         {{ room.short_info }}
       </div>
       <div class="image bg-cover" style="background-image:url({{ room.image.url }} );">
-        <a class="primary-btn inverse" href="/rooms/{{ room.url_friendly_name }}/"><span>Discover More</span><i class="fas fa-angle-right"></i></a>
+        <a class="primary-btn inverse" href="{{ lang_url }}/rooms/{{ room.url_friendly_name }}/"><span>{% t 'discover_more' %}</span><i class="fas fa-angle-right"></i></a>
       </div>
     </div>
     {% endif %}
@@ -81,16 +81,6 @@ layout: default
 </section>
 
 
-<!-- Stay Zen Part -->
-<section class="stay-zen bg-cover" style="background-image:url('/assets/images/rooms/stay-zen.jpg');">
-  <div class="stay-zen-inner">
-    <div class="content">
-      <h4>urban tranquility</h4>
-      <h2>stay zen</h2>
-      <h4>hotel zen tokyo</h4>
-    </div>
-    <a class="primary-btn" href="#"><span>Book Your Stay</span><i class="fas fa-angle-right"></i></a>
-  </div>
-</section>
+{% inckude stay-zen.html %}
 
 {% include forms/jotform/newsletter.html %}

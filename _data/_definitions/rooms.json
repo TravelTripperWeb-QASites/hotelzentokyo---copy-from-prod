@@ -3,6 +3,16 @@
 		"required":true,
     "localizable": true
 	},
+  "room_title":{
+    "label": "Room Title",
+		"required":true,
+    "localizable": true
+	},
+  "room_type":{
+    "label": "Room Type",
+		"required":true,
+    "localizable": true
+	},
   "image": {
     "label": "Thumb Image",
     "type": "image",
@@ -14,7 +24,7 @@
     "required": true
   },
   "intro_image": {
-    "label": "intro Image",
+    "label": "Intro Image",
     "type": "image",
     "required": true
   },
@@ -36,7 +46,7 @@
   "book_room": {
     "label": "Book Room URL",
     "type": "url_slug",
-    "required": true
+    "required": false
   },
   "bed_info":{
 		"label": "Bed Info",

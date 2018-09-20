@@ -1,8 +1,17 @@
 ---
 layout: default
-title: FAQs
-meta_description:
-permalink: /faq/
+title_localized:
+  en: FAQs | Authentic Japan in Modern Tokyo
+  ja: よくあるご質問
+meta_description_localized:
+  en: FAQs
+  ja: よくあるご質問
+permalink_localized:
+  en: /faq/
+  ja: /faq/
+published_localized:
+  en: true
+  ja: true
 meta_tags:
   robots:
 ---
@@ -11,7 +20,7 @@ meta_tags:
 <section class="inner-banner text-center bg-cover mb-5" style="background-image:url('/assets/images/careers/careers-hero.jpg');">
   <div class="inner-banner-content">
     {% regionblock faq_heading, type:header %}
-      <h1>FAQ</h1>
+      <h1>{% t 'faq' %}</h1>
     {% endregionblock %}
   </div>
 </section>

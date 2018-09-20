@@ -19,13 +19,14 @@ layout: default
 
     <div class="blog-content">
       <!-- Blog individual post -->
+
+      <div class="category-intro">
+        <h2>{{ page.title }}</h2>
+        <p>{{ page.description }}</p>
+      </div>
+
       {% for post in site.data._models.blog %}
         {% if post.category.url_friendly_name == page.url_friendly_name %}
-
-        <div class="category-intro">
-          <h2>{{ post.category.title }}</h2>
-          <p>{{ post.category.description }}</p>
-        </div>
 
           <div class="blog-item">
             <figure class="blog-lead-image">

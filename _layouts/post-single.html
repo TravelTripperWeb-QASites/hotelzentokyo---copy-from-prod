@@ -80,8 +80,6 @@ layout: default
 
         <a href="https://twitter.com/intent/tweet?{% if site.data.social.twitter.username %}via={{ site.data.social.twitter.username }}&{% endif %}text={{ page.title }} {{site.url}}{{ page.url }}" title="Share on Twitter" onClick="window.open(this.href,'targetWindow','toolbar=no,location=0,status=no,menubar=no,scrollbars=yes,resizable=yes,width=600,height=250'); return false;"><i class="fab fa-twitter"></i></a>
 
-        <a href="https://instagram.com/" title="Instagram"><i class="fab fa-instagram"></i></a>
-
         <a href="https://plus.google.com/share?url={{site.url}}{{ page.url }}" onClick="window.open(this.href,'targetWindow','toolbar=no,location=0,status=no,menubar=no,scrollbars=yes,resizable=yes,width=600,height=250'); return false;" title="Share on Google plus"><i class="fab fa-google-plus-g"></i></a>
 
       </div>
@@ -105,17 +103,41 @@ layout: default
 
 <section class="more-blogs">
   <div class="more-blogs-container">
+    <h4>Related Stories</h4>
     <div class="more-blogs-row">
-      <div class="more-blogs-item">
-        <figure class="more-blogs-image bg-cover" style="background-image:url('/assets/images/blog/pic.jpg');"></figure>
-        <h5><a href="">Pellentesque vehicula libero sit amet sem aliquam adipiscing</a></h5>
-        <div class="blog-info">
-          <span class="date">September 5th,</span>
-          <span class="cat">
-            <a href="">Eat & Drink</a>
-          </span>
-        </div>
-      </div>
+      {% assign more-blogs = site.data._models.blog %}
+      {% for moreblog in more-blogs %}
+      <!-- Related blog items -->
+        {% if moreblog.category.title == blog.category.title %}
+        <!-- Skip current blog -->
+          {% if moreblog.url_friendly_name != blog.url_friendly_name %}
+            <div class="more-blogs-item">
+              <div class="more-blogs-content">
+                <a href="/blog/{{ moreblog.url_friendly_name }}/">
+                  <figure class="more-blogs-image bg-cover" style="background-image:url('{{ moreblog.image.url_medium }}');"></figure>
+                </a>
+                <div class="content-block">
+                  <h5><a href="/blog/{{ moreblog.url_friendly_name }}">{{ moreblog.title }}</a></h5>
+                  <div class="blog-info">
+                    <span class="date">
+                      {% assign d = moreblog.date | date: "%-d" %}
+                      {{ moreblog.date | date: "%B" }}
+                      {% case d %}{% when "1" or "21" or "31" %}{{ d }}st{% when "2" or "22" %}{{ d }}nd{% when "3" or "23" %}{{ d }}rd{% else %}{{ d }}th{% endcase %},
+                      {{ moreblog.date | date: "%Y" }}
+                    </span>
+                    <span class="cat">
+                      <a href="/blog/category/{{ blog.category.url_friendly_name }}/">{{ moreblog.category.title }}</a>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          {% endif %}
+        {% endif %}
+      {% endfor %}
+    </div>
+    <div class="btn-holder">
+      <a class="primary-btn" href="/blog/category/{{ blog.category.url_friendly_name }}/"><span>View All Blog Posts</span><i class="fas fa-angle-right"></i></a>
     </div>
   </div>
 </section>

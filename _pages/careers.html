@@ -1,8 +1,17 @@
 ---
 layout: default
-title: Careers
-meta_description:
-permalink: /careers/
+title_localized:
+  en: Contact Us | Authentic Japan in Modern Tokyo
+  ja: お問い合わせ
+meta_description_localized:
+  en: Contact Us
+  ja: お問い合わせ
+permalink_localized:
+  en: /careers/
+  ja: /careers/
+published_localized:
+  en: true
+  ja: true
 meta_tags:
   robots:
 ---
@@ -28,7 +37,7 @@ meta_tags:
   <ul class="job-positions">
     {% for career in careers %}
     <li>
-      <a href="/careers/{{ career.url_friendly_name }}/">
+      <a href="{{ page | permalink }}{{ career.url_friendly_name }}/">
         <i class="fas fa-angle-right"></i>
         <span>{{ career.designation }}</span>
       </a>

@@ -1,8 +1,17 @@
 ---
 layout: default
-title: FAQs
-meta_description:
-permalink: /faq/
+title_localized:
+  en: FAQs | Hotel Zen Tokyo
+  zh:
+meta_description_localized:
+  en:
+  ja:
+permalink_localized:
+  en: /faq/
+  ja: /faq/
+published_localized:
+  en: true
+  ja: true
 meta_tags:
   robots:
 ---
@@ -16,21 +25,28 @@ meta_tags:
   </div>
 </section>
 
+{% assign qa = site.data._models.faq | sort: "category_order" %}
 <!-- FAQs Accordion -->
 <section class="faq">
-  <div class="accordion" id="accordionExample">
-    <div class="card">
-      <h2>Reservation & Checking in</h2>
-      <div class="card-header" id="headingOne">
-        <h5 data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne"><i class="fas fa-angle-right"></i> <span>Check-in time?</span></h5>
-      </div>
+  <div class="accordion" id="faqs">
+    {% for item in qa %}
+      <div class="card">
+        <h2>{{ item.title }}</h2>
 
-      <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
-        <div class="card-body">
-          Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.
-        </div>
+        {% for query in item.qa_listing %}
+          <div class="card-header" id="{{ query.question_id }}heading">
+            <h5 class="{% if forloop.index > 1 %}collapsed{% endif %}" data-toggle="collapse" data-target="#{{ query.question_id }}collapse" aria-expanded="true" aria-controls="{{ query.question_id }}collapse"><i class="fas fa-angle-right"></i> <span>{{ query.question }}</span></h5>
+          </div>
+
+          <div id="{{ query.question_id }}collapse" class="collapse {% if forloop.first %}show{% endif %}" aria-labelledby="{{ query.question_id }}heading" data-parent="#faqs">
+            <div class="card-body">
+              {{ query.answer }}
+            </div>
+          </div>
+        {% endfor %}
+
       </div>
-    </div>
+    {% endfor %}
   </div>
 </div>
 </section>

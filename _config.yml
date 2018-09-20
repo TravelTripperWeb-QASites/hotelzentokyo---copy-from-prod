@@ -109,3 +109,6 @@ page_gen: #
     - data: 'careers'
       template: 'single-careers'
       dir: 'careers'
+    - data: 'rooms'
+      template: 'room-single'
+      dir: 'rooms'

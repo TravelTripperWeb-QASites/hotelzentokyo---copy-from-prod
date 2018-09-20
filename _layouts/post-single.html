@@ -93,9 +93,9 @@ layout: default
           <a class="primary-btn inverse left-arrow not-active" href="/blog/{{prevPostUrl}}" title="Current Blog"><i class="fas fa-angle-left" aria-hidden="true"></i><span>Prev</span></a>
         {% endif %}
         {% if nextPostUrl %}
-          <a class="primary-btn inverse" href="/blog/{{nextPostUrl}}/" title="Next Blog"><span>Next</span> <i class="fas fa-angle-right" aria-hidden="true"></i></a>
+          <a class="primary-btn inverse pushleft" href="/blog/{{nextPostUrl}}/" title="Next Blog"><span>Next</span> <i class="fas fa-angle-right" aria-hidden="true"></i></a>
         {% else %}
-          <a class="primary-btn inverse not-active" href="/blog/{{nextPostUrl}}" title="Next Blog"><span>Next</span> <i class="fas fa-angle-right" aria-hidden="true"></i></a>
+          <a class="primary-btn inverse pushleft not-active" href="/blog/{{nextPostUrl}}" title="Next Blog"><span>Next</span> <i class="fas fa-angle-right" aria-hidden="true"></i></a>
         {% endif %}
       </div>
 

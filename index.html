@@ -10,11 +10,19 @@ meta_tags:
 <!--Home carousel banner here -->
 <section class="banner">
   <div id="home-carousel" class="carousel slide" data-ride="carousel">
-    <ol class="carousel-indicators">
-      <li data-target="#home-carousel" data-slide-to="0" class="active">1</li>
-      <li data-target="#home-carousel" data-slide-to="1">2</li>
-      <li data-target="#home-carousel" data-slide-to="2">3</li>
-    </ol>
+    <div class="indicators-control">
+      <ol class="carousel-indicators">
+        <li data-target="#home-carousel" data-slide-to="0" class="active">1</li>
+        <li data-target="#home-carousel" data-slide-to="1">2</li>
+        <li data-target="#home-carousel" data-slide-to="2">3</li>
+      </ol>
+      <a class="carousel-control-prev primary-btn previous" href="#home-carousel" role="button" data-slide="prev">
+        <i class="fas fa-angle-left"></i>
+      </a>
+      <a class="carousel-control-next primary-btn" href="#home-carousel" role="button" data-slide="next">
+        <i class="fas fa-angle-right"></i>
+      </a>
+    </div>
     <div class="carousel-inner">
       <div class="carousel-item active" style="background-image: url('/assets/images/home-banner-1.jpg');">
         <div class="banner-content">
@@ -32,14 +40,7 @@ meta_tags:
         </div>
       </div>
     </div>
-    <a class="carousel-control-prev" href="#home-carousel" role="button" data-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="sr-only">Previous</span>
-    </a>
-    <a class="carousel-control-next" href="#home-carousel" role="button" data-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="sr-only">Next</span>
-    </a>
+
   </div>
 </section>
 

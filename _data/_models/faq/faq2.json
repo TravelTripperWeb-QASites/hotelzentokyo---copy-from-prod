@@ -1,0 +1,30 @@
+{
+  "qa_listing_localized": {
+    "en": [
+      {
+        "question": "What is the difference between room options?",
+        "question_id": "roomoptions",
+        "answer": "<p>Your answer here...</p>"
+      },
+      {
+        "question": "Are there rooms for more than one person?",
+        "question_id": "personcount",
+        "answer": "<p>Your answer here...</p>"
+      },
+      {
+        "question": "Is breakfast provided?",
+        "question_id": "breakfast",
+        "answer": "<p>Your answer here...</p>"
+      },
+      {
+        "question": "Do rooms come with bath or shower?",
+        "question_id": "bath",
+        "answer": "<p>Your answer here....</p>"
+      }
+    ]
+  },
+  "category_order": 2,
+  "title_localized": {
+    "en": "Room"
+  }
+}

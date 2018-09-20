@@ -7,9 +7,6 @@ $(document).ready(function () {
   // Navigation Change on page Scroll
   navOnScroll();
 
-  //Leflet Map trigger
-  $('#leaflet-map').leafMap('mapOptions');
-
   // Restrict form submission by disabling submit button until all required fields are filled (W.r.t GDPR Guidelines)
   function checkForm() {
     // here, "this" is an input element
@@ -86,4 +83,11 @@ function navOnScroll() {
 $('.selectpicker').selectpicker({
   style: 'btn-transparent',
   size: 4
+});
+
+//if some hit enter on card will be clicked on card header (For Accessibility)
+$('.card-header').keypress(function (event) {
+  if (event.keyCode == 13) {
+    $(this).find("h5").click();
+  }
 });

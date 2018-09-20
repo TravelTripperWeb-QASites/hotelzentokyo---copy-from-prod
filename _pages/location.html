@@ -16,6 +16,9 @@ meta_tags:
   robots:
 ---
 
+{% if site.active_lang == "ja" %}
+ {% assign lang_url = "/ja" %}
+{% endif %}
 <!-- Location page banner -->
 <section class="banner-fullscreen" style="background-image:url('/assets/images/location/location-banner.jpg')">
   <div class="wrapper">
@@ -23,10 +26,10 @@ meta_tags:
       <h6>Hotel Zen Tokyo</h6>
     {% endregionblock %}
     {% regionblock location_title, type:header %}
-      <h1 class="lowercase">Location</h1>
+      <h1 class="lowercase">{% t 'location' %}</h1>
     {% endregionblock %}
     {% regionblock location_url, type:html %}
-      <a class="primary-btn" href="https://goo.gl/maps/3VwoSMEa5Wo" target="_blank"><span>Get Directions</span><i class="fas fa-angle-right"></i></a>
+      <a class="primary-btn" href="https://goo.gl/maps/3VwoSMEa5Wo" target="_blank" rel="nofollow"><span>{% t 'direction' %}</span><i class="fas fa-angle-right"></i></a>
     {% endregionblock %}
   </div>
 </section>
@@ -48,7 +51,7 @@ meta_tags:
       </div>
       <div class="intro-btn-holder">
         {% regionblock contact_url, type:html %}
-          <a class="primary-btn" href="/contact/"><span>Contact Us</span><i class="fas fa-angle-right"></i></a>
+          <a class="primary-btn" href="{{ lang_url }}/contact/"><span>{% t 'contact' %}</span><i class="fas fa-angle-right"></i></a>
         {% endregionblock %}
       </div>
     </div>

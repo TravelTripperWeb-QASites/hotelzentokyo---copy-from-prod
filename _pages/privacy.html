@@ -1,8 +1,17 @@
 ---
 layout: default
-title: Privacy Policy
-meta_description:
-permalink: /privacy/
+title_localized:
+  en: Privacy Policy
+  ja: プライバシーポリシー
+meta_description_localized:
+  en: Privacy Policy
+  ja: プライバシーポリシー
+permalink_localized:
+  en: /privacy/
+  ja: /privacy/
+published_localized:
+  en: true
+  ja: true
 meta_tags:
   robots: noindex, nofollow
 ---
@@ -11,7 +20,7 @@ meta_tags:
 <section class="inner-banner text-center bg-cover mb-5" style="background-image:url('/assets/images/rooms/rooms-banner.jpg');">
   <div class="inner-banner-content">
     {% regionblock privacy_banner_heading, type:header %}
-      <h1>Privacy Policy</h1>
+      <h1>{% t 'privacy_policy' %}</h1>
     {% endregionblock %}
   </div>
 </section>

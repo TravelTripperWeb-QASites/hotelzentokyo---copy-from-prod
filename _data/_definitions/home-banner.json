@@ -1,0 +1,16 @@
+{
+  "name": {
+    "label": "Title",
+    "required": true,
+    "localizable": true
+  },
+  "image": {
+    "label": "Banner Image",
+    "type": "image",
+    "required": true
+  },
+  "order": {
+    "type": "integer",
+    "required": true
+  }
+}

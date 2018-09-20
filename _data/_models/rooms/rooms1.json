@@ -1,26 +1,26 @@
 {
   "amenities_access_facilities_localized": {
     "en": "<ul>\n<li>Locker for big luggage&nbsp;(on the same floor)&nbsp;</li>\n<li>Coin laundry</li>\n<li>Bar / cafe \"NAME\"</li>\n<li>Work &amp; study lounge</li>\n<li>Communal shower &amp; bathrooms</li>\n</ul>",
-    "ja": "<p><span style=\"font-family: Arial; font-size: 13px; white-space: pre-wrap;\">・荷物用個別ロッカー（同フロア・カプセル外） ・共用シャワー・バスルーム ・コインランドリー ・ワーク・スタディラウンジ ・バー・カフェ</span></p>"
+    "ja": "<p><span style=\"font-family: Arial; font-size: 13px; white-space: pre-wrap;\">・荷物用個別ロッカー（同フロア・カプセル外） </span></p>\n<p><span style=\"font-family: Arial; font-size: 13px; white-space: pre-wrap;\">・共用シャワー・バスルーム </span></p>\n<p><span style=\"font-family: Arial; font-size: 13px; white-space: pre-wrap;\">・コインランドリー </span></p>\n<p><span style=\"font-family: Arial; font-size: 13px; white-space: pre-wrap;\">・ワーク・スタディラウンジ ・バー・カフェ</span></p>"
   },
   "image": {
-    "name": "room-4-pic",
-    "file_name": "room-4-pic.jpg",
-    "url": "//cdn.traveltripper.io/site-assets/32_913_19117/media/2018-09-20-073159/room-4-pic.jpg",
+    "name": "room-5-pic",
+    "file_name": "room-5-pic.jpg",
+    "url": "//cdn.traveltripper.io/site-assets/32_913_19117/media/2018-09-20-074440/room-5-pic.jpg",
     "tags": "",
     "description": "",
-    "date_added": "2018-09-20-073159",
+    "date_added": "2018-09-20-074440",
     "file_type": "image/jpeg",
     "width": 392,
     "height": 224,
-    "file_size": 64090,
-    "url_large": "//cdn.traveltripper.io/site-assets/32_913_19117/media/2018-09-20-073159/large_room-4-pic.jpg",
-    "url_medium": "//cdn.traveltripper.io/site-assets/32_913_19117/media/2018-09-20-073159/medium_room-4-pic.jpg",
-    "url_small": "//cdn.traveltripper.io/site-assets/32_913_19117/media/2018-09-20-073159/small_room-4-pic.jpg",
-    "url_xsmall": "//cdn.traveltripper.io/site-assets/32_913_19117/media/2018-09-20-073159/xsmall_room-4-pic.jpg",
-    "url_thumb": "//cdn.traveltripper.io/site-assets/32_913_19117/media/2018-09-20-073159/thumb_room-4-pic.jpg",
-    "path": "//cdn.traveltripper.io/site-assets/32_913_19117/media/2018-09-20-073159/room-4-pic.jpg",
-    "alt": "room-4-pic",
+    "file_size": 68034,
+    "url_large": "//cdn.traveltripper.io/site-assets/32_913_19117/media/2018-09-20-074440/large_room-5-pic.jpg",
+    "url_medium": "//cdn.traveltripper.io/site-assets/32_913_19117/media/2018-09-20-074440/medium_room-5-pic.jpg",
+    "url_small": "//cdn.traveltripper.io/site-assets/32_913_19117/media/2018-09-20-074440/small_room-5-pic.jpg",
+    "url_xsmall": "//cdn.traveltripper.io/site-assets/32_913_19117/media/2018-09-20-074440/xsmall_room-5-pic.jpg",
+    "url_thumb": "//cdn.traveltripper.io/site-assets/32_913_19117/media/2018-09-20-074440/thumb_room-5-pic.jpg",
+    "path": "//cdn.traveltripper.io/site-assets/32_913_19117/media/2018-09-20-074440/room-5-pic.jpg",
+    "alt": "room-5-pic",
     "caption": ""
   },
   "banner_image": {
@@ -83,19 +83,19 @@
     "alt": "room-amenities",
     "caption": ""
   },
-  "url_friendly_name": "asa",
+  "url_friendly_name": "kiku",
   "book_room": "",
   "title_localized": {
-    "en": "ASA - DEXLUE ROOM TYPE A ",
+    "en": "KIKU - PREMIERE ROOM TYPE B",
     "ja": "ASA - DELUXE ROOM TYPE A"
   },
   "short_info_localized": {
-    "en": "<p>Spacious pod with a comfortable, western-style semi-double (120cm) bed for one person only. Pod height reaches all the way to the ceiling. Comes with a safe, free-wifi, clothes hanger, towel and full amenities.</p>",
-    "ja": "<p><span style=\"font-family: Arial; font-size: 13px; white-space: pre-wrap;\">天井まで届く広々としたカプセルに、セミダブル（120cm）のSimmonsベッド。カプセル内金庫、フリーWifi、ハンガー、タオル、 フル・アメニティセットが付いています。</span></p>"
+    "en": "<p>Spacious pod with a comfortable, western-style semi-double (120cm) bed for one person only.&nbsp; Pod height reaches all the way to the ceiling. Comes with a safe, free-wifi, clothes hanger, towel and full amenities.&nbsp;</p>",
+    "ja": "<p>天井まで届く広々としたカプセルに、セミダブル（120cm）のSimmonsベッド。カプセル内金庫、フリーWifi、ハンガー、タオル、 フル・アメニティセットが付いています。</p>"
   },
   "long_info_localized": {
-    "en": "<p>Spacious pod with a comfortable, western-style semi-double (120cm) bed for one person only. Pod height reaches all the way to the ceiling. Comes with a safe, free-wifi, clothes hanger, towel and full amenities.</p>",
-    "ja": "<p><span style=\"font-family: Arial; font-size: 13px; white-space: pre-wrap;\">天井まで届く広々としたカプセルに、セミダブル（120cm）のSimmonsベッド。カプセル内金庫、フリーWifi、ハンガー、タオル、 フル・アメニティセットが付いています。</span></p>"
+    "en": "<p>Spacious pod with a comfortable, western-style semi-double (120cm) bed for one person only.&nbsp; Pod height reaches all the way to the ceiling. Comes with a safe, free-wifi, clothes hanger, towel and full amenities.&nbsp;</p>",
+    "ja": "<p>天井まで届く広々としたカプセルに、セミダブル（120cm）のSimmonsベッド。カプセル内金庫、フリーWifi、ハンガー、タオル、 フル・アメニティセットが付いています。</p>"
   },
   "bed_info_localized": {
     "en": "1 Single (120cm) sized bed",
@@ -107,15 +107,15 @@
   },
   "amenities_within_pod_localized": {
     "en": "<ul>\n<li>Free Wi-fi</li>\n<li>In-room Safes</li>\n<li>In-room Hanger</li>\n<li>Two outlets</li>\n<li>Full bathroom amenities&nbsp;</li>\n<li>Towels</li>\n</ul>",
-    "ja": "<p><span style=\"font-family: Arial; font-size: 13px; white-space: pre-wrap;\">・無料Wi-Fi ・鍵付きセーフティボックス ・衣服ハンガー ・電源コンセント2口 ・アメニティフルセット ・タオル</span></p>"
+    "ja": "<p><span style=\"font-family: Arial; font-size: 13px; white-space: pre-wrap;\">・無料Wi-Fi </span></p>\n<p><span style=\"font-family: Arial; font-size: 13px; white-space: pre-wrap;\">・鍵付きセーフティボックス </span></p>\n<p><span style=\"font-family: Arial; font-size: 13px; white-space: pre-wrap;\">・衣服ハンガー </span></p>\n<p><span style=\"font-family: Arial; font-size: 13px; white-space: pre-wrap;\">・電源コンセント2口 </span></p>\n<p><span style=\"font-family: Arial; font-size: 13px; white-space: pre-wrap;\">・アメニティフルセット </span></p>\n<p><span style=\"font-family: Arial; font-size: 13px; white-space: pre-wrap;\">・タオル</span></p>"
   },
   "room_title_localized": {
-    "en": "ASA",
+    "en": "KIKU",
     "ja": "ASA"
   },
   "room_type_localized": {
-    "en": " DEXLUE ROOM TYPE A ",
+    "en": "PREMIERE ROOM TYPE B",
     "ja": "DELUXE ROOM TYPE A"
   },
-  "order": 4
+  "order": 5
 }

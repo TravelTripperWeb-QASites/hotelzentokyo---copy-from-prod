@@ -1,6 +1,7 @@
 {
   "amenities_access_facilities_localized": {
-    "en": "<ul>\n<li>Locker for big luggage&nbsp;(on the same floor)&nbsp;</li>\n<li>Coin laundry</li>\n<li>Bar / cafe \"NAME\"</li>\n<li>Work &amp; study lounge</li>\n<li>Communal shower &amp; bathrooms</li>\n</ul>"
+    "en": "<ul>\n<li>Locker for big luggage&nbsp;(on the same floor)&nbsp;</li>\n<li>Coin laundry</li>\n<li>Bar / cafe \"NAME\"</li>\n<li>Work &amp; study lounge</li>\n<li>Communal shower &amp; bathrooms</li>\n</ul>",
+    "ja": "<p><span style=\"font-family: Arial; font-size: 13px; white-space: pre-wrap;\">・荷物用個別ロッカー（同フロア・カプセル外） ・共用シャワー・バスルーム ・コインランドリー ・ワーク・スタディラウンジ ・バー・カフェ</span></p>"
   },
   "image": {
     "name": "room-list-thumb",
@@ -83,30 +84,38 @@
     "caption": ""
   },
   "url_friendly_name": "ume",
-  "book_room": "nnn",
+  "book_room": "",
   "title_localized": {
-    "en": "UME - SINGLE BED POD"
+    "en": "UME - SINGLE BED POD",
+    "ja": "UME - SINGLE BED POD"
   },
   "short_info_localized": {
-    "en": "<p>Spacious pod with a comfortable, western-style Single-sized (100cm) bed for one person only. Pod height reaches all the way to the ceiling. Comes with a safe, free-wifi, clothes hanger, towel and full amenities.&nbsp;</p>"
+    "en": "<p>Spacious pod with a comfortable, western-style Single-sized (100cm) bed for one person only. Pod height reaches all the way to the ceiling. Comes with a safe, free-wifi, clothes hanger, towel and full amenities.&nbsp;</p>",
+    "ja": "<p><span style=\"font-family: Arial; font-size: 13px; white-space: pre-wrap;\">天井まで届く広々としたカプセルに、シングル（100cm）のSimmonsベッド。カプセル内金庫、フリーWifi、ハンガー、タオル、 フル・アメニティセットが付いています。</span></p>"
   },
   "long_info_localized": {
-    "en": "<p>Spacious pod with a comfortable, western-style Single-sized (100cm) bed for one person only. Pod height reaches all the way to the ceiling. Comes with a safe, free-wifi, clothes hanger, towel and full amenities.&nbsp;</p>"
+    "en": "<p>Spacious pod with a comfortable, western-style Single-sized (100cm) bed for one person only. Pod height reaches all the way to the ceiling. Comes with a safe, free-wifi, clothes hanger, towel and full amenities.&nbsp;</p>",
+    "ja": "<p><span style=\"font-family: Arial; font-size: 13px; white-space: pre-wrap;\">天井まで届く広々としたカプセルに、シングル（100cm）のSimmonsベッド。カプセル内金庫、フリーWifi、ハンガー、タオル、 フル・アメニティセットが付いています。</span></p>"
   },
   "bed_info_localized": {
-    "en": "1 Single (100cm) sized bed"
+    "en": "1 Single (100cm) sized bed",
+    "ja": "100cm"
   },
   "amenities_text_localized": {
-    "en": "A night&rsquo;s stay at this pod comes with..."
+    "en": "A night&rsquo;s stay at this pod comes with...",
+    "ja": "A night’s stay at this pod comes with..."
   },
   "amenities_within_pod_localized": {
-    "en": "<ul>\n<li>Free Wi-fi</li>\n<li>In-room Safes</li>\n<li>In-room Hanger</li>\n<li>Two outlets</li>\n<li>Full bathroom amenities&nbsp;</li>\n<li>Towels</li>\n</ul>"
+    "en": "<ul>\n<li>Free Wi-fi</li>\n<li>In-room Safes</li>\n<li>In-room Hanger</li>\n<li>Two outlets</li>\n<li>Full bathroom amenities&nbsp;</li>\n<li>Towels</li>\n</ul>",
+    "ja": "<p><span style=\"font-family: Arial; font-size: 13px; white-space: pre-wrap;\">・無料Wi-Fi ・鍵付きセーフティボックス ・衣服ハンガー ・電源コンセント2口 ・アメニティフルセット ・タオル</span></p>"
   },
   "room_title_localized": {
-    "en": "UME"
+    "en": "UME",
+    "ja": "UME"
   },
   "room_type_localized": {
-    "en": "SINGLE BED POD"
+    "en": "SINGLE BED POD",
+    "ja": "SINGLE BED POD"
   },
   "order": 1
 }

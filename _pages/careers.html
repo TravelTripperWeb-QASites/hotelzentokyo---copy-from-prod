@@ -10,15 +10,21 @@ meta_tags:
 <!-- Careers Banner -->
 <section class="inner-banner text-center bg-cover mb-5" style="background-image:url('/assets/images/careers/careers-hero.jpg');">
   <div class="inner-banner-content">
-    <h1>Careers</h1>
+    {% regionblock page_title, type:header %}
+     <h1>Careers</h1>
+    {% endregionblock %}
   </div>
 </section>
 
 <!-- Careers Content -->
 {% assign careers = site.data._models.careers %}
 <section class="careers-content">
-  <h2>Join us for these open positions</h2>
+  {% regionblock page_subtitle, type:header %}
+   <h2>Join us for these open positions</h2>
+  {% endregionblock %}
+  {% regionblock page_detail, type:html %}
   <p>We’re hiring at hotel zen tokyo! Please see open positions below and send your CV to <a href="mailto:jobs@senrecube.co">jobs@senrecube.com</a></p>
+  {% endregionblock %}
   <ul class="job-positions">
     {% for career in careers %}
     <li>

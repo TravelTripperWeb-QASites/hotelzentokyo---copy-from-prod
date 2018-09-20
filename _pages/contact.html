@@ -1,8 +1,17 @@
 ---
 layout: default
-title: Contact
-meta_description:
-permalink: /contact/
+title_localized:
+  en: Contact Us | Authentic Japan in Modern Tokyo
+  ja: お問い合わせ
+meta_description_localized:
+  en: Contact Us
+  ja: お問い合わせ
+permalink_localized:
+  en: /contact/
+  ja: /contact/
+published_localized:
+  en: true
+  ja: true
 meta_tags:
   robots:
 ---
@@ -10,13 +19,18 @@ meta_tags:
 <!-- Contact Banner -->
 <section class="inner-banner text-center bg-styles mb-5" style="background-image:url('/assets/images/contact/contact-hero.jpg');">
   <div class="inner-banner-content">
+   {% regionblock page_title, type:header %}
     <h1>contact</h1>
+   {% endregionblock %}
   </div>
 </section>
 
 <!-- Contact Form -->
 <section class="contact-form">
-  <h2>We’re at your service</h2>
+  {% regionblock page_subtitle, type:header %}
+   <h2>{% t 'at_your_service' %}</h2>
+  {% endregionblock %}
+
   {% include forms/jotform/contact.html %}
 </section>
 

@@ -107,11 +107,11 @@ meta_tags:
          <h2>Authentic Japan in Modern Tokyo</h2>
         {% endregionblock %}
         <div class="btn-holder">
-          {% regionblock location_link, type:text %}
+          {% regionblock location_link, type:html %}
            <a class="primary-btn" href="#"><span>{% t 'discover_more' %}</span><i class="fas fa-angle-right"></i></a>
            {% endregionblock %}
         </div>
-        {% regionblock location_detail, type:text %}
+        {% regionblock location_detail, type:html %}
          <p>Our hotel is mere steps away from Ningyocho Station, which offers direct access to both of Tokyo's airports and the city's most exciting destinations. The Ningyocho/Nihonmbashi neighborhood is a historically rich district within Tokyo that has retained much of its traditional charm, architecture and experiences. Take a stroll around the hotel and enjoy some of Tokyo's oldest shops and local foods.</p>
         {% endregionblock %}
       </div>
@@ -132,7 +132,7 @@ meta_tags:
         {% regionblock cafe_title, type:header %}
          <h2>Showcases by local artists</h2>
         {% endregionblock %}
-        {% regionblock cafe_detail, type:text %}
+        {% regionblock cafe_detail, type:html %}
          <p>The Hotel Zen Tokyo experience includes our basement cafe "NAME," which serves as a gateway to Japanese culture, art and music. During the day, take advantage of the cafe library to read up on Japan and view the rotating, pop-up exhibits of arts and crafts. Enjoy live, traditionally inspired Japanese music while sipping on sake in the evening.</p>
         {% endregionblock %}
       </div>

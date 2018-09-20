@@ -7,7 +7,9 @@
 </head>
 
 <body>
-
+  {% if site.active_lang == "ja" %}
+    <input type="hidden" id="siteLang" value="ja-JP">
+  {% endif %}
   {% if site.data.tracking.analytics.provider and page.analytics != false %}
     {% case site.data.tracking.analytics.provider %}
     {% when "gtm" %}

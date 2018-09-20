@@ -1,0 +1,15 @@
+{
+  "qa_listing": [{
+      "question": "Check-In Time?",
+      "question_id": "checkin",
+      "answer": "Enjoy live jazz, Thursday - Saturday from 6:30pm - 9:30pm with our artist-in-residence, internationally renowned musician Antonio Ciacca and discover Two E's new Icons of Jazz  series featuring Antonio & special guests! Food & beverage minimum and advance reservations required"
+    },
+    {
+      "question": "Live jazz with Antonio Ciacca",
+      "question_id": "livejazz",
+      "answer": "Enjoy live jazz, Thursday - Saturday from 6:30pm - 9:30pm with our artist-in-residence, internationally renowned musician Antonio Ciacca and discover Two E's new Icons of Jazz  series featuring Antonio & special guests! Food & beverage minimum and advance reservations required"
+    }
+  ],
+  "title": "Reservation & Checking in",
+  "category_order": 1
+}

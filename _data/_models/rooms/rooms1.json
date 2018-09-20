@@ -82,8 +82,8 @@
     "alt": "room-amenities",
     "caption": ""
   },
-  "url_friendly_name": "sigle-bed-pod",
-  "book_room": "google.com",
+  "url_friendly_name": "ume",
+  "book_room": "",
   "title_localized": {
     "en": "UME - SINGLE BED POD"
   },
@@ -101,5 +101,11 @@
   },
   "amenities_within_pod_localized": {
     "en": "<ul>\n<li>Free Wi-fi</li>\n<li>In-room Safes</li>\n<li>In-room Hanger</li>\n<li>Two outlets</li>\n<li>Full bathroom amenities&nbsp;</li>\n<li>Towels</li>\n</ul>"
+  },
+  "room_title_localized": {
+    "en": "UME"
+  },
+  "room_type_localized": {
+    "en": "SINGLE BED POD"
   }
 }

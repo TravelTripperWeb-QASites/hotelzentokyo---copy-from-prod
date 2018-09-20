@@ -9,8 +9,8 @@
 <!-- Blog recent posts here -->
 <div class="blog-recent">
   <h4>Recent Posts <span class="toggle-arrow" data-toggle="collapse" data-target="#recent-blogs"><i class="fas fa-angle-down"></i></span></h4>
-  <div class="blog-recent-wrap collapse" id="recent-blogs">
-    {% assign recentblogs = site.data._models.blog %}
+  <div class="collapse" id="recent-blogs">
+    {% assign recentblogs = site.data._models.blog | sort: 'date' | reverse %}
     {% for recentblog in recentblogs | limit: 5 %}
       <div class="blog-recent-item">
         <a href="/blog/{{ recentblog.url_friendly_name }}/">

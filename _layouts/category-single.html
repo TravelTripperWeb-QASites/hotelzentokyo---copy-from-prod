@@ -25,7 +25,7 @@ layout: default
         <p>{{ page.description }}</p>
       </div>
 
-      {% for post in site.data._models.blog %}
+      {% for post in site.data._models.blog | sort: 'date' | reverse %}
         {% if post.category.url_friendly_name == page.url_friendly_name %}
 
           <div class="blog-item">

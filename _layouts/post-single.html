@@ -104,14 +104,15 @@ layout: default
 <section class="more-blogs">
   <div class="more-blogs-container">
     <h4>Related Stories</h4>
-    <div class="more-blogs-row"> 
-      {% assign moreblogs = site.data._models.blog | where:'category', {{ blog.category.title }} %}
-
+    <div class="more-blogs-row">
+      {% assign moreblogs = site.data._models.blog | sort: 'date' | reverse %}
+      {% assign count = 0 %}
       {% for moreblog in moreblogs %}
       <!-- Related blog items -->
-        {% if moreblog.category.title == blog.category.title %}
+        {% if moreblog.category.title == blog.category.title and count < 3 %}
         <!-- Skip current blog -->
           {% if moreblog.url_friendly_name != blog.url_friendly_name %}
+          {% assign count = count | plus: 1 %}
             <div class="more-blogs-item">
               <div class="more-blogs-content">
                 <a href="/blog/{{ moreblog.url_friendly_name }}/">

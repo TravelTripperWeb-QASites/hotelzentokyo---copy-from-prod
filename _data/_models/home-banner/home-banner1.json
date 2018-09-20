@@ -109,7 +109,7 @@
       "git_file_name": "_assets/image_data/home-banner-2.json",
       "path": "//cdn.traveltripper.io/site-assets/32_913_18984/media/2018-09-20-031712/home-banner-2.jpg",
       "alt": "stay zen",
-      "caption": ""
+      "caption": "stay zen"
     },
     {
       "name": "home-banner-3",
@@ -129,8 +129,8 @@
       "url_thumb": "//cdn.traveltripper.io/site-assets/32_913_18984/media/2018-09-20-031714/thumb_home-banner-3.jpg",
       "git_file_name": "_assets/image_data/home-banner-3.json",
       "path": "//cdn.traveltripper.io/site-assets/32_913_18984/media/2018-09-20-031714/home-banner-3.jpg",
-      "alt": "stay zen 2",
-      "caption": ""
+      "alt": "stay zen",
+      "caption": "stay zen"
     }
   ]
 }

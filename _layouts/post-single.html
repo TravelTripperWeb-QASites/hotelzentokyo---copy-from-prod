@@ -88,9 +88,9 @@ layout: default
 
       <div class="blog-prev-next">
         {% if prevPostUrl %}
-          <a class="primary-btn inverse left-arrow" href="/blog/{{prevPostUrl}}/" title="Previous Blog"><i class="fas fa-angle-left" aria-hidden="true"></i><span>Prev</span></a>
+          <a class="primary-btn inverse previous" href="/blog/{{prevPostUrl}}/" title="Previous Blog"><i class="fas fa-angle-left" aria-hidden="true"></i><span>Prev</span></a>
         {% else %}
-          <a class="primary-btn inverse left-arrow not-active" href="/blog/{{prevPostUrl}}" title="Current Blog"><i class="fas fa-angle-left" aria-hidden="true"></i><span>Prev</span></a>
+          <a class="primary-btn inverse previous not-active" href="/blog/{{prevPostUrl}}" title="Current Blog"><i class="fas fa-angle-left" aria-hidden="true"></i><span>Prev</span></a>
         {% endif %}
         {% if nextPostUrl %}
           <a class="primary-btn inverse pushleft" href="/blog/{{nextPostUrl}}/" title="Next Blog"><span>Next</span> <i class="fas fa-angle-right" aria-hidden="true"></i></a>
@@ -99,6 +99,23 @@ layout: default
         {% endif %}
       </div>
 
+    </div>
+  </div>
+</section>
+
+<section class="more-blogs">
+  <div class="more-blogs-container">
+    <div class="more-blogs-row">
+      <div class="more-blogs-item">
+        <figure class="more-blogs-image bg-cover" style="background-image:url('/assets/images/blog/pic.jpg');"></figure>
+        <h5><a href="">Pellentesque vehicula libero sit amet sem aliquam adipiscing</a></h5>
+        <div class="blog-info">
+          <span class="date">September 5th,</span>
+          <span class="cat">
+            <a href="">Eat & Drink</a>
+          </span>
+        </div>
+      </div>
     </div>
   </div>
 </section>

@@ -66,35 +66,6 @@
     }
   }
 
-  .blog-info {
-    margin-bottom: 10px;
-    font-family: $header-font-family;
-    font-size: $type-size-6;
-    color: $dark-gray;
-    letter-spacing: .05rem;
-    .date {
-      display: inline-block;
-    }
-    .cat {
-      position: relative;
-      display: inline-block;
-      margin-left: 10px;
-      padding-left: 10px;
-      color: $black;
-      text-transform: uppercase;
-      &:before {
-        @include absolute-position(5px,auto,4px,0,1px,auto);
-        background-color: $black;
-      }
-      a {
-        color: $black;
-        &:hover {
-          text-decoration: none;
-        }
-      }
-    }
-  }
-
   .blog-aside {
     @include make-col-ready;
     margin-bottom: 50px;
@@ -302,5 +273,69 @@
   }
   .pagination {
     justify-content: center;
+  }
+}
+
+.blog-info {
+  margin-bottom: 10px;
+  font-family: $header-font-family;
+  font-size: $type-size-6;
+  color: $dark-gray;
+  letter-spacing: .05rem;
+  .date {
+    display: inline-block;
+  }
+  .cat {
+    position: relative;
+    display: inline-block;
+    margin-left: 10px;
+    padding-left: 10px;
+    color: $black;
+    text-transform: uppercase;
+    &:before {
+      @include absolute-position(5px,auto,4px,0,1px,auto);
+      background-color: $black;
+    }
+    a {
+      color: $black;
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+.more-blogs {
+  padding-top: 70px;
+  padding-bottom: 70px;
+  background-color: $lighter-gray;
+  .more-blogs-container {
+    @include fixed-width-layout;
+  }
+  .more-blogs-row {
+    @include make-row;
+  }
+  .more-blogs-item {
+    @include make-col-ready;
+    @include media-breakpoint-up(md) {
+      @include make-col(4);
+    }
+    h5 {
+      position: relative;
+      margin-bottom: 15px;
+      padding-bottom: 20px;
+      font-weight: 400;
+      line-height: 28px;
+      &:after {
+        @include absolute-position(auto,auto,0,0,80px,1px);
+        background-color: $black;
+      }
+      a {
+        color: $black;
+      }
+    }
+  }
+  .more-blogs-image {
+    height: 264px;
   }
 }

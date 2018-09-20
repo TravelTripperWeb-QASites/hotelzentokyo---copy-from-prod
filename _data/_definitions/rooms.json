@@ -1,0 +1,71 @@
+{
+	"title":{
+		"required":true,
+    "localizable": true
+	},
+  "image": {
+    "label": "Thumb Image",
+    "type": "image",
+    "required": true
+  },
+  "banner_image": {
+    "label": "Banner Image",
+    "type": "image",
+    "required": true
+  },
+  "intro_image": {
+    "label": "intro Image",
+    "type": "image",
+    "required": true
+  },
+  "amenities_image": {
+    "label": "Amenities Image",
+    "type": "image",
+    "required": true
+  },
+	"short_info":{
+		"label": "Short Description",
+		"required": true,
+    "type": "richtext",
+    "localizable": true
+	},
+  "url_friendly_name": {
+    "type": "url_slug",
+    "required": true
+  },
+  "book_room": {
+    "label": "Book Room URL",
+    "type": "url_slug",
+    "required": true
+  },
+  "bed_info":{
+		"label": "Bed Info",
+		"required": true,
+		"type": "text",
+    "localizable": true
+	},
+	"long_info":{
+		"label": "Description",
+		"required": true,
+		"type": "richtext",
+    "localizable": true
+	},
+	"amenities_text":{
+		"label": "Amenities Heading",
+		"required": false,
+		"type": "richtext",
+    "localizable": true
+	},
+  "amenities_within_pod":{
+		"label": "Amenities - Within the pod",
+		"required": false,
+		"type": "richtext",
+    "localizable": true
+	},
+  "amenities_access_facilities":{
+		"label": "Amenities - Access to facilities",
+		"required": false,
+		"type": "richtext",
+    "localizable": true
+	}
+}

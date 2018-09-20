@@ -8,7 +8,7 @@
         id="{{ site.data.forms.jotform.newsletter-id }}" accept-charset="utf-8">
         <input type="hidden" name="formID" value="{{ site.data.forms.jotform.newsletter-id }}">
         <div class="input-group">
-          <input type="email" id="signup-email" name="q1_email" class="form-control" placeholder="Email Address" aria-label="Email Address" aria-describedby="email-address" required>
+          <input type="email" id="signup-email" name="q1_email" class="form-control" placeholder="{% t 'email' %}" aria-label="Email Address" aria-describedby="email-address" required>
           <div class="input-group-append">
             <button class="btn btn-outline-secondary" type="submit" title="Submit"><i class="fas fa-angle-right"></i></button>
           </div>

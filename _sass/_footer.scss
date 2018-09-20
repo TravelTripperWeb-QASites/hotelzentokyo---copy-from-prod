@@ -72,12 +72,20 @@ footer {
     ul {
       margin: 0;
       padding: 0;
-
+     @include media-breakpoint-down(lg) {
+       justify-content: center;
+     }
       li {
         min-width: auto;
         padding: 0 15px;
         text-align: center;
-
+        @include media-breakpoint-up(lg) {
+          min-width: 95px;
+          text-align: left;
+          padding: 0 15px;
+          padding-left: 0;
+          flex-direction: column;
+        }
         a {
           font-family: $header-font-family;
           font-size: $type-size-7;
@@ -90,11 +98,6 @@ footer {
           }
         }
 
-        @include media-breakpoint-up(lg) {
-          min-width: 104px;
-          padding: 0;
-          text-align: left;
-        }
       }
     }
   }
@@ -112,7 +115,7 @@ footer {
         text-align: left;
       }
     }
-    
+
     .copyrights {
       display: block;
       font-family: $header-font-family;

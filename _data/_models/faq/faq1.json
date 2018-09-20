@@ -1,15 +1,30 @@
 {
-  "qa_listing": [{
-      "question": "Check-In Time?",
-      "question_id": "checkin",
-      "answer": "Enjoy live jazz, Thursday - Saturday from 6:30pm - 9:30pm with our artist-in-residence, internationally renowned musician Antonio Ciacca and discover Two E's new Icons of Jazz  series featuring Antonio & special guests! Food & beverage minimum and advance reservations required"
-    },
-    {
-      "question": "Live jazz with Antonio Ciacca",
-      "question_id": "livejazz",
-      "answer": "Enjoy live jazz, Thursday - Saturday from 6:30pm - 9:30pm with our artist-in-residence, internationally renowned musician Antonio Ciacca and discover Two E's new Icons of Jazz  series featuring Antonio & special guests! Food & beverage minimum and advance reservations required"
-    }
-  ],
-  "title": "Reservation & Checking in",
-  "category_order": 1
+  "category_order": 1,
+  "title_localized": {
+    "en": "Reservation & Checking in"
+  },
+  "qa_listing_localized": {
+    "en": [
+      {
+        "question": "Check-In Time?",
+        "question_id": "checkin",
+        "answer": "<p>Your answer here.............................</p>"
+      },
+      {
+        "question": "Check-Out Time?",
+        "question_id": "checkout",
+        "answer": "<p>Your answer here.......</p>"
+      },
+      {
+        "question": "Is early check-in available?",
+        "question_id": "earlycheckin",
+        "answer": "<p>Early check-in is not available at the moment. In cases of early arrival, it is possible to leave luggage in our storage room for free.</p>\n<p>&nbsp;</p>"
+      },
+      {
+        "question": "Is late check-out available?",
+        "question_id": "latecheckout",
+        "answer": "<p>Your answer here....</p>"
+      }
+    ]
+  }
 }

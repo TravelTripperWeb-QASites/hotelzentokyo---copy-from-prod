@@ -1,7 +1,7 @@
 {
   "amenities_access_facilities_localized": {
     "en": "<ul>\n<li>Locker for big luggage&nbsp;(on the same floor)&nbsp;</li>\n<li>Coin laundry</li>\n<li>Bar / cafe \"NAME\"</li>\n<li>Work &amp; study lounge</li>\n<li>Communal shower &amp; bathrooms</li>\n</ul>",
-    "ja": "<p><span style=\"font-family: Arial; font-size: 13px; white-space: pre-wrap;\">・荷物用個別ロッカー（同フロア・カプセル外） ・共用シャワー・バスルーム ・コインランドリー ・ワーク・スタディラウンジ ・バー・カフェ</span></p>"
+    "ja": "・荷物用個別ロッカー（同フロア・カプセル外\n・共用シャワー・バスルーム\n・コインランドリー \n・ワーク・スタディラウンジ ・バー・カフェ"
   },
   "image": {
     "name": "room-list-thumb",
@@ -107,7 +107,7 @@
   },
   "amenities_within_pod_localized": {
     "en": "<ul>\n<li>Free Wi-fi</li>\n<li>In-room Safes</li>\n<li>In-room Hanger</li>\n<li>Two outlets</li>\n<li>Full bathroom amenities&nbsp;</li>\n<li>Towels</li>\n</ul>",
-    "ja": "<p><span style=\"font-family: Arial; font-size: 13px; white-space: pre-wrap;\">・無料Wi-Fi ・鍵付きセーフティボックス ・衣服ハンガー ・電源コンセント2口 ・アメニティフルセット ・タオル</span></p>"
+    "ja": "・無料Wi-Fi \n・鍵付きセーフティボックス \n・衣服ハンガー \n・電源コンセント2口 \n・アメニティフルセット \n・タオル"
   },
   "room_title_localized": {
     "en": "TA-KE",

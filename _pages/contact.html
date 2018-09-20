@@ -17,7 +17,7 @@ meta_tags:
 ---
 
 <!-- Contact Banner -->
-<section class="inner-banner text-center bg-styles mb-5" style="background-image:url('/assets/images/contact/contact-hero.jpg');">
+<section class="inner-banner text-center bg-cover mb-5" style="background-image:url('/assets/images/contact/contact-hero.jpg');">
   <div class="inner-banner-content">
    {% regionblock page_title, type:header %}
     <h1>contact</h1>
@@ -30,6 +30,7 @@ meta_tags:
   {% regionblock page_subtitle, type:header %}
    <h2>{% t 'at_your_service' %}</h2>
   {% endregionblock %}
+
 
   {% include forms/jotform/contact.html %}
 </section>

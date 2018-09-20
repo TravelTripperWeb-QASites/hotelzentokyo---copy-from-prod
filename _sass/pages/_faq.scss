@@ -1,0 +1,62 @@
+// FAQs Page
+// ======================================
+
+.faq {
+  @include fixed-width-layout;
+  margin: 30px auto 50px;
+
+  .card {
+    border: 0;
+    border-radius: 0;
+
+    h2 {
+      margin-bottom: 20px;
+    }
+
+    .card-header {
+      padding: 12px 0;
+      cursor: pointer;
+      background-color: transparent;
+      border-top: solid 1px $light-gray;
+      border-bottom: solid 1px $light-gray;
+
+      h5 {
+        position: relative;
+
+        svg {
+          position: absolute;
+          top: 6px;
+          left: 0;
+          width: 24px !important;
+          height: 24px;
+          padding: 5px;
+          color: $white;
+          background-color: $primary-color;
+          border-radius: 50%;
+          @include rotate(90deg);
+        }
+
+        span {
+          display: block;
+          padding-left: 38px;
+          color: $primary-color;
+        }
+
+        &.collapsed {
+          span {
+            color: $dark-gray;
+          }
+
+          svg {
+            background-color: $dark-gray;
+            @include rotate(0deg);
+          }
+        }
+      }
+    }
+
+    .card-body {
+      padding: 20px 0;
+    }
+  }
+}

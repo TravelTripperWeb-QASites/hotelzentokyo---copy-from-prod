@@ -26,54 +26,21 @@ meta_tags:
   </div>
 </section>
 
+{% assign rooms = site.data._models.rooms %}
 <!-- Rooms Listing -->
 <section class="rooms-list-wrap">
   <div class="rooms-list-inner">
+    {% for room in rooms %}
     <div class="room-list-block">
-      <div class="image bg-cover" style="background-image:url('/assets/images/rooms/room-list-thumb.jpg');">
+      <div class="image bg-cover" style="background-image:url({{ room.image.url }} );">
       </div>
       <div class="content">
-        <h4>UME - <span>SINGLE BED POD<span></h4>
-        <p>Spacious pod with a comfortable, western-style Single-sized (100cm) bed for one person only. Pod height reaches all the way to the ceiling. Comes with a safe, free-wifi, clothes hanger, towel and full amenities. </p>
-        <a class="primary-btn inverse" href="#"><span>{% t 'view_this_room' %}</span><i class="fas fa-angle-right"></i></a>
+        <h4>{{ room.room_title }} - <span>{{ room.room_type }}<span></h4>
+        {{ room.short_info }}
+        <a class="primary-btn inverse" href="{{ page | permalink }}{{ room.url_friendly_name }}/"><span>{% t 'view_this_room' %}</span><i class="fas fa-angle-right"></i></a>
       </div>
     </div>
-    <div class="room-list-block">
-      <div class="image bg-cover" style="background-image:url('/assets/images/rooms/room-list-thumb.jpg');">
-      </div>
-      <div class="content">
-        <h4>UME - <span>SINGLE BED POD<span></h4>
-        <p>Spacious pod with a comfortable, western-style Single-sized (100cm) bed for one person only. Pod height reaches all the way to the ceiling. Comes with a safe, free-wifi, clothes hanger, towel and full amenities. </p>
-        <a class="primary-btn inverse" href="#"><span>{% t 'view_this_room' %}</span><i class="fas fa-angle-right"></i></a>
-      </div>
-    </div>
-    <div class="room-list-block">
-      <div class="image bg-cover" style="background-image:url('/assets/images/rooms/room-list-thumb.jpg');">
-      </div>
-      <div class="content">
-        <h4>UME - <span>SINGLE BED POD<span></h4>
-        <p>Spacious pod with a comfortable, western-style Single-sized (100cm) bed for one person only. Pod height reaches all the way to the ceiling. Comes with a safe, free-wifi, clothes hanger, towel and full amenities. </p>
-        <a class="primary-btn inverse" href="#"><span>{% t 'view_this_room' %}</span><i class="fas fa-angle-right"></i></a>
-      </div>
-    </div>
-    <div class="room-list-block">
-      <div class="image bg-cover" style="background-image:url('/assets/images/rooms/room-list-thumb.jpg');">
-      </div>
-      <div class="content">
-        <h4>UME - <span>SINGLE BED POD<span></h4>
-        <p>Spacious pod with a comfortable, western-style Single-sized (100cm) bed for one person only. Pod height reaches all the way to the ceiling. Comes with a safe, free-wifi, clothes hanger, towel and full amenities. </p>
-        <a class="primary-btn inverse" href="#"><span>{% t 'view_this_room' %}</span><i class="fas fa-angle-right"></i></a>
-      </div>
-    </div>
-    <div class="room-list-block">
-      <div class="image bg-cover" style="background-image:url('/assets/images/rooms/room-list-thumb.jpg');">
-      </div>
-      <div class="content">
-        <h4>UME - <span>SINGLE BED POD<span></h4>
-        <p>Spacious pod with a comfortable, western-style Single-sized (100cm) bed for one person only. Pod height reaches all the way to the ceiling. Comes with a safe, free-wifi, clothes hanger, towel and full amenities. </p>
-        <a class="primary-btn inverse" href="#"><span>{% t 'view_this_room' %}</span><i class="fas fa-angle-right"></i></a>
-      </div>
-    </div>
+    {% endfor %}
   </div>
 </section>
 

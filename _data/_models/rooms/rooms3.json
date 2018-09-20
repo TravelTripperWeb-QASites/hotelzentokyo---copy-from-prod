@@ -82,10 +82,10 @@
     "alt": "room-amenities",
     "caption": ""
   },
-  "url_friendly_name": "ume",
-  "book_room": "nnn",
+  "url_friendly_name": "mastu",
+  "book_room": "nnnnnn",
   "title_localized": {
-    "en": "UME - SINGLE BED POD"
+    "en": "MATSU - SEMIDOUBLE BED WITH EXTRA ROOM"
   },
   "short_info_localized": {
     "en": "<p>Spacious pod with a comfortable, western-style Single-sized (100cm) bed for one person only. Pod height reaches all the way to the ceiling. Comes with a safe, free-wifi, clothes hanger, towel and full amenities.&nbsp;</p>"
@@ -103,9 +103,9 @@
     "en": "<ul>\n<li>Free Wi-fi</li>\n<li>In-room Safes</li>\n<li>In-room Hanger</li>\n<li>Two outlets</li>\n<li>Full bathroom amenities&nbsp;</li>\n<li>Towels</li>\n</ul>"
   },
   "room_title_localized": {
-    "en": "UME"
+    "en": "MATSU"
   },
   "room_type_localized": {
-    "en": "SINGLE BED POD"
+    "en": "SEMIDOUBLE BED WITH EXTRA ROOM"
   }
 }

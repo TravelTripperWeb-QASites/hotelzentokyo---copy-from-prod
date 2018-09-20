@@ -63,7 +63,7 @@
 	"amenities_text":{
 		"label": "Amenities Heading",
 		"required": false,
-		"type": "richtext",
+		"type": "text",
     "localizable": true
 	},
   "amenities_within_pod":{

@@ -42,7 +42,7 @@ meta_tags:
     </div>
     <div class="carousel-inner" role="tablist">
       {% for banner in banners %}
-        <div class="carousel-item {% if forloop.first %}active{% endif %}" style="background-image: url('{{ banner.url_large }}');" role="option">
+        <div class="carousel-item bg-cover {% if forloop.first %}active{% endif %}" style="background-image: url('{{ banner.url_large }}');" role="option">
           <div class="banner-content">
             <h1 class="lowercase" tabindex="0">{{ banner.caption }}</h1>
           </div>

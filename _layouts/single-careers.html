@@ -6,7 +6,7 @@ layout: default
 <section class="inner-banner text-center bg-cover mb-5" style="background-image:url('/assets/images/careers/careers-hero.jpg');">
   <div class="inner-banner-content">
     {% regionblock careers_details_banner, type:header %}
-      <h1>Careers</h1>
+      <h1 tabindex="0">Careers</h1>
     {% endregionblock %}
   </div>
 </section>
@@ -14,20 +14,26 @@ layout: default
 <!-- Careers Content -->
 {% assign careers = site.data._models.careers %}
 <section class="careers-content">
-  <h2>{{ page.designation }}</h2>
+  <h2 tabindex="0">{{ page.designation }}</h2>
   {% regionblock careers_details_text, type:html %}
-    <p class="mb-40">To apply: Please send your CV to <a href="mailto:jobs@senrecube.co">jobs@senrecube.com</a></p>
+    <p class="mb-40" tabindex="0">To apply: Please send your CV to <a href="mailto:jobs@senrecube.co">jobs@senrecube.com</a></p>
   {% endregionblock %}
   <div class="content-block">
-    <h5 class="dark">Job description</h5>
-    {{ page.job-description }}
+    <h5 class="dark" tabindex="0">Job description</h5>
+    <div tabindex="0">
+      {{ page.job-description }}
+    </div>
   </div>
   <div class="content-block">
-    <h5 class="dark">Requirements</h5>
-    {{ page.requirements }}
+    <h5 class="dark" tabindex="0">Requirements</h5>
+    <div tabindex="0">
+      {{ page.requirements }}
+    </div>
   </div>
   <div class="content-block">
-    <h5 class="dark">Qualifications</h5>
-    {{ page.qualifications }}
+    <h5 class="dark" tabindex="0">Qualifications</h5>
+    <div tabindex="0">
+      {{ page.qualifications }}
+    </div>
   </div>
 </section>

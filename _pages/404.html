@@ -14,7 +14,7 @@ meta_tags:
 <section class="inner-banner text-center bg-cover mb-5" style="background-image:url('/assets/images/rooms/rooms-banner.jpg');">
   <div class="inner-banner-content">
     {% regionblock page_bot_found_banner, type:header %}
-      <h1>Page not found</h1>
+      <h1 tabindex="0">Page not found</h1>
     {% endregionblock %}
   </div>
 </section>
@@ -25,7 +25,7 @@ meta_tags:
 <section class="static-page-wrap text-center">
   <div class="sitemap">
     {% regionblock page_bot_found_sitemap, type:header %}
-      <h3>Sitemap</h3>
+      <h3 tabindex="0">Sitemap</h3>
     {% endregionblock %}
     <ul>
       {% for link in links %}

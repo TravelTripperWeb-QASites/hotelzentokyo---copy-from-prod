@@ -1,7 +1,6 @@
 {
   "qa_listing_localized": {
-    "en": [
-      {
+    "en": [{
         "question": "What is the difference between room options?",
         "question_id": "roomoptions",
         "answer": "<p>Your answer here...</p>"
@@ -24,6 +23,7 @@
     ]
   },
   "category_order": 2,
+  "category_id": "room",
   "title_localized": {
     "en": "Room"
   }

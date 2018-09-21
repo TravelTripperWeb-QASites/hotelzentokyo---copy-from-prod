@@ -1,11 +1,11 @@
 {
   "category_order": 1,
+  "category_id": "reservation",
   "title_localized": {
     "en": "Reservation & Checking in"
   },
   "qa_listing_localized": {
-    "en": [
-      {
+    "en": [{
         "question": "Check-In Time?",
         "question_id": "checkin",
         "answer": "<p>Your answer here.............................</p>"

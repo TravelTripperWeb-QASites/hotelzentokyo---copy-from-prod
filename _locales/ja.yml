@@ -9,14 +9,14 @@ ja:
   discover_more: 部屋一覧へ
   stay_in_the_know: 「ニュースレター」
   newsletter_sign_text: ニュースレターで最近の様子や お得な情報をお届けします。
-  privacy_text: <a href="/ja/terms-of-service/" target="_blank">利用規約</a> <a href="/ja/privacy-policy/" target="_blank">とプライバシーポリシー</a> に同意します。
+  privacy_text: <a href="/ja/terms/" target="_blank">利用規約</a> <a href="/ja/privacy/" target="_blank">とプライバシーポリシー</a> に同意します。
   at_your_service: お問い合わせ
   first_name: 名
   surname: 姓
   email: メール
   subject: 件名
   your_message: メッセージをご入力ください
-  address: 〒103-0013 東京都中央区 <br> 日本橋人形町1-5-8
+  address: 〒103-0013 東京都中央区 <br/>日本橋人形町1-5-8
   links: Links
   location: ロケーション
   direction: アクセス
@@ -24,7 +24,6 @@ ja:
   careers: 採用情報
   privacy_policy: プライバシーポリシー
   thank_you: ありがとうございました
-  address: 〒103-0013 東京都中央区 日本橋人形町1-5-8
   go_room_link: ...and more  (Go to reservation page for full details)
   within_the_pod: Within the pod
   access_to_facilities: Access to facilities

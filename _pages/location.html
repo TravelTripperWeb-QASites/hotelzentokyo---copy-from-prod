@@ -23,10 +23,10 @@ meta_tags:
 <section class="banner-fullscreen" style="background-image:url('/assets/images/location/location-banner.jpg')">
   <div class="wrapper">
     {% regionblock location_tagline, type:header %}
-      <h6>Hotel Zen Tokyo</h6>
+      <h6 tabindex="0">Hotel Zen Tokyo</h6>
     {% endregionblock %}
     {% regionblock location_title, type:header %}
-      <h1 class="lowercase">{% t 'location' %}</h1>
+      <h1 class="lowercase" tabindex="0">{% t 'location' %}</h1>
     {% endregionblock %}
     {% regionblock location_url, type:html %}
       <a class="primary-btn" href="https://goo.gl/maps/3VwoSMEa5Wo" target="_blank" rel="nofollow"><span>{% t 'direction' %}</span><i class="fas fa-angle-right"></i></a>
@@ -38,7 +38,7 @@ meta_tags:
 <section class="twocol">
   <div class="twocol-row">
     <div class="content">
-      <div class="content-wrap">
+      <div class="content-wrap" tabindex="0">
         {% regionblock ningyocho_tagline, type:header %}
           <h4>NIHOMBASHI NINGYOCHO</h4>
         {% endregionblock %}
@@ -85,10 +85,10 @@ meta_tags:
   <div class="wrapper">
     <div class="content">
       {% regionblock directions_title, type:header %}
-        <h6 class="hideline">Directions</h6>
+        <h6 class="hideline" tabindex="0">Directions</h6>
       {% endregionblock %}
       {% regionblock direction_query, type:header %}
-        <h2>How to find us</h2>
+        <h2 tabindex="0">How to find us</h2>
       {% endregionblock %}
       {% regionblock direction_url, type:html %}
         <a class="primary-btn inverse" href="https://goo.gl/maps/3VwoSMEa5Wo" target="_blank"><span>Google Map</span><i class="fas fa-angle-right"></i></a>
@@ -97,7 +97,7 @@ meta_tags:
         <a class="primary-btn inverse" href="#"><span>Download PDF</span><i class="fas fa-angle-right"></i></a>
       {% endregionblock %}
     </div>
-    <div class="content">
+    <div class="content" tabindex="0">
       {% regionblock byplane_title, type:header %}
         <h6>By Plane</h6>
       {% endregionblock %}
@@ -111,7 +111,7 @@ meta_tags:
         <p>BY BUS:<br><br>There is a Narita airport limousine bus that leaves the airport and stops at Tokyo City Air Terminal("TCAT") which is a five minute walk away from our hotel.</p>
       {% endregionblock %}
     </div>
-    <div class="content">
+    <div class="content" tabindex="0">
       {% regionblock byplane_two_title, type:header %}
         <h6>By Plane</h6>
       {% endregionblock %}
@@ -125,7 +125,7 @@ meta_tags:
         <p>BY BUS:<br><br>There is a Haneda airport limousine bus that leaves the airport and stops at Tokyo City Air Terminal("TCAT") which is a five minute walk away from our hotel. </p>
       {% endregionblock %}
     </div>
-    <div class="content">
+    <div class="content" tabindex="0">
       {% regionblock bytrain_title, type:header %}
         <h6>By Train</h6>
       {% endregionblock %}
@@ -142,7 +142,7 @@ meta_tags:
   </div>
 
   <!-- Leflet Map -->
-  <div class="mt-5" id="leaflet-map"></div>
+  <div class="mt-5" id="leaflet-map" tabindex="-1"></div>
 
 </section>
 

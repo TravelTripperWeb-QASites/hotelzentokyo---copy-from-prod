@@ -6,7 +6,6 @@
 .banner {
   .carousel-item {
     min-height: 400px;
-    @extend .bg-cover;
     @include media-breakpoint-up(md) {
       min-height: 688px;
     }

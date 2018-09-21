@@ -20,7 +20,7 @@ meta_tags:
 <section class="inner-banner text-center bg-cover mb-5" style="background-image:url('/assets/images/careers/careers-hero.jpg');">
   <div class="inner-banner-content">
     {% regionblock page_title, type:header %}
-     <h1>{% t 'careers' %}</h1>
+     <h1 tabindex="0">{% t 'careers' %}</h1>
     {% endregionblock %}
   </div>
 </section>
@@ -29,10 +29,10 @@ meta_tags:
 {% assign careers = site.data._models.careers %}
 <section class="careers-content">
   {% regionblock page_subtitle, type:header %}
-   <h2>Join us for these open positions</h2>
+   <h2 tabindex="0">Join us for these open positions</h2>
   {% endregionblock %}
   {% regionblock page_detail, type:html %}
-  <p>We’re hiring at hotel zen tokyo! Please see open positions below and send your CV to <a href="mailto:jobs@senrecube.co">jobs@senrecube.com</a></p>
+  <p tabindex="0">We’re hiring at hotel zen tokyo! Please see open positions below and send your CV to <a href="mailto:jobs@senrecube.co">jobs@senrecube.com</a></p>
   {% endregionblock %}
   <ul class="job-positions">
     {% for career in careers %}

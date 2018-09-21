@@ -30,26 +30,25 @@ meta_tags:
     <div class="indicators-control">
       <ol class="carousel-indicators">
         {% for banner in banners %}
-        <li data-target="#home-carousel" data-slide-to="{{ forloop.index0 }}" {% if forloop.first %}class="active"{% endif %}>{{ forloop.index }}</li>
+          <li data-target="#home-carousel" data-slide-to="{{ forloop.index0 }}" {% if forloop.first %}class="active"{% endif %}>{{ forloop.index }}</li>
         {% endfor %}
       </ol>
-      <a class="carousel-control-prev primary-btn previous" href="#home-carousel" data-slide="prev" title="Previous Slide">
+      <a class="carousel-control-prev primary-btn previous" href="#home-carousel" data-slide="prev" title="Previous Slide" aria-label="Previous slide">
         <i class="fas fa-angle-left"></i>
       </a>
-      <a class="carousel-control-next primary-btn" href="#home-carousel" data-slide="next" title="Next Slide">
+      <a class="carousel-control-next primary-btn" href="#home-carousel" data-slide="next" title="Next Slide" aria-label="Next slide">
         <i class="fas fa-angle-right"></i>
       </a>
     </div>
     <div class="carousel-inner" role="tablist">
       {% for banner in banners %}
-      <div class="carousel-item {% if forloop.first %}active{% endif %}" style="background-image: url('{{ banner.url_large }}');" role="option">
-        <div class="banner-content">
-          <h1 class="lowercase">{{ banner.caption }}</h1>
+        <div class="carousel-item {% if forloop.first %}active{% endif %}" style="background-image: url('{{ banner.url_large }}');" role="option">
+          <div class="banner-content">
+            <h1 class="lowercase" tabindex="0">{{ banner.caption }}</h1>
+          </div>
         </div>
-      </div>
       {% endfor %}
     </div>
-
   </div>
 </section>
 
@@ -59,13 +58,13 @@ meta_tags:
     <div class="content">
       <div class="content-wrap">
         {% regionblock about_hotel_subtitle, type:header %}
-          <h4>About Hotel Zen Tokyo</h4>
+          <h4 tabindex="0">About Hotel Zen Tokyo</h4>
         {% endregionblock %}
         {% regionblock about_hotel_title, type:header %}
-          <h2>Stay Minimal, Experience Maximal</h2>
+          <h2 tabindex="0">Stay Minimal, Experience Maximal</h2>
         {% endregionblock %}
         {% regionblock about_hotel_detail, type:html %}
-        <p>Hotel Zen Tokyo's guest experience is crafted with the spirit of Japanese zen minimalism in mind. We have designed the most modern, compact rendition of traditional Japanese architecture in hopes to provide our guests with an opportunity to experience Japan to the fullest, with comfort, and at reasonable prices. Travellers enjoy a fusion of efficient capsule accommodations with authentic traditional design - in essence, a modern and urban ryokan experience in the heart of Tokyo.</p>
+        <p tabindex="0">Hotel Zen Tokyo's guest experience is crafted with the spirit of Japanese zen minimalism in mind. We have designed the most modern, compact rendition of traditional Japanese architecture in hopes to provide our guests with an opportunity to experience Japan to the fullest, with comfort, and at reasonable prices. Travellers enjoy a fusion of efficient capsule accommodations with authentic traditional design - in essence, a modern and urban ryokan experience in the heart of Tokyo.</p>
         {% endregionblock %}
       </div>
       <div class="intro-btn-holder">
@@ -86,13 +85,13 @@ meta_tags:
     <div class="content">
       <div class="content-wrap">
         {% regionblock room_title_subtitle, type:header %}
-         <h4>Minimalistic Room Design</h4>
+         <h4 tabindex="0">Minimalistic Room Design</h4>
         {% endregionblock %}
         {% regionblock room_title, type:header %}
-         <h2>Teahouse-inspired Zen Pods</h2>
+         <h2 tabindex="0">Teahouse-inspired Zen Pods</h2>
         {% endregionblock %}
         {% regionblock room_detail, type:html %}
-         <p>Each room in the hotel is a pod (capsule-type accommodation) and guests can choose from various bed sizes and pod styles. Each pod is designed in accordance with Japanese traditional design disciplines, with touches of wabi-sabi, Japanese version of minimalistic design that appreciates small spaces and natural materials. Enjoy a good night’s stay in traditional Japanese architecture while enjoying music at the bar downstairs or local flavors while strolling around the neighborhood.</p>
+         <p tabindex="0">Each room in the hotel is a pod (capsule-type accommodation) and guests can choose from various bed sizes and pod styles. Each pod is designed in accordance with Japanese traditional design disciplines, with touches of wabi-sabi, Japanese version of minimalistic design that appreciates small spaces and natural materials. Enjoy a good night’s stay in traditional Japanese architecture while enjoying music at the bar downstairs or local flavors while strolling around the neighborhood.</p>
         {% endregionblock %}
       </div>
     </div>
@@ -102,10 +101,10 @@ meta_tags:
     <div class="content">
       <div class="content-wrap">
         {% regionblock location_title_subtitle, type:header %}
-         <h4>Prime Location</h4>
+         <h4 tabindex="0">Prime Location</h4>
         {% endregionblock %}
         {% regionblock location_title, type:header %}
-         <h2>Authentic Japan in Modern Tokyo</h2>
+         <h2 tabindex="0">Authentic Japan in Modern Tokyo</h2>
         {% endregionblock %}
         <div class="btn-holder">
           {% regionblock location_link, type:html %}
@@ -113,7 +112,7 @@ meta_tags:
            {% endregionblock %}
         </div>
         {% regionblock location_detail, type:html %}
-         <p>Our hotel is mere steps away from Ningyocho Station, which offers direct access to both of Tokyo's airports and the city's most exciting destinations. The Ningyocho/Nihonmbashi neighborhood is a historically rich district within Tokyo that has retained much of its traditional charm, architecture and experiences. Take a stroll around the hotel and enjoy some of Tokyo's oldest shops and local foods.</p>
+         <p tabindex="0">Our hotel is mere steps away from Ningyocho Station, which offers direct access to both of Tokyo's airports and the city's most exciting destinations. The Ningyocho/Nihonmbashi neighborhood is a historically rich district within Tokyo that has retained much of its traditional charm, architecture and experiences. Take a stroll around the hotel and enjoy some of Tokyo's oldest shops and local foods.</p>
         {% endregionblock %}
       </div>
     </div>
@@ -128,13 +127,13 @@ meta_tags:
       <div class="image-wrap bg-bottom overlap" style="background-image: url('/assets/images/common-room-2.jpg');"></div>
       <div class="content-wrap">
         {% regionblock cafe_title_subtitle, type:header %}
-         <h4>Food & Live Music at Downstairs Bar / Cafe</h4>
+         <h4 tabindex="0">Food & Live Music at Downstairs Bar / Cafe</h4>
         {% endregionblock %}
         {% regionblock cafe_title, type:header %}
-         <h2>Showcases by local artists</h2>
+         <h2 tabindex="0">Showcases by local artists</h2>
         {% endregionblock %}
         {% regionblock cafe_detail, type:html %}
-         <p>The Hotel Zen Tokyo experience includes our basement cafe "NAME," which serves as a gateway to Japanese culture, art and music. During the day, take advantage of the cafe library to read up on Japan and view the rotating, pop-up exhibits of arts and crafts. Enjoy live, traditionally inspired Japanese music while sipping on sake in the evening.</p>
+         <p tabindex="0">The Hotel Zen Tokyo experience includes our basement cafe "NAME," which serves as a gateway to Japanese culture, art and music. During the day, take advantage of the cafe library to read up on Japan and view the rotating, pop-up exhibits of arts and crafts. Enjoy live, traditionally inspired Japanese music while sipping on sake in the evening.</p>
         {% endregionblock %}
       </div>
     </div>

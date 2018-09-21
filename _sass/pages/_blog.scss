@@ -16,8 +16,10 @@
   }
   .blog-content {
     @include make-col-ready;
+    order: 2;
     @include media-breakpoint-up(md) {
       @include make-col(7.45);
+      order: 1;
     }
     .blog-item {
       margin-bottom: 50px;
@@ -73,6 +75,7 @@
   .blog-aside {
     @include make-col-ready;
     margin-bottom: 30px;
+    order: 1;
     @include media-breakpoint-up(md) {
       @include make-col(4.15);
       margin-bottom: 0;

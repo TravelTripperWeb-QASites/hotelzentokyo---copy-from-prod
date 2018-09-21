@@ -8,17 +8,17 @@
 
 <!-- Blog recent posts here -->
 <div class="blog-recent">
-  <h4>Recent Posts <span class="toggle-arrow" data-toggle="collapse" data-target="#recent-blogs"><i class="fas fa-angle-down"></i></span></h4>
+  <h4 tabindex="0">Recent Posts <span class="toggle-arrow" data-toggle="collapse" data-target="#recent-blogs"><i class="fas fa-angle-down"></i></span></h4>
   <div class="collapse" id="recent-blogs">
     {% assign recentblogs = site.data._models.blog | sort: 'date' | reverse %}
     {% for recentblog in recentblogs | limit: 5 %}
       <div class="blog-recent-item">
-        <a href="/blog/{{ recentblog.url_friendly_name }}/">
+        <a href="/blog/{{ recentblog.url_friendly_name }}/" tabindex="-1">
           <figure style="background-image:url('{{ recentblog.image.url_small }}');"></figure>
           <div class="recent-item-content">
-            <h5>{{ recentblog.title | truncate: 28 }}</h5>
+            <h5 tabindex="0">{{ recentblog.title | truncate: 28 }}</h5>
             <div class="blog-info">
-              <span class="date">
+              <span class="date" tabindex="0">
                 {% assign d = recentblog.date | date: "%-d" %}
                 {{ recentblog.date | date: "%B" }}
                 {% case d %}{% when "1" or "21" or "31" %}{{ d }}st{% when "2" or "22" %}{{ d }}nd{% when "3" or "23" %}{{ d }}rd{% else %}{{ d }}th{% endcase %},
@@ -34,7 +34,7 @@
 
 <!-- Blog categories list here -->
 <div class="blog-categories">
-  <h4>Categories <span class="toggle-arrow" data-toggle="collapse" data-target="#categories"><i class="fas fa-angle-down"></i></span></h4>
+  <h4 tabindex="0">Categories <span class="toggle-arrow" data-toggle="collapse" data-target="#categories"><i class="fas fa-angle-down"></i></span></h4>
   <ul class="categories-list collapse" id="categories">
     {% assign category = site.data._models.categories | sort:'order' %}
     {% for categorylist in category %}

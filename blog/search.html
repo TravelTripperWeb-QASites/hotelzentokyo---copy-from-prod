@@ -7,27 +7,22 @@ meta_tags:
 ---
 
 <!-- Blog landing banner here -->
-<section class="inner-banner text-center" style="background-image:url('/assets/images/blog/blog-banner.jpg');">
-  <div class="inner-banner-content">
-    <h1 class="lowercase">Blog</h1>
-    <h3 class="italic">Read about all the local hasellus condimentum libero vel velit auctor sit amet tincidunt velit varius.</h3>
-  </div>
-</section>
+{% include blog-banner.html %}
 
 <!-- Blog content here -->
 <section class="blog">
   <div class="blog-row">
-    <div class="blog-aside">
-      {% include blog-aside.html %}
-    </div>
     <div class="blog-content">
 
       <!-- Blog search results -->
       <div class="blog-results-wrap">
-        <h2>Search Results:</h2>
+        <h2 tabindex="0">Search Results:</h2>
         <ul id="search-results" class="blog-results"></ul>
       </div>
 
+    </div>
+    <div class="blog-aside">
+      {% include blog-aside.html %}
     </div>
   </div>
 </section>

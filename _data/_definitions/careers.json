@@ -32,10 +32,6 @@
     "type": "richtext",
     "required": true
   },
-  "title": {
-    "label": "Meta Title",
-    "required": true
-  },
   "meta_description": {
     "label": "Meta Description",
     "required": true

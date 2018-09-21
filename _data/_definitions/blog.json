@@ -16,11 +16,6 @@
     "label": "Meta Description",
     "type": "text"
   },
-  "image": {
-    "label": "Featured Image",
-    "type": "image",
-    "required": true
-  },
   "url_friendly_name": {
     "label": "URL Friendly Name",
     "type": "url_slug",

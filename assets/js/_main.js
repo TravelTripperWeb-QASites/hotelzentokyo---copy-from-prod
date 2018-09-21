@@ -85,7 +85,7 @@ $('.selectpicker').selectpicker({
   size: 4
 });
 
-//if some hit enter on card will be clicked on card header (For Accessibility)
+// If someone clicks enter on card, it will be clicked on card header (For Accessibility)
 $('.card-header').keypress(function (event) {
   if (event.keyCode == 13) {
     $(this).find("h5").click();

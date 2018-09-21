@@ -6,10 +6,12 @@ description: "Hotel Zen Tokyo"
 url: "https://www.hotelzentokyo.com"
 repository: "TravelTripperWeb-Sites/hotelzentokyo"
 email: contact@senrecube.com
+
 # Language Settings
 default_lang: 'en'
 languages: ['en','ja']
 exclude_from_localizations: ["assets", "CNAME"]
+
 # Reading Files
 include:
   - _pages

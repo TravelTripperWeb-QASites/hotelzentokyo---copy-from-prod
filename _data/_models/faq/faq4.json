@@ -21,11 +21,29 @@
         "question_id": "metro",
         "answer": "<p>Nngyocho has Asakusa line, Hibiya line. Suitengumae has Hanzomoline (that directly connects to Denentoshi-line)</p>"
       }
+    ],
+    "ja": [
+      {
+        "question": "成田空港からのアクセスを教えてください",
+        "question_id": "naritaairport",
+        "answer": "<p>電車の場合は空港から都営浅草線一本で人形町駅まで。バスご利用の場合は空港からリムジンバスで水天宮駅直結のT-CATまでお越しいただき、水天宮前からは徒歩5分になります。</p>"
+      },
+      {
+        "question": "羽田空港からのアクセスを教えてください",
+        "question_id": "hanedaairport",
+        "answer": "<p>電車の場合は空港から都営浅草線一本で人形町駅まで。バスご利用の場合は空港からリムジンバスで水天宮駅直結のT-CATまでお越しいただき、水天宮前からは徒歩5分になります。</p>"
+      },
+      {
+        "question": "最寄駅はどこですか？",
+        "question_id": "train",
+        "answer": "<p>人形町（徒歩1分）、水天宮（徒歩5分）になります。</p>"
+      }
     ]
   },
   "category_order": 4,
   "category_id": "access",
   "title_localized": {
-    "en": "Access"
+    "en": "Access",
+    "ja": "アクセス"
   }
 }

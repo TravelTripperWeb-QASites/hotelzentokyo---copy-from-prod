@@ -115,7 +115,7 @@ layout: default
           {% assign count = count | plus: 1 %}
             <div class="more-blogs-item">
               <div class="more-blogs-content">
-                <a href="/blog/{{ moreblog.url_friendly_name }}/">
+                <a href="/blog/{{ moreblog.url_friendly_name }}/" title="{{ moreblog.title }}">
                   <figure class="more-blogs-image bg-cover" style="background-image:url('{{ moreblog.image.url_medium }}');"></figure>
                 </a>
                 <div class="content-block">

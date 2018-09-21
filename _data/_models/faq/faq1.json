@@ -5,15 +5,16 @@
     "en": "Reservation & Checking in"
   },
   "qa_listing_localized": {
-    "en": [{
+    "en": [
+      {
         "question": "Check-In Time?",
         "question_id": "checkin",
-        "answer": "<p>Your answer here.............................</p>"
+        "answer": "<p>Check-in time is 4PM to midnight.</p>"
       },
       {
         "question": "Check-Out Time?",
         "question_id": "checkout",
-        "answer": "<p>Your answer here.......</p>"
+        "answer": "<p>Check-out time is 10AM</p>"
       },
       {
         "question": "Is early check-in available?",
@@ -23,7 +24,32 @@
       {
         "question": "Is late check-out available?",
         "question_id": "latecheckout",
-        "answer": "<p>Your answer here....</p>"
+        "answer": "<p>Late check-out is available at 1,500 JPY per hour per room until 3pm. A one night room fee will be charged if you would like to stay later than 4:00pm. You can leave your luggage in our storage for free if you wish after check-out.</p>"
+      },
+      {
+        "question": "Is reception open 24 hours?",
+        "question_id": "reception",
+        "answer": "<p>Yes reception is open 24 hours</p>"
+      },
+      {
+        "question": "Which languages are spoken at reception? ",
+        "question_id": "language",
+        "answer": "<p>We speak English and Japanese</p>"
+      },
+      {
+        "question": "Can I pay by credit card? ",
+        "question_id": "creditcard",
+        "answer": "<p>Yes. We take credit cards online and at the front desk.</p>"
+      },
+      {
+        "question": "Cancellation policy? ",
+        "question_id": "cancellation",
+        "answer": "<p>Lorem ipsum</p>"
+      },
+      {
+        "question": "Can I leave my luggage before check-in or check-out? ",
+        "question_id": "luggage",
+        "answer": "<p>Yes we'll keep it in our storage</p>"
       }
     ]
   }

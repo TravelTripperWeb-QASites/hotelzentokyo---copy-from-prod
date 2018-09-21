@@ -20,7 +20,7 @@ meta_tags:
 <section class="inner-banner text-center bg-cover" style="background-image:url('/assets/images/rooms/rooms-banner.jpg');">
   <div class="inner-banner-content">
     {% regionblock rooms_banner_heading, type:header %}
-      <h1>{% t 'rooms_stay' %}</h1>
+      <h1 tabindex="0">{% t 'rooms_stay' %}</h1>
     {% endregionblock %}
 
   </div>
@@ -35,8 +35,10 @@ meta_tags:
       <div class="image bg-cover" style="background-image:url({{ room.image.url }} );">
       </div>
       <div class="content">
-        <h4>{{ room.room_title }} - <span>{{ room.room_type }}<span></h4>
-        {{ room.short_info }}
+        <h4 tabindex="0">{{ room.room_title }} - <span>{{ room.room_type }}<span></h4>
+        <div tabindex="0">
+          {{ room.short_info }}
+        </div>
         <a class="primary-btn inverse" href="{{ page | permalink }}{{ room.url_friendly_name }}/"><span>{% t 'view_this_room' %}</span><i class="fas fa-angle-right"></i></a>
       </div>
     </div>

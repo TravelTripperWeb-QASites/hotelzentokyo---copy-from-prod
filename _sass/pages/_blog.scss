@@ -96,6 +96,7 @@
         letter-spacing: .05rem;
         border: solid 1px $black;
         border-radius: 0;
+        appearance: none;
         -webkit-appearnce: none;
         &:focus {
           outline: none;

@@ -1,12 +1,17 @@
 {
+  "language": {
+    "required": true,
+    "label": "Select language",
+    "type": "select",
+    "options": "['en','ja']"
+  },
   "title": {
     "required": true,
     "label": "Title"
   },
   "designation": {
     "label": "Designation",
-    "required": true,
-    "localizable": true
+    "required": true
   },
   "url_friendly_name": {
     "type": "url_slug",
@@ -15,29 +20,24 @@
   "job-description": {
     "label": "Job description",
     "type": "richtext",
-    "required": true,
-    "localizable": true
+    "required": true
   },
   "requirements": {
     "label": "Requirements",
     "type": "richtext",
-    "required": true,
-    "localizable": true
+    "required": true
   },
   "qualifications": {
     "label": "Qualifications",
     "type": "richtext",
-    "required": true,
-    "localizable": true
+    "required": true
   },
   "title": {
     "label": "Meta Title",
-    "required": true,
-    "localizable": true
+    "required": true
   },
   "meta_description": {
     "label": "Meta Description",
-    "required": true,
-    "localizable": true
+    "required": true
   }
 }

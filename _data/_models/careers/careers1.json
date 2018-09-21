@@ -1,27 +1,27 @@
 {
-  "url_friendly_name": "operation-manager",
+  "url_friendly_name": "operations-manager",
   "designation_localized": {
-    "en": "Operation Manager",
-    "ja": "Operation Manager"
+    "en": "",
+    "ja": "オペレーション・マネジャー兼支配人"
   },
   "job-description_localized": {
-    "en": "<p><strong>To apply:</strong> Please send your CV to <a href=\"mailto:jobs@senrecube.com\">jobs@senrecube.com</a></p>\n<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras dapibus vulputate diam eu pretium. Mauris elit orci, ultricies id fermentum vel, porta et eros. Vestibulum condimentum lectus in convallis feugiat. Sed vulputate fringilla felis. Aliquam ut arcu et dui feugiat scelerisque eu quis diam. Mauris placerat congue dui sit amet blandit. Phasellus condimentum libero vel velit auctor, sit amet tincidunt velit varius.</p>\n<p>Mauris lacinia porta faucibus. Fusce eu est ac eros vulputate mollis in ac felis. Aenean commodo scelerisque mi sed imperdiet. Donec at hendrerit nisi, eget vestibulum nisi. Sed sit amet magna luctus, facilisis erat quis, sagittis ligula. Aenean dignissim velit quis leo consequat ultricies. Proin quis pretium justo. Vestibulum at eros nisl. Fusce lobortis erat ante, eu cursus sapien molestie at. Pellentesque placerat ante diam, et euismod lacus dictum vel. Phasellus vitae sollicitudin mi.</p>",
-    "ja": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras dapibus vulputate diam eu pretium. Mauris elit orci, ultricies id fermentum vel, porta et eros. Vestibulum condimentum lectus in convallis feugiat. Sed vulputate fringilla felis. Aliquam ut arcu et dui feugiat scelerisque eu quis diam. Mauris placerat congue dui sit amet blandit. Phasellus condimentum libero vel velit auctor, sit amet tincidunt velit varius.</p>\n<p>Mauris lacinia porta faucibus. Fusce eu est ac eros vulputate mollis in ac felis. Aenean commodo scelerisque mi sed imperdiet. Donec at hendrerit nisi, eget vestibulum nisi. Sed sit amet magna luctus, facilisis erat quis, sagittis ligula. Aenean dignissim velit quis leo consequat ultricies. Proin quis pretium justo. Vestibulum at eros nisl. Fusce lobortis erat ante, eu cursus sapien molestie at. Pellentesque placerat ante diam, et euismod lacus dictum vel. Phasellus vitae sollicitudin mi.</p>"
+    "en": "",
+    "ja": "<p>ホテル・地下の飲食店の現場オペレーションをご担当いただきます。</p>\n<ul>\n<li>支配人業務</li>\n<li>将来の多店舗展開に必要な支配人育成業務</li>\n<li>現場でのオペレーション、ならびにアルバイト・パートの方々の教育</li>\n<li>フロント業務（チェックイン／チェックアウト）</li>\n</ul>\n<p>【雇用形態】正社員</p>"
   },
   "requirements_localized": {
-    "en": "<ul>\n<li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>\n<li>Mauris elit orci, ultricies id fermentum vel, porta et eros. Vestibulum condimentum lectus in convallis feugiat.</li>\n<li>Aliquam ut arcu et dui feugiat scelerisque eu quis diam.</li>\n</ul>",
-    "ja": "<ul>\n<li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>\n<li>Mauris elit orci, ultricies id fermentum vel, porta et eros. Vestibulum condimentum lectus in convallis feugiat.</li>\n<li>Aliquam ut arcu et dui feugiat scelerisque eu quis diam.</li>\n</ul>"
+    "en": "",
+    "ja": "<ul>\n<li>日本語（ネィティブレベル）、英語（日常会話レベル）</li>\n<li>接客・サービス業の勤務経験</li>\n<li>基本的PCスキル</li>\n</ul>"
   },
   "qualifications_localized": {
-    "en": "<ul>\n<li>Phasellus condimentum libero vel velit auctor, sit amet tincidunt velit varius.</li>\n<li>Mauris placerat congue dui sit amet blandit.</li>\n<li>Cras dapibus vulputate diam eu pretium.</li>\n<li>Sed vulputate fringilla felis.</li>\n</ul>",
-    "ja": "<ul>\n<li>Phasellus condimentum libero vel velit auctor, sit amet tincidunt velit varius.</li>\n<li>Mauris placerat congue dui sit amet blandit.</li>\n<li>Cras dapibus vulputate diam eu pretium.</li>\n<li>Sed vulputate fringilla felis.</li>\n</ul>"
+    "en": "",
+    "ja": "<ul>\n<li>宿泊施設での勤務経験</li>\n</ul>"
   },
   "meta_description_localized": {
-    "en": "Operation Manager",
-    "ja": "Operation Manager"
+    "en": "",
+    "ja": "オペレーション・マネジャー兼支配人"
   },
   "title_localized": {
-    "en": "Operation Manager",
-    "ja": "Operation Manager"
+    "en": "",
+    "ja": "オペレーション・マネジャー兼支配人"
   }
 }

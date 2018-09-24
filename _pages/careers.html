@@ -1,0 +1,49 @@
+---
+layout: default
+title_localized:
+  en: Careers | Authentic Japan in Modern Tokyo
+  ja: 採用情報
+meta_description_localized:
+  en: Careers
+  ja: 採用情報
+permalink_localized:
+  en: /careers/
+  ja: /careers/
+published_localized:
+  en: true
+  ja: true
+meta_tags:
+  robots:
+---
+
+<!-- Careers Banner -->
+<section class="inner-banner text-center bg-cover mb-5" style="background-image:url('/assets/images/careers/careers-hero.jpg');">
+  <div class="inner-banner-content">
+    {% regionblock page_title, type:header %}
+     <h1 tabindex="0">{% t 'careers' %}</h1>
+    {% endregionblock %}
+  </div>
+</section>
+
+<!-- Careers Content -->
+{% assign careers = site.data._models.careers %}
+<section class="careers-content">
+  {% regionblock page_subtitle, type:header %}
+   <h2 tabindex="0">Join us for these open positions</h2>
+  {% endregionblock %}
+  {% regionblock page_detail, type:html %}
+    <p tabindex="0">We’re hiring at hotel zen tokyo! Please see open positions below and send your CV to <a href="mailto:jobs@senrecube.co">jobs@senrecube.com</a></p>
+  {% endregionblock %}
+  <ul class="job-positions">
+    {% for career in careers %}
+      {% if career.language == site.active_lang %}
+        <li>
+          <a href="{{ page | permalink }}{{ career.url_friendly_name }}/">
+            <i class="fas fa-angle-right"></i>
+            <span>{{ career.designation }}</span>
+          </a>
+        </li>
+      {% endif %}
+    {% endfor %}
+  </ul>
+</section>

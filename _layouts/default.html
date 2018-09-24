@@ -7,7 +7,9 @@
 </head>
 
 <body>
-
+  {% if site.active_lang == "ja" %}
+    <input type="hidden" id="siteLang" value="ja-JP">
+  {% endif %}
   {% if site.data.tracking.analytics.provider and page.analytics != false %}
     {% case site.data.tracking.analytics.provider %}
     {% when "gtm" %}
@@ -15,12 +17,13 @@
     {% endcase %}
   {% endif %}
 
+  <a class="sr-only sr-only-focusable" href="#main">Skip to main content</a>
+
   {% include nav-main.html %}
 
-  <div class="container">
+  <div id="main">
     {{ content }}
   </div>
-
   <footer class="footer">
     {% include footer/custom.html %}
     {% include footer.html %}

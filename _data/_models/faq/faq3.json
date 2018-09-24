@@ -1,0 +1,59 @@
+{
+  "qa_listing_localized": {
+    "en": [
+      {
+        "question": "What room amenities are available? ",
+        "question_id": "roomamenities",
+        "answer": "<p>We have the full set: toothbrush and toothpaste, haircomb, facetowel, towel, razor for men, and (in showers) face cleansing oil, facewash, shampoo and conditioner.</p>"
+      },
+      {
+        "question": "Do you have internet connection? ",
+        "question_id": "internet",
+        "answer": "<p>Yes. We have free wi-fi.</p>"
+      },
+      {
+        "question": "Is there a lift? ",
+        "question_id": "lift",
+        "answer": "<p>Yes</p>"
+      },
+      {
+        "question": "Are pets allowed to stay? ",
+        "question_id": "pets",
+        "answer": "<p>Unfortunately pets are not allowed.</p>"
+      },
+      {
+        "question": "Can you smoke in the hotel? ",
+        "question_id": "smoke",
+        "answer": "<p>You can smoke in the smoking room. You may not smoke anywhere else in the hotel.</p>"
+      }
+    ],
+    "ja": [
+      {
+        "question": "どのようなアメニティーがありますか？",
+        "answer": "<p>シャワーにはオイルクレンジング・洗顔・シャンプー・リンスを用意しております。 各部屋に、タオル、歯ブラシ、歯磨き粉、くし、（男性用）カミソリもございます。</p>",
+        "question_id": "roomamenities"
+      },
+      {
+        "question": "インターネット・無料WiFiはありますか？",
+        "question_id": "internet",
+        "answer": "<p>はい。</p>"
+      },
+      {
+        "question": "エレベーターはありますか？",
+        "question_id": "lift",
+        "answer": "<p>はい</p>"
+      },
+      {
+        "question": "ホテルでの喫煙はできますか？",
+        "question_id": "smoke",
+        "answer": "<p>喫煙室でのみ喫煙いただけます。喫煙室以外での喫煙は一切禁じております。</p>"
+      }
+    ]
+  },
+  "category_order": 3,
+  "category_id": "amenities",
+  "title_localized": {
+    "en": "Facility & Amenities",
+    "ja": "設備とアメニティ"
+  }
+}

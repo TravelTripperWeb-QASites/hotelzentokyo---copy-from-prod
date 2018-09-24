@@ -9,49 +9,101 @@ html {
 body {
   margin: 0;
   padding: 0;
-  color: $text-color;
   font-family: $global-font-family;
-  line-height: 1.5;
+  line-height: 1.5rem;
+  color: $text-color;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  margin: 2rem 0 0.5rem;
-  line-height: 1.2;
+  margin: 0;
   font-family: $header-font-family;
-  font-weight: bold;
 }
 
 h1 {
-  margin-top: 0;
-  font-size: $type-size-3;
+  font-size: $type-size-1;
+  font-weight: 400;
+  line-height: 5rem;
+  color: $white;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+
+  &.lowercase {
+    font-size: $type-size-0;
+    text-transform: lowercase;
+  }
 }
 
 h2 {
-  font-size: $type-size-4;
+  font-size: $type-size-2;
+  font-weight: 400;
+  line-height: 2.5rem;
+  color: $secondary-color;
+  letter-spacing: 1px;
 }
 
 h3 {
-  font-size: $type-size-5;
+  font-size: $type-size-3;
+  font-weight: 400;
+  line-height: 2rem;
+  color: $primary-color;
+  letter-spacing: 1px;
+
+  &.italic {
+    font-style: italic;
+    font-weight: 500;
+  }
 }
 
 h4 {
   font-size: $type-size-6;
+  font-weight: 500;
+  color: $dark-gray;
+  text-transform: uppercase;
+  letter-spacing: .5px;
 }
 
 h5 {
-  font-size: $type-size-6;
+  font-size: $type-size-4;
+  line-height: 1.75;
+  color: $primary-color;
+  letter-spacing: .5px;
 }
 
 h6 {
   font-size: $type-size-6;
+  font-weight: 400;
+}
+
+caption {
+  font-size: $type-size-6;
+  font-weight: 400;
+  color: $black;
 }
 
 small, .small {
-  font-size: $type-size-6;
+  font-size: $type-size-8;
+  font-weight: 400;
+  line-height: 1rem;
+  color: $black;
 }
 
 p {
-  margin-bottom: 1.3rem;
+  margin-bottom: 24px;
+  font-family: $global-font-family;
+  font-size: $type-size-5;
+  line-height: 1.5rem;
+  color: $black;
+  letter-spacing: .5px;
+}
+
+//For text color light & dark states w.r.t above text options
+
+.dark {
+  color: $black !important;
+}
+
+.light {
+  color: $white !important;
 }
 
 u,
@@ -72,6 +124,7 @@ del a {
 a {
   &:hover,
   &:active {
+    text-decoration: none;
     outline: 0;
   }
 }
@@ -80,13 +133,18 @@ a {
 
 ul li,
 ol li {
-  margin-bottom: 0.5rem;
+  margin-bottom: 12px;
+  font-family: $global-font-family;
+  font-size: $type-size-5;
+  line-height: 1.5rem;
+  color: $black;
+  letter-spacing: .5px;
   list-style: none;
 }
 
 li ul,
 li ol {
-  margin-top: 0.5rem;
+  margin-top: .5rem;
   list-style: none;
 }
 
@@ -94,4 +152,12 @@ li ol {
 
 svg:not(:root) {
   overflow: hidden;
+}
+
+#main {
+  margin-top: 63px;
+
+  @include media-breakpoint-up(lg) {
+    margin-top: 128px;
+  }
 }

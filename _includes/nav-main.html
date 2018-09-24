@@ -1,17 +1,31 @@
 {% assign links = site.data.navigation.main %}
 
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" href="/">Bedrock</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-	  <span class="navbar-toggler-icon"></span>
-	</button>
-  <div class="collapse navbar-collapse" id="navbarNav">
-    <ul class="navbar-nav">
-    {% for link in links %}
-      <li class="nav-item{% if page.url == link.url %} active{% endif%}">
-        <a class="nav-link" href="{{ link.url | absolute_url }}">{{ link.title }}{% if page.url == link.url %}<span class="sr-only">(current)</span>{% endif%}</a>
-      </li>
-    {% endfor %}
-    </ul>
-  </div>
-</nav>
+<header>
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <a class="navbar-brand" href="/"><img class="w-100" src="/assets/images/logo.png" alt="Hotel Zen Tokyo" /></a>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav justify-content-center">
+      {% for link in links %}
+        <li class="nav-item{% if page.url == link.url %} active{% endif%}">
+          <a class="nav-link" href="{{ link.url | absolute_url }}">{{ link.title }}{% if page.url == link.url %}<span class="sr-only">(current)</span>{% endif%}</a>
+        </li>
+      {% endfor %}
+        <li>
+          <a class="secondary-btn d-block d-md-none" href="javascript:void(0)" show-booking-widget>Book Now</a>
+        </li>
+      </ul>
+    </div>
+    <div class="form-select">
+      <select class="selectpicker" data-width="fit" id="language1" onchange="location = this.options[this.selectedIndex].value;" aria-label="Select Language">
+        <option {% if site.active_lang == "en" %} selected="true" {% endif %} value="{{ page | permalink: locale: lang }}">English</option>
+        <option {% if site.active_lang == "ja" %} selected="true" {% endif %} value="/ja{{ page | permalink: locale: lang }}">日本語</option>
+      </select>
+    </div>
+    <button class="navbar-toggler collapsed d-md-block d-lg-none" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span> </span>
+      <span> </span>
+      <span> </span>
+  	</button>
+    <a class="secondary-btn d-none d-md-block" href="javascript:void(0)" show-booking-widget>{% t 'book_now' %}</a>
+  </nav>
+</header>

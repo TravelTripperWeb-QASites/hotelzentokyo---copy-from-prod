@@ -1,0 +1,170 @@
+// Home Page Elements
+// ==========================================================================
+
+// Home page carousel styles
+
+.banner {
+  .carousel-item {
+    min-height: 400px;
+    @include media-breakpoint-up(md) {
+      min-height: 688px;
+    }
+    &:after {
+      @include absolute-position(0,0,0,0,auto,auto);
+      z-index: 1;
+      background-color: rgba($black, .2);
+    }
+
+    .banner-content {
+      @include absolute-position(50%,0,auto,0,auto,auto);
+      z-index: 5;
+      margin: 0 auto;
+      text-align: center;
+      transform: translateY(-50%);
+    }
+  }
+  .indicators-control {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 240px;
+    margin: 0 auto;
+
+    .primary-btn {
+      &:hover {
+        svg {
+          border-left-color: $white !important;
+        }
+      }
+      &.previous {
+        &:hover {
+          svg {
+            border-right-color: $white !important;
+          }
+        }
+      }
+    }
+  }
+  .carousel-indicators {
+    position: relative;
+    bottom: 0;
+    align-items: center;
+    height: 48px;
+    margin: 0 auto;
+    font-family: $header-font-family;
+    background-color: $black;
+
+    li {
+      width: 24px;
+      height: auto;
+      margin: 0;
+      font-size: $type-size-5;
+      line-height: normal;
+      color: $white;
+      text-align: center;
+      text-indent: 0;
+      cursor: pointer;
+      background-color: transparent;
+      transition: $global-transition;
+
+      &.active {
+        position: relative;
+        margin-right: 40px;
+
+        &:after {
+          @include absolute-position(14px,auto,auto,24px,40px,1px);
+          background-color: $white;
+        }
+      }
+    }
+  }
+  .carousel-control-prev {
+    top: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 99;
+    width: auto;
+    border: 0;
+    opacity: 1;
+  }
+  .carousel-control-next {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: auto;
+    z-index: 99;
+    width: auto;
+    border: 0;
+    opacity: 1;
+  }
+}
+
+// Home page content styles
+
+.twocol {
+  @include fluid-layout;
+  padding-right: 0;
+  padding-left: 0;
+  .twocol-row {
+    @include make-row;
+    margin-right: 0;
+    margin-left: 0;
+    &:nth-child(even) {
+      .image {
+        @include media-breakpoint-up(md) {
+          order: 2;
+        }
+      }
+    }
+  }
+  .content {
+    @include make-col-ready;
+    padding-right: 0;
+    padding-left: 0;
+    @include media-breakpoint-up(md) {
+      @include make-col(6);
+    }
+    .content-wrap {
+      max-width: 555px;
+      margin: 0 auto;
+      padding: 60px 20px 30px;
+      @include media-breakpoint-up(md) {
+        padding: 100px 15px 76px;
+      }
+      h4 {
+        margin-bottom: 12px;
+        color: $black;
+      }
+      h2 {
+        margin-bottom: 25px;
+      }
+    }
+    .image-wrap {
+      height: 300px;
+      @include media-breakpoint-up(md) {
+        height: 432px;
+      }
+      &.overlap {
+        margin-top: -40px;
+      }
+    }
+    .intro-btn-holder {
+      margin-top: 30px;
+      text-align: right;
+    }
+    .btn-holder {
+      margin-bottom: 25px;
+    }
+  }
+  .image {
+    @include make-col-ready;
+    height: 400px;
+    padding-right: 0;
+    padding-left: 0;
+    @include media-breakpoint-up(md) {
+      @include make-col(6);
+      height: auto;
+    }
+  }
+}

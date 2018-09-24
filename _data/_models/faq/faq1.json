@@ -1,0 +1,99 @@
+{
+  "category_order": 1,
+  "category_id": "reservation",
+  "title_localized": {
+    "en": "Reservation & Checking in",
+    "ja": "ご予約＆チェックイン"
+  },
+  "qa_listing_localized": {
+    "en": [
+      {
+        "question": "Check-In Time?",
+        "question_id": "checkin",
+        "answer": "<p>Check-in time is 4PM to midnight.</p>"
+      },
+      {
+        "question": "Check-Out Time?",
+        "question_id": "checkout",
+        "answer": "<p>Check-out time is 10AM</p>"
+      },
+      {
+        "question": "Is early check-in available?",
+        "question_id": "earlycheckin",
+        "answer": "<p>Early check-in is not available at the moment. In cases of early arrival, it is possible to leave luggage in our storage room for free.</p>\n<p>&nbsp;</p>"
+      },
+      {
+        "question": "Is late check-out available?",
+        "question_id": "latecheckout",
+        "answer": "<p>Late check-out is available at 1,500 JPY per hour per room until 3pm. A one night room fee will be charged if you would like to stay later than 4:00pm. You can leave your luggage in our storage for free if you wish after check-out.</p>"
+      },
+      {
+        "question": "Is reception open 24 hours?",
+        "question_id": "reception",
+        "answer": "<p>Yes reception is open 24 hours</p>"
+      },
+      {
+        "question": "Which languages are spoken at reception? ",
+        "question_id": "language",
+        "answer": "<p>We speak English and Japanese</p>"
+      },
+      {
+        "question": "Can I pay by credit card? ",
+        "question_id": "creditcard",
+        "answer": "<p>Yes. We take credit cards online and at the front desk.</p>"
+      },
+      {
+        "question": "Cancellation policy? ",
+        "question_id": "cancellation",
+        "answer": "<p>Lorem ipsum</p>"
+      },
+      {
+        "question": "Can I leave my luggage before check-in or check-out? ",
+        "question_id": "luggage",
+        "answer": "<p>Yes we'll keep it in our storage</p>"
+      }
+    ],
+    "ja": [
+      {
+        "question": "チェックイン時間について",
+        "question_id": "checkin",
+        "answer": "<p>午後4時から深夜零時です。</p>"
+      },
+      {
+        "question": "チェックアウト時間について",
+        "question_id": "checkout",
+        "answer": "<p>午前10時です。</p>"
+      },
+      {
+        "question": "アーリーチェックインについて",
+        "question_id": "earlycheckin",
+        "answer": "<p>申し訳ございませんがアーリーチェックインはございません。ホテルにお早めに到着される場合は、フロントにてお荷物を預かることは可能です。</p>"
+      },
+      {
+        "question": "レイトチェックアウトについて",
+        "question_id": "latecheckout",
+        "answer": "<p>レイトチェックアウトは、午後3時まで1時間あたり1500円でご利用いただけます。午後4時以降のご滞在は延泊とさせていただきますのでご了承ください。尚、チェックアウト後の荷物の保管は可能ですのでフロントまでお問い合わせください。</p>"
+      },
+      {
+        "question": "フロントの営業時間について",
+        "question_id": "reception",
+        "answer": "<p>フロントは24時間営業しております。</p>"
+      },
+      {
+        "question": "クレジットカードでのお支払いはできますか？",
+        "question_id": "creditcard",
+        "answer": "<p>可能です。</p>"
+      },
+      {
+        "question": "キャンセルポリシーについて",
+        "question_id": "cancellation",
+        "answer": "<p>Lorem Ipsum</p>"
+      },
+      {
+        "question": "チェックイン前またはチェックアウト後に荷物を預けることは可能ですか？",
+        "question_id": "baggage",
+        "answer": "<p>可能です。フロントにて預かります。</p>"
+      }
+    ]
+  }
+}

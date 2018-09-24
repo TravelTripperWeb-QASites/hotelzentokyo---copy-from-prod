@@ -1,0 +1,107 @@
+//Buttons Styles
+//==========================================
+
+.primary-btn {
+  display: inline-block;
+  font-family: $header-font-family;
+  font-size: $type-size-5;
+  font-style: italic;
+  color: $white;
+  letter-spacing: .5px;
+  background-color: $black;
+  border: solid 1px $black;
+  @include transition ($global-transition);
+
+  span {
+    position: relative;
+    top: -4px;
+    display: inline-block;
+    padding: 8px 20px 10px;
+  }
+
+  svg {
+    position: relative;
+    top: 7px;
+    width: 48px !important;
+    height: 36px;
+    padding: 10px 20px 10px 18px;
+    border-left: solid 1px $white;
+  }
+
+  &:hover {
+    color: $black;
+    text-decoration: none;
+    background-color: $white;
+
+    svg {
+      border-left-color: $black;
+    }
+  }
+
+  &.previous {
+    svg {
+      padding: 10px 18px 10px 20px;
+      border-right: solid 1px $white;
+      border-left: 0;
+    }
+
+    &:hover {
+      svg {
+        border-right-color: $black;
+      }
+    }
+  }
+  &.inverse {
+    color: $black;
+    background-color: $white;
+
+    svg {
+      border-left-color: $black;
+    }
+
+    &:hover {
+      color: $white !important;
+      background-color: $black;
+
+      svg {
+        border-left-color: $white;
+      }
+    }
+    &.previous {
+      svg {
+        border-right: solid 1px $black;
+      }
+
+      &:hover {
+        svg {
+          border-right-color: $white;
+        }
+      }
+    }
+  }
+}
+
+.secondary-btn {
+  display: inline-block;
+  padding: 11px 19px;
+  font-family: $header-font-family;
+  font-size: $type-size-5;
+  color: $tertiary-color;
+  text-transform: uppercase;
+  letter-spacing: .5px;
+  background-color: $black;
+  border: solid 1px $tertiary-color;
+  @include transition ($global-transition);
+
+  &:hover {
+    color: $black;
+    text-decoration: none;
+    background-color: $tertiary-color;
+    border: solid 1px $black;
+  }
+}
+
+[disabled],disabled,.disabled {
+  cursor: not-allowed !important;
+  opacity: .3;
+}

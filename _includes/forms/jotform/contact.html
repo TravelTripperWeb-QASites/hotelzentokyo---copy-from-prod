@@ -1,18 +1,30 @@
 <form action="https://submit.jotform.me/submit/{{ site.data.forms.jotform.contact-id }}/" method="post" name="form_{{ site.data.forms.jotform.contact-id }}"
     id="{{ site.data.forms.jotform.contact-id }}" accept-charset="utf-8">
     <input type="hidden" name="formID" value="{{ site.data.forms.jotform.contact-id }}">
-    <label>Name*</label>
-    <input type="text" id="input_3" name="q3_input3" placeholder="Your Name" required>
-    <label>Email Address*</label>
-    <input type="email" id="input_4" name="q4_input4" placeholder="Your Email" required>
-    <label>Message</label>
-    <textarea id="input_5" name="q5_input5" cols="40" rows="8"></textarea>
-    <button type="submit" id="input_2">Submit</button>
+    <div class="form-group two">
+      <div class="input-block">
+        <input type="text" class="form-control" placeholder="{% t 'first_name' %} *" aria-label="First Name" title="First Name" id="input_3" name="q3_firstName" required>
+      </div>
+      <div class="input-block">
+        <input type="text" class="form-control" placeholder="{% t 'surname' %}" aria-label="Please enter your Surname" title="Please enter your Surname" id="input_6" name="q6_enterYour">
+      </div>
+      <div class="input-block">
+        <input type="email" class="form-control" placeholder="{% t 'email' %} *" aria-label="Please enter your Email" title="Please enter your Email" id="input_4" name="q4_email" required>
+      </div>
+      <div class="input-block">
+        <input type="text" class="form-control" placeholder="{% t 'subject' %} *" aria-label="Subject" title="Subject" id="input_7" name="q7_subject" required>
+      </div>
+    </div>
+    <div class="form-group">
+      <textarea placeholder="{% t 'your_message' %} *" id="input_5" name="q5_message" aria-label="Enter your message" required></textarea>
+    </div>
+    <div class="form-check custom-checkbox">
+      <input class="custom-control-input" type="checkbox" value="Accept" id="tnc" name="q8_terms[]" required>
+      <label class="custom-control-label" for="tnc">
+       {% t 'privacy_text' %}
+      </label>
+    </div>
+    <button class="primary-btn" id="contact-btn" type="submit" disabled><span>Submit</span><i class="fas fa-angle-right"></i></button>
     <input type="hidden" id="simple_spc" name="simple_spc" value="{{ site.data.forms.jotform.contact-id }}">
 
-    <script type="text/javascript">
-        document.getElementById("si" + "mple" + "_spc").value = "{{ site.data.forms.jotform.contact-id }}-{{ site.data.forms.jotform.contact-id }}";
-    </script>
 </form>
-
-<script type="text/javascript">JotForm.ownerView=true;</script>

@@ -1,23 +1,55 @@
-main:
-  - title: About
-    url: /about/
-  - title: Amenities
-    url: /amenities/
-  - title: Attractions
-    url: /attractions/
-  - title: Rooms
-    url: /rooms/
-  - title: Offers
-    url: /offers/
-  - title: Location
-    url: /location/
-  - title: Dining
-    url: /dining/
-  - title: Events
-    url: /events/
-  - title: Gallery
-    url: /gallery/
-  - title: Blog
-    url: /blog/
-  - title: Contact
-    url: /contact/
+main_localized:
+  en:
+    - title: Rooms
+      url: /rooms/
+    - title: Location
+      url: /location/
+    - title: Blog
+      url: /blog/
+    - title: Contact
+      url: /contact/
+  ja:
+    - title: ご宿泊
+      url: /ja/rooms/
+    - title: ロケーション
+      url: /ja/location/
+    - title: ブログ
+      url: /blog/
+    - title: 接触
+      url: /ja/contact/
+
+footer_localized:
+  en:
+    - title: Rooms
+      url: /rooms/
+    - title: Blog
+      url: /blog/
+    - title: Careers
+      url: /careers/
+    - title: Privacy Policy
+      url: /privacy/
+    - title: Location
+      url: /location/
+    - title: Contact
+      url: /contact/
+    - title: FAQ
+      url: /faq/
+    - title: Terms of Use
+      url: /terms/
+  ja:
+    - title: ご宿泊
+      url: /ja/rooms/
+    - title: ブログ
+      url: /ja/blog/
+    - title: 採用情報
+      url: /ja/careers/
+    - title: プライバシーポリシー
+      url: /ja/privacy/
+    - title: ロケーション
+      url: /ja/location/
+    - title: 接触
+      url: /ja/contact/
+    - title: よくあるご質問
+      url: /ja/faq/
+    - title: 利用規約・宿泊約款
+      url: /ja/terms/

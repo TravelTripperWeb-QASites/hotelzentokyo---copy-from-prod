@@ -2,13 +2,15 @@
 title: "Tokyo Hotels"
 title_separator: "|"
 name: "Hotel Zen Tokyo"
-description: "Site default description."
-url: "https://hotelzentokyo.com"
+description: "Hotel Zen Tokyo"
+url: "https://www.hotelzentokyo.com"
 repository: "TravelTripperWeb-Sites/hotelzentokyo"
+email: contact@senrecube.com
 
 # Language Settings
 default_lang: 'en'
-languages: ['en']
+languages: ['en','ja']
+exclude_from_localizations: ["assets", "CNAME"]
 
 # Reading Files
 include:
@@ -44,7 +46,9 @@ keep_files:
   - .git
   - assets
 rsync_copy:
-  - _assets
+  - assets
+  - _pages
+  - _sass
 encoding: "utf-8"
 markdown_ext: "markdown,mkdown,mkdn,mkd,md"
 
@@ -74,21 +78,24 @@ sass:
 permalink: pretty
 timezone: # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
-# data_paginate:
-#   per_page: 5
-#   data: 'blog'
-#   path: 'blog/page:num'
-#   pagination_template: 'blog/index.html'
-#   sort_field: 'date'
-#   sort_reverse: true
+data_paginate:
+  per_page: 5
+  data: 'blog'
+  path: 'blog/page:num'
+  pagination_template: 'blog/index.html'
+  sort_field: 'date'
+  sort_reverse: true
 
 page_gen: #
   # - data: 'attractions'
   #   template: 'attraction-single'
   #   dir: 'attractions'
-  # - data: 'blog'
-  #   template: 'post-single'
-  #   dir: 'blog'
+    - data: 'blog'
+      template: 'post-single'
+      dir: 'blog'
+    - data: 'categories'
+      template: 'category-single'
+      dir: 'blog/category'
   # - data: 'events'
   #   template: 'event-single'
   #   dir: 'events'
@@ -101,3 +108,9 @@ page_gen: #
   # - data: 'specials'
   #   template: 'special-single'
   #   dir: 'specials'
+    - data: 'careers'
+      template: 'single-careers'
+      dir: 'careers'
+    - data: 'rooms'
+      template: 'room-single'
+      dir: 'rooms'

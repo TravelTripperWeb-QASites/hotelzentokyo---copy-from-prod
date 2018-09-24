@@ -1,0 +1,19 @@
+{
+  "name": {
+    "label": "Title",
+    "required": true,
+    "localizable": true
+  },
+  "image": {
+    "label": "Banner Image",
+    "type": "image",
+    "multiple": true,
+    "required": true
+  },
+  "imageja": {
+    "label": "Banner Image for JA",
+    "type": "image",
+    "multiple": true,
+    "required": true
+  }
+}

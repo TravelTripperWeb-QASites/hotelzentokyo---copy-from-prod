@@ -1,28 +1,36 @@
 ---
 layout: default
-title: Contact
-meta_description:
-permalink: /contact/
+title_localized:
+  en: Contact Us | Authentic Japan in Modern Tokyo
+  ja: お問い合わせ
+meta_description_localized:
+  en: Contact Us
+  ja: お問い合わせ
+permalink_localized:
+  en: /contact/
+  ja: /contact/
+published_localized:
+  en: true
+  ja: true
 meta_tags:
   robots:
 ---
 
-{% comment %}
+<!-- Contact Banner -->
+<section class="inner-banner text-center bg-cover mb-5" style="background-image:url('/assets/images/contact/contact-hero.jpg');">
+  <div class="inner-banner-content">
+   {% regionblock page_title, type:header %}
+    <h1 tabindex="0">{% t 'contact' %}</h1>
+   {% endregionblock %}
+  </div>
+</section>
 
-  Name:
+<!-- Contact Form -->
+<section class="contact-form">
+  {% regionblock page_subtitle, type:header %}
+   <h2 tabindex="0">{% t 'at_your_service' %}</h2>
+  {% endregionblock %}
+  {% include forms/jotform/contact.html %}
+</section>
 
-    Contact Page
-
-  Description:
-
-    Static content that can be modified by editable regions.
-
-  Usage:
-
-    Text   - {% regionblock region_name, type:html %}{% endregionblock %}
-
-    Header - {% regionblock region_name, type:header %}{% endregionblock %}
-
-    Image  - {% regionblock region_name, type:image %}{% endregionblock %}
-
-{% endcomment %}
+{% include forms/jotform/newsletter.html %}

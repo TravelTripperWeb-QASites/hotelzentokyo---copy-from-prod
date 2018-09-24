@@ -1,14 +1,27 @@
-<form action="https://submit.jotform.me/submit/{{ site.data.forms.jotform.newsletter-id }}/" method="post" name="form_{{ site.data.forms.jotform.newsletter-id }}"
-    id="{{ site.data.forms.jotform.newsletter-id }}" accept-charset="utf-8">
-    <input type="hidden" name="formID" value="{{ site.data.forms.jotform.newsletter-id }}">
-    <label>Email Address*</label>
-    <input type="email" id="input_3" name="q3_input3" placeholder="Your Email" required>
-    <button type="submit" id="input_2">Submit</button>
-    <input type="hidden" id="simple_spc" name="simple_spc" value="{{ site.data.forms.jotform.newsletter-id }}">
+<!-- Newletter Signup Form -->
 
-    <script type="text/javascript">
-        document.getElementById("si" + "mple" + "_spc").value = "{{ site.data.forms.jotform.newsletter-id }}-{{ site.data.forms.jotform.newsletter-id }}";
-    </script>
-</form>
+<div class="signup" style="background-image:url('/assets/images/newsletter-banner.jpg')">
+  <div class="wrapper">
+    <h2 tabindex="0">{% t 'stay_in_the_know' %}</h2>
+    <h3 tabindex="0">{% t 'newsletter_sign_text' %}</h3>
+    <form action="https://submit.jotform.me/submit/{{ site.data.forms.jotform.newsletter-id }}/" method="post" name="form_{{ site.data.forms.jotform.newsletter-id }}"
+        id="{{ site.data.forms.jotform.newsletter-id }}" accept-charset="utf-8">
+        <input type="hidden" name="formID" value="{{ site.data.forms.jotform.newsletter-id }}">
+        <div class="input-group">
+          <input type="email" id="signup-email" name="q1_email" class="form-control" placeholder="{% t 'email' %}" aria-label="Email Address" required>
+          <div class="input-group-append">
+            <button class="btn btn-outline-secondary" type="submit" title="Submit"><i class="fas fa-angle-right"></i></button>
+          </div>
+        </div>
+        <div class="custom-control custom-checkbox">
+          <input type="checkbox" name="q2_typeA[]" class="custom-control-input" id="signup-terms" required>
+          <label class="custom-control-label" for="signup-terms">{% t 'privacy_text' %}</label>
+        </div>
+        <input type="hidden" id="simple_spc" name="simple_spc" value="{{ site.data.forms.jotform.newsletter-id }}">
 
-<script type="text/javascript">JotForm.ownerView=true;</script>
+        <script type="text/javascript">
+            document.getElementById("si" + "mple" + "_spc").value = "{{ site.data.forms.jotform.newsletter-id }}-{{ site.data.forms.jotform.newsletter-id }}";
+        </script>
+    </form>
+  </div>
+</div>

@@ -1,20 +1,49 @@
 ---
 layout: default
-title: Rooms
-meta_description:
-permalink: /rooms/
+title_localized:
+  en: zen pods & rooms
+  ja: 禅ポッド＆部屋
+meta_description_localized:
+  en: zen pods & rooms
+  ja: 禅ポッド＆部屋
+permalink_localized:
+  en: /rooms/
+  ja: /rooms/
+published_localized:
+  en: true
+  ja: true
 meta_tags:
   robots:
 ---
 
-{% comment %}
+<!-- Rooms Banner -->
+<section class="inner-banner text-center bg-cover" style="background-image:url('/assets/images/rooms/rooms-banner.jpg');">
+  <div class="inner-banner-content">
+    {% regionblock rooms_banner_heading, type:header %}
+      <h1 tabindex="0">{% t 'rooms_stay' %}</h1>
+    {% endregionblock %}
 
-  Name:
+  </div>
+</section>
 
-    Rooms Listing Page
+{% assign rooms = site.data._models.rooms | sort: 'order' reverse %}
+<!-- Rooms Listing -->
+<section class="rooms-list-wrap">
+  <div class="rooms-list-inner">
+    {% for room in rooms %}
+    <div class="room-list-block">
+      <div class="image bg-cover" style="background-image:url({{ room.image.url }} );">
+      </div>
+      <div class="content">
+        <h4 tabindex="0">{{ room.room_title }} - <span>{{ room.room_type }}<span></h4>
+        <div tabindex="0">
+          {{ room.short_info }}
+        </div>
+        <a class="primary-btn inverse" href="{{ page | permalink }}{{ room.url_friendly_name }}/"><span>{% t 'view_this_room' %}</span><i class="fas fa-angle-right"></i></a>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</section>
 
-  Description:
-
-    Display room list from RezTrip.
-
-{% endcomment %}
+{% include forms/jotform/newsletter.html %}

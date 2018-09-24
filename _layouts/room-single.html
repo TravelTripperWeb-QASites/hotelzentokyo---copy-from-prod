@@ -1,0 +1,93 @@
+---
+layout: default
+---
+
+{% if site.active_lang == "ja" %}
+ {% assign lang_url = '/ja' %}
+{% endif %}
+
+{% assign rooms = site.data._models.rooms | sort: 'order' reverse %}
+<!-- Room Banner -->
+<section class="inner-banner text-center bg-cover" style="background-image:url('{{ page.banner_image.url }}');">
+  <div class="inner-banner-content">
+    <h1 tabindex="0">{{ page.room_title }}</h1>
+  </div>
+</section>
+
+<!-- Rooms Subnav -->
+<div class="inner-sub-nav text-center">
+  <ul>
+    {% for room in rooms %}
+    <li><a href="/rooms/{{ room.url_friendly_name }}/" class="{% if page.url_friendly_name == room.url_friendly_name %} active{% endif %}">{{ room.room_title }} - {{ page.room_type }}</a></li>
+    {% endfor %}
+  </ul>
+</div>
+
+<!-- Room Intro -->
+<section class="room-details-intro m-0">
+  <div class="content">
+    <div class="content-inner">
+      <h2 tabindex="0">{{ page.room_title }} - <span>{{ page.room_type }}</span></h2>
+      <p tabindex="0">{{ page.bed_info }}</p>
+      <div tabindex="0">
+        {{ page.long_info }}
+      </div>
+    </div>
+    {% if page.book_room != "" %}
+    <a class="primary-btn" href="{{ page.book_room }}" target="_blank"><span>{% t 'book_room' %}</span><i class="fas fa-angle-right"></i></a>
+    {% endif %}
+  </div>
+  <div class="image bg-cover" style="background-image:url('{{ page.intro_image.url }}');">
+  </div>
+</section>
+
+<!-- Room Amenities -->
+<section class="room-details-amenities d-flex align-items-center">
+  <div class="image bg-cover" style="background-image:url('{{ page.amenities_image.url }}');">
+  </div>
+  <div class="content">
+    <h4 tabindex="0">{% t 'amenities' %}</h4>
+    <h3 class="italic" tabindex="0">{{ page.amenities_text }}</span></h3>
+    <div class="inner-row m-0">
+      <div class="left">
+        <p tabindex="0">{% t 'within_the_pod' %}:</p>
+        <div tabindex="0">
+          {{ page.amenities_within_pod }}
+        </div>
+      </div>
+      <div class="right">
+        <p tabindex="0">{% t 'access_to_facilities' %}:</p>
+        <div tabindex="0">
+          {{ page.amenities_access_facilities }}
+        </div>
+        <p>{% t 'go_room_link' %}</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- More Rooms -->
+<section class="more-rooms-wrap">
+  <h4 tabindex="0">hotel zen tokyo</h4>
+  <h2 tabindex="0">discover more rooms & pods</h2>
+  {% for room in rooms %}
+    {% if page.url_friendly_name != room.url_friendly_name %}
+    <div class="more-rooms-inner align-items-center">
+      <div class="content">
+        <h4 tabindex="0">room {{ forloop.index }}</h4>
+        <h3 tabindex="0">{{ room.room_title }} - <span>{{ room.room_type }}</span></h3>
+        <div tabindex="0">
+          {{ room.short_info }}
+        </div>
+      </div>
+      <div class="image bg-cover" style="background-image:url({{ room.image.url }} );">
+        <a class="primary-btn inverse" href="{{ lang_url }}/rooms/{{ room.url_friendly_name }}/"><span>{% t 'discover_more' %}</span><i class="fas fa-angle-right"></i></a>
+      </div>
+    </div>
+    {% endif %}
+  {% endfor %}
+</section>
+
+{% include stay-zen.html %}
+
+{% include forms/jotform/newsletter.html %}

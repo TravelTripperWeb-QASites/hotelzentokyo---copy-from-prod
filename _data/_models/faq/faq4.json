@@ -1,0 +1,49 @@
+{
+  "qa_listing_localized": {
+    "en": [
+      {
+        "question": "How do I get there from Narita airport? ",
+        "question_id": "naritaairport",
+        "answer": "<p>BY METRO: Take the Keisei Narita Skyaccess line that directly connects to Asakusa line, no need to transfer. Get off at Ningyocho station, take the exit A6 elevator and you'll see our hotel to your left.</p>\n<p>BY BUS: There is a Narita airport limousine bus that leaves the airport and stops at Tokyo City Air Terminal(\"TCAT\") which is a five minute walk away from our hotel.</p>"
+      },
+      {
+        "question": "How do I get there from Haneda airport? ",
+        "question_id": "hanedaairport",
+        "answer": "<p>BY METRO: Take the Keikyu-Kuko line that directly connects to Asakusa line, no need to transfer. Get off at Ningyocho station, take the exit A6 elevator and you'll see our hotel to your left.</p>\n<p>BY BUS: There is a Haneda airport limousine bus that leaves the airport and stops at Tokyo City Air Terminal(\"TCAT\") which is a five minute walk away from our hotel.</p>"
+      },
+      {
+        "question": "What is the closest train station from your hotel? ",
+        "question_id": "train",
+        "answer": "<p>Ningyocho and Suitengumae stations. We are 1 minute walk away from Ningyocho, and 5 minutes walk away from Suitengumae.</p>"
+      },
+      {
+        "question": "What metro lines are closest from your hotel? ",
+        "question_id": "metro",
+        "answer": "<p>Nngyocho has Asakusa line, Hibiya line. Suitengumae has Hanzomoline (that directly connects to Denentoshi-line)</p>"
+      }
+    ],
+    "ja": [
+      {
+        "question": "成田空港からのアクセスを教えてください",
+        "question_id": "naritaairport",
+        "answer": "<p>電車の場合は空港から都営浅草線一本で人形町駅まで。バスご利用の場合は空港からリムジンバスで水天宮駅直結のT-CATまでお越しいただき、水天宮前からは徒歩5分になります。</p>"
+      },
+      {
+        "question": "羽田空港からのアクセスを教えてください",
+        "question_id": "hanedaairport",
+        "answer": "<p>電車の場合は空港から都営浅草線一本で人形町駅まで。バスご利用の場合は空港からリムジンバスで水天宮駅直結のT-CATまでお越しいただき、水天宮前からは徒歩5分になります。</p>"
+      },
+      {
+        "question": "最寄駅はどこですか？",
+        "question_id": "train",
+        "answer": "<p>人形町（徒歩1分）、水天宮（徒歩5分）になります。</p>"
+      }
+    ]
+  },
+  "category_order": 4,
+  "category_id": "access",
+  "title_localized": {
+    "en": "Access",
+    "ja": "アクセス"
+  }
+}

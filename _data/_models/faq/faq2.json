@@ -1,0 +1,84 @@
+{
+  "qa_listing_localized": {
+    "en": [
+      {
+        "question": "What is the difference between room options?",
+        "question_id": "roomoptions",
+        "answer": "<p>Room options vary depending on the size of bed (single or semidouble) and general room size. For details please refer to ROOMS (link).</p>"
+      },
+      {
+        "question": "Are there rooms for more than one person?",
+        "question_id": "personcount",
+        "answer": "<p>Unfortunately no. All rooms are for one person.</p>"
+      },
+      {
+        "question": "Is breakfast provided?",
+        "question_id": "breakfast",
+        "answer": "<p>Yes, it's included in the room plan.</p>"
+      },
+      {
+        "question": "Do rooms come with bath or shower?",
+        "question_id": "bath",
+        "answer": "<p>No. There are gender-segregated communal showers and bathrooms.</p>"
+      },
+      {
+        "question": "Does the room come with a lock?",
+        "question_id": "lock",
+        "answer": "<p>You can lock the room door when leaving the pod (e.g., you can lock your belogingings in the pod) but you can't lock your door when you're in the pod. This is according to the capsule hotel regulations. The pod comes with a safe for locking your valuables and you'll also get a private locker to lock up all other belongings.</p>"
+      },
+      {
+        "question": "Is there a safe? ",
+        "question_id": "safe",
+        "answer": "<p>Yes all rooms comes with a safe for you to leave your valuables</p>"
+      },
+      {
+        "question": "Where can I leave my luggage? ",
+        "question_id": "leaveluggage",
+        "answer": "<p>You can leave your luggage in your personal locker that you're given access to on your room floor.</p>\n<p>Lockers are spacious and fit suitcases and backpages. For larger luggage we can keep them at reception.</p>"
+      }
+    ],
+    "ja": [
+      {
+        "question": "部屋の種類について",
+        "question_id": "roomopts",
+        "answer": "<p>部屋のサイズやベッドのサイズが異なる部屋タイプを複数用意しております。 詳しくはホームページのROOMSをご参照ください。</p>"
+      },
+      {
+        "question": "二人以上が利用できる部屋はありますか？",
+        "answer": "<p>二人以上が利用できる部屋はありますか？</p>",
+        "question_id": "personcount"
+      },
+      {
+        "question": "朝食は提供されていますか",
+        "question_id": "breakfast",
+        "answer": "<p>はい。宿泊プランに含まれています。</p>"
+      },
+      {
+        "question": "客室にバスルーム・シャワーはついていますか？",
+        "question_id": "bath",
+        "answer": "<p>客室にはございません。男女別、共用シャワー・バスルームがございます。</p>"
+      },
+      {
+        "question": "部屋のドアの鍵について",
+        "question_id": "lock",
+        "answer": "<p>部屋を退室する時は鍵をかけれますが、部屋の中にいらっしゃる際は鍵をかけることができません。</p>\n<p>カプセルホテルの規制上の仕様になりますためご理解のほど何卒宜しくお願いいたします。</p>"
+      },
+      {
+        "question": "部屋に金庫はありますか？",
+        "question_id": "safe",
+        "answer": "<p>ございます。パソコンやタブレットも入るサイズのものがございます。</p>"
+      },
+      {
+        "question": "荷物はどこに置けますか？",
+        "question_id": "leaveluggage",
+        "answer": "<p>鍵付きプライベートロッカーにて保管いただけます。</p>\n<p>ロッカーはスーツケースも入るサイズになっておりますが、ロッカーに入らないサイズのお荷物の際はフロントにてお預かりいたします。</p>"
+      }
+    ]
+  },
+  "category_order": 2,
+  "category_id": "room",
+  "title_localized": {
+    "en": "Room",
+    "ja": "ルーム"
+  }
+}

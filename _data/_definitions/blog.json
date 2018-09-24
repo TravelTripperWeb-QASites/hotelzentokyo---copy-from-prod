@@ -1,0 +1,54 @@
+{
+  "title": {
+    "label": "Post Title",
+    "required": true
+  },
+  "short_description": {
+    "label": "Short Description",
+    "type": "text",
+    "required": true
+  },
+  "seo_title": {
+    "label": "Meta Title",
+    "type": "text"
+  },
+  "seo_description": {
+    "label": "Meta Description",
+    "type": "text"
+  },
+  "url_friendly_name": {
+    "label": "URL Friendly Name",
+    "type": "url_slug",
+    "required": true
+  },
+  "date": {
+    "label": "Date Posted",
+    "type": "date",
+    "required": true
+  },
+  "post_content": {
+    "label": "Post Content",
+    "type": "richtext",
+    "required": true
+  },
+  "post_more_content": {
+    "label": "Post More Content",
+    "type": "richtext"
+  },
+  "image": {
+    "label": "Featured Image",
+    "type": "image",
+    "required": true
+  },
+  "collage_image": {
+    "label": "Collage Images",
+    "type": "image",
+    "multiple": "true"
+  },
+  "category": {
+    "label": "Choose Category",
+    "type": "model",
+    "display_field": "title",
+    "model_name": "categories"
+  }
+}

@@ -1,2 +1,160 @@
 // Shared Page Elements
 // ==========================================================================
+
+.bg-cover {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.bg-bottom {
+  @extend .bg-cover;
+  background-position: center bottom;
+}
+
+// Inner banner styles
+.inner-banner {
+  height: 344px;
+  margin-bottom: 24px;
+  @include bg-cover;
+  .inner-banner-content {
+    @include vertical-center;
+    padding: 0 15px;
+    h3 {
+      max-width: 715px;
+      margin: 8px auto 0;
+      color: $white;
+    }
+
+    h1 {
+      text-transform: lowercase;
+    }
+  }
+}
+
+//Full screen banner
+.banner-fullscreen {
+  @include fluid-layout;
+  position: relative;
+  height: calc(100vh - 63px);
+  padding: 0;
+  @include bg-cover;
+
+  @include media-breakpoint-up(lg) {
+    height: calc(100vh - 128px);
+  }
+
+  .wrapper {
+    @include vertical-center;
+    z-index: 2;
+    color: $white;
+    text-align: center;
+
+    h6 {
+      margin-bottom: 40px;
+      text-transform: uppercase;
+    }
+    h1 {
+      margin-bottom: 40px;
+    }
+  }
+
+  &:after {
+    @include absolute-position(0,0,0,0,auto,auto);
+    z-index: 1;
+    background-color: rgba($black, .3);
+  }
+}
+
+// Newsletter signup cross-cell
+.signup {
+  @include fluid-layout;
+  @include bg-cover;
+  height: 480px;
+
+  .wrapper {
+    @include fixed-width-content;
+    @include vertical-center;
+    text-align: center;
+
+    h2 {
+      display: inline-block;
+      padding: 40px 50px;
+      color: $white;
+      text-transform: uppercase;
+      background-color: $black;
+    }
+
+    h3 {
+      display: inline-block;
+      padding: 30px;
+      font-style: italic;
+      color: $white;
+    }
+
+    .input-group {
+      max-width: 288px;
+      margin: 0 auto;
+    }
+
+    input[type='email'] {
+      padding: 12px 60px 12px 20px;
+      font-family: $header-font-family;
+      font-size: $type-size-5;
+      font-style: italic;
+      letter-spacing: .5px;
+      border: 0;
+      border-radius: 0;
+
+      &:focus {
+        z-index: 0;
+      }
+    }
+
+    .custom-checkbox {
+      max-width: 248px;
+      margin: 10px auto;
+      font-family: $header-font-family;
+      font-size: $type-size-7;
+      color: $white;
+
+      input[type='checkbox'] {
+        background-color: transparent;
+        border: solid 1px $white;
+        border-radius: 0;
+      }
+    }
+
+    .custom-control-label {
+      &::before {
+        background-color: transparent;
+        border: solid 1px $white;
+        border-radius: 0;
+      }
+
+      a {
+        color: $white;
+        text-decoration: underline;
+      }
+    }
+
+    button {
+      position: absolute;
+      top: 5px;
+      right: 5px;
+      padding: 6px 15px 6px 20px;
+      background-color: $white;
+      border: 0;
+      border-left: solid 1px $dark-gray;
+
+      &:hover {
+        color: $black;
+        background-color: transparent;
+      }
+    }
+  }
+}
+
+.pushleft {
+  margin-left: -6px;
+}

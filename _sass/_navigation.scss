@@ -3,6 +3,9 @@
 
 // Removes margins, padding, and bullet points from navigation lists
 nav {
+  @include fixed-width-layout;
+  background: $white;
+
   ul {
     margin: 0;
     padding: 0;
@@ -26,5 +29,237 @@ nav {
   li ol,
   li ul {
     margin-top: 0;
+  }
+}
+
+.navbar-brand {
+  width: 140px;
+  order: 1;
+
+  @include media-breakpoint-up(sm) {
+    width: 235px;
+  }
+}
+
+.navbar-collapse {
+  order: 5;
+
+  @include media-breakpoint-up(lg) {
+    order: 2;
+  }
+}
+
+.navbar {
+  padding: 27px 15px;
+  @include transition ($global-transition);
+
+  .navbar-nav {
+    margin: 0 auto;
+
+    .nav-item {
+      text-align: center;
+
+      @include media-breakpoint-up(lg) {
+        text-align: left;
+      }
+
+      .nav-link {
+        margin: 0 13px;
+        padding: 10px 3px 12px;
+        font-family: $header-font-family;
+        font-size: $type-size-6;
+        color: $black;
+        text-transform: uppercase;
+        letter-spacing: .5px;
+        border-top: solid 1px transparent;
+        border-bottom: solid 1px transparent;
+        @include transition ($global-transition);
+
+        @include media-breakpoint-up(lg) {
+          padding: 3px 3px 4px;
+        }
+      }
+
+      &.active, &:hover {
+        .nav-link {
+          border-top: solid 1px $black;
+          border-bottom: solid 1px $black;
+        }
+      }
+    }
+  }
+
+  .secondary-btn {
+    max-width: 150px;
+    margin: 10px auto;
+    text-align: center;
+    order: 4;
+
+    @include media-breakpoint-up(md) {
+      max-width: auto;
+      margin: 0;
+    }
+  }
+
+  .navbar-toggler {
+    position: relative;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    order: 4;
+
+    span {
+      position: relative;
+      left: 0;
+      display: block;
+      width: 25px;
+      height: 2px;
+      margin-top: 6px;
+      margin-bottom: 6px;
+      background-color: $text-color;
+      opacity: 1;
+      -webkit-transform: rotate(0deg);
+      -moz-transform: rotate(0deg);
+      -o-transform: rotate(0deg);
+      transform: rotate(0deg);
+
+      &:nth-child(1), &:nth-child(3) {
+        -webkit-transition: transform .35s ease-in-out;
+        -moz-transition: transform .35s ease-in-out;
+        -o-transition: transform .35s ease-in-out;
+        transition: transform .35s ease-in-out;
+      }
+    }
+
+    &:not(.collapsed) {
+      span {
+        &:nth-child(1) {
+          position: absolute;
+          top: 5px;
+          left: 0;
+          opacity: .9;
+          -webkit-transform: rotate(135deg);
+          -moz-transform: rotate(135deg);
+          -o-transform: rotate(135deg);
+          transform: rotate(135deg);
+        }
+
+        &:nth-child(2) {
+          height: 12px;
+          visibility: hidden;
+          background-color: transparent;
+        }
+
+        &:nth-child(3) {
+          position: absolute;
+          top: 5px;
+          left: 0;
+          opacity: .9;
+          -webkit-transform: rotate(-135deg);
+          -moz-transform: rotate(-135deg);
+          -o-transform: rotate(-135deg);
+          transform: rotate(-135deg);
+        }
+      }
+    }
+
+    @include media-breakpoint-up(lg) {
+      order: 4;
+    }
+  }
+}
+
+.scroll-head {
+  border-bottom: solid 10px $tertiary-color;
+
+  .navbar {
+    padding: 6px 15px;
+  }
+
+  .navbar-brand {
+    width: 160px;
+    @include transition($global-transition);
+
+    @include media-breakpoint-up(sm) {
+      width: 196px;
+    }
+  }
+}
+
+
+//Select menu styling
+.bootstrap-select {
+
+  .dropdown-toggle {
+    &::after {
+      vertical-align: .1em;
+    }
+  }
+  .dropdown-menu {
+    left: 11px;
+    border-radius: 0;
+
+    .dropdown-item {
+      &.active, &:active {
+        background-color: $gray;
+      }
+    }
+  }
+}
+
+.btn-transparent {
+  display: block;
+  width: 130px;
+  height: fit-content;
+  margin-top: 0;
+  margin-left: 10px;
+  padding: 0;
+  font-family: $header-font-family;
+  font-size: $type-size-8;
+  color: $black !important;
+  text-align: center;
+  text-transform: uppercase;
+  background: transparent;
+  border: 0;
+
+  @include media-breakpoint-up(sm) {
+    margin-top: -20px;
+    font-size: $type-size-6;
+  }
+
+  @include media-breakpoint-up(lg) {
+    margin-top: -27px;
+  }
+
+  &:before {
+    position: relative;
+    top: 3px;
+    display: none;
+    width: 14px;
+    height: 14px;
+    margin-right: 3px;
+    content: '';
+    background: url('/assets/images/globe-dark.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    @include media-breakpoint-up(sm) {
+      display: inline-block;
+      width: 16px;
+      height: 16px;
+      margin-right: 7px;
+    }
+  }
+}
+
+.form-select {
+  margin-top: -6px;
+  margin-right: 15px;
+  order: 3;
+
+  @include media-breakpoint-up(lg) {
+    margin-top: 0;
+    margin-right: 30px;
+    order: 3;
   }
 }

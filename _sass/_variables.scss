@@ -1,7 +1,6 @@
 // Variables
 // ==========================================================================
 
-
 // Typography
 $font-size-base: 1rem !default;
 
@@ -11,13 +10,16 @@ $header-font-family: 'EB Garamond', serif !default;
 $caption-font-family: $header-font-family !default;
 
 // Type scale
+$type-size-0: 5rem !default; // ~80px
 $type-size-1: 4.5rem !default; // ~72px
 $type-size-2: 2.25rem !default; // ~36px
 $type-size-3: 1.5rem !default; // ~24px
 $type-size-4: 1.25rem !default; // ~20px
 $type-size-5: 1rem !default; // ~16px
 $type-size-6: .875rem !default; // ~14px
-$type-size-7: .625rem !default; // ~10px
+$type-size-7: .75rem !default; // ~12px
+$type-size-8: .625rem !default; // ~10px
+$type-size-9: .938rem !default; // ~10px
 
 // Colors
 $gray: #808080 !default;

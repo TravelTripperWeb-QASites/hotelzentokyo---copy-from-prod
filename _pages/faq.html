@@ -1,0 +1,48 @@
+---
+layout: default
+title_localized:
+  en: FAQs | Authentic Japan in Modern Tokyo
+  ja: よくあるご質問
+meta_description_localized:
+  en: FAQs
+  ja: よくあるご質問
+permalink_localized:
+  en: /faq/
+  ja: /faq/
+published_localized:
+  en: true
+  ja: true
+meta_tags:
+  robots:
+---
+
+<!-- FAQs Banner -->
+<section class="inner-banner text-center bg-cover mb-5" style="background-image:url('/assets/images/careers/careers-hero.jpg');">
+  <div class="inner-banner-content">
+    {% regionblock faq_heading, type:header %}
+      <h1 tabindex="0">{% t 'faq' %}</h1>
+    {% endregionblock %}
+  </div>
+</section>
+
+{% assign qa = site.data._models.faq | sort: "category_order" %}
+<!-- FAQs Accordion -->
+<section class="faq">
+  {% for item in qa %}
+    <div class="accordion" id="{{ item.category_id }}">
+      <div class="card mb-5">
+        <h2 tabindex="0">{{ item.title }}</h2>
+          {% for query in item.qa_listing %}
+            <div class="card-header" id="{{ query.question_id }}heading" tabindex="0">
+              <h5 class="{% if forloop.index > 1 %}collapsed{% endif %}" role="button" data-toggle="collapse" data-target="#{{ query.question_id }}collapse" aria-expanded="{% if forloop.index > 1 %}false{% else %}true{% endif %}" aria-controls="{{ query.question_id }}collapse"><i class="fas fa-angle-right"></i> <span>{{ query.question }}</span></h5>
+            </div>
+            <div id="{{ query.question_id }}collapse" class="collapse {% if forloop.first %}show{% endif %}" aria-labelledby="{{ query.question_id }}heading" data-parent="#{{ item.category_id }}">
+              <div class="card-body" tabindex="0">
+                {{ query.answer }}
+              </div>
+            </div>
+          {% endfor %}
+      </div>
+    </div>
+  {% endfor %}
+</section>

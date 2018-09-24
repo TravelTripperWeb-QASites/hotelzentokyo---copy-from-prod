@@ -75,7 +75,6 @@ body:hover .visually-hidden button {
   list-style: none;
 }
 
-
 // Icons
 
 .icon {
@@ -92,39 +91,24 @@ body:hover .visually-hidden button {
 // Social icons
 
 .social-icons {
+  a {
+    padding: 10px 13px;
+    color: $dark-gray;
+
+    &:hover {
+      color: $white;
+    }
+
+    &:first-child {
+      padding-left: 0;
+    }
+
+    &:last-child {
+      padding-right: 0;
+    }
+  }
   .fa {
-    color: #000;
-  }
-
-  .fa-facebook,
-  .fa-facebook-square {
-    color: $facebook-color;
-  }
-
-  .fa-google-plus,
-  .fa-google-plus-square {
-    color: $google-plus-color;
-  }
-
-  .fa-instagram {
-    color: $instagram-color;
-  }
-
-  .fa-pinterest,
-  .fa-pinterest-p,
-  .fa-pinterest-square {
-    color: $pinterest-color;
-  }
-
-  .fa-twitter,
-  .fa-twitter-square {
-    color: $twitter-color;
-  }
-
-  .fa-youtube,
-  .fa-youtube-square,
-  .fa-youtube-play {
-    color: $youtube-color;
+    color: $white;
   }
 }
 

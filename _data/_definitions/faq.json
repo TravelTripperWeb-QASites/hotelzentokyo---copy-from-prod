@@ -1,0 +1,36 @@
+{
+  "title": {
+    "label": "Category Name",
+    "required": true,
+    "hint": "Enter event categroy name",
+    "localizable": true
+  },
+  "category_order": {
+    "type": "integer",
+    "required": true,
+    "hint": "Enter sort order for categories"
+  },
+  "category_id": {
+    "required": true,
+    "hint": "Should be in lowercase without spaces"
+  },
+  "qa_listing": {
+    "type": "nested",
+    "multiple": true,
+    "localizable": true,
+    "hint": "Enter questions & answers in this category. Click on 'Add New Menu Items' below to add more questions.",
+    "fields": {
+      "question": {
+        "required": true
+      },
+      "question_id": {
+        "required": true,
+        "hint": "Should be in lowercase without spaces"
+      },
+      "answer": {
+        "type": "richtext",
+        "required": true
+      }
+    }
+  }
+}

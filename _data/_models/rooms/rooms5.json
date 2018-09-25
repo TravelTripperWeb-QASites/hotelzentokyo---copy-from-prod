@@ -86,7 +86,7 @@
   "url_friendly_name": "asa",
   "book_room": "",
   "title_localized": {
-    "en": "ASA - DEXLUE ROOM TYPE A ",
+    "en": "ASA - DELUXE ROOM TYPE A ",
     "ja": "ASA - DELUXE ROOM TYPE A"
   },
   "short_info_localized": {
@@ -114,7 +114,7 @@
     "ja": "ASA"
   },
   "room_type_localized": {
-    "en": " DEXLUE ROOM TYPE A ",
+    "en": " DELUXE ROOM TYPE A ",
     "ja": "DELUXE ROOM TYPE A"
   },
   "order": 4

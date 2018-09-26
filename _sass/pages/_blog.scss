@@ -397,9 +397,12 @@
     transition: $global-transition;
     &:hover {
       background-color: $white;
-      h5 {
-        a {
-          color: $primary-color;
+      .content-block {
+        h5 {
+          a {
+            color: $primary-color;
+            transition: $global-transition;
+          }
         }
       }
     }

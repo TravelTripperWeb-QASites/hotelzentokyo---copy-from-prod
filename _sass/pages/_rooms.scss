@@ -23,17 +23,25 @@
       }
     }
     .content {
+      padding-right: 22px;
+      padding-left: 22px;
       h4 {
         position: relative;
-        margin-bottom: 50px;
+        margin-bottom: 35px;
+        padding-bottom: 15px;
+        line-height: 20px;
         &:after {
           position: absolute;
-          top: 32px;
+          top: auto;
+          bottom: 0;
           left: 0;
           width: 81px;
           height: 2px;
           content: '';
           background-color: $black;
+        }
+        a {
+          color: $primary-color;
         }
         span {
           color: $black;
@@ -41,9 +49,9 @@
       }
       p {
         height: auto;
-        @include media-breakpoint-up(md) {
-          height: 136px;
-        }
+        // @include media-breakpoint-up(md) {
+        //   height: 136px;
+        // }
       }
     }
   }

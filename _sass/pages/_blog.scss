@@ -270,6 +270,10 @@
         a {
           color: $primary-color;
         }
+        em {
+          font-size: $type-size-6;
+          font-style: italic;
+        }
       }
       // Blog share
       .blog-share {

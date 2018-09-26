@@ -6,6 +6,8 @@
     var defaults = {
         hotelTitle: 'Hotel Zen Tokyo',
         hotelAddress: '1-5-8 Nihonbashi Ningyocho, Chuo-ku, Tokyo',
+        getDirections: 'Get Directions',
+        getDirectionsLink: 'https://goo.gl/maps/3VwoSMEa5Wo',
         hotelLat: 35.7219034,
         hotelLong: 139.78093109999998,
         hotelMarker: '/assets/images/map-marker.png',
@@ -68,7 +70,7 @@
         title: options.hotelTitle,
         alt: 'Hotel Map Marker',
         icon: hotelIcon
-      }).bindPopup('<h4>' + options.hotelTitle + '</h4>' + options.hotelAddress).addTo(map);
+      }).bindPopup('<h4>' + options.hotelTitle + '</h4>' + options.hotelAddress + '<h4><a href="' + options.getDirectionsLink + '" target="_blank">' + options.getDirections + '</h4>').addTo(map);
 
       if ($(self).data("attractions") == 'show') {
         loadAttractionMarkers();

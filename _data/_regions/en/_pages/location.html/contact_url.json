@@ -1,6 +1,6 @@
 [
   {
-    "content": "<p><a class=\"primary-btn\" href=\"../contact/\"><span>Contact</span><!-- <i class=\"fas fa-angle-right\"></i> --></a></p>",
+    "content": "<p><a class=\"primary-btn\" href=\"../contact/\"><span>Contact</span><i class=\"fas fa-angle-right\"></i></a></p>",
     "_template": "html"
   }
 ]

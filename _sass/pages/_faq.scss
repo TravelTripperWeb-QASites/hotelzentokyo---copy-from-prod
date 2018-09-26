@@ -20,7 +20,9 @@
       background-color: transparent;
       border-top: solid 1px $light-gray;
       border-bottom: solid 1px $light-gray;
-
+      &:focus {
+        outline: none;
+      }
       h5 {
         position: relative;
 
@@ -58,6 +60,9 @@
 
     .card-body {
       padding: 20px 0;
+      &:focus {
+        outline: none;
+      }
     }
   }
 }

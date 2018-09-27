@@ -37,5 +37,9 @@
   "meta_description": {
     "label": "Meta Description",
     "required": true
+  },
+  "sort_order": {
+    "type": "integer",
+    "required": true
   }
 }

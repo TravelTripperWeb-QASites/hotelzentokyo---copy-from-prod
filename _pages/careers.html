@@ -26,7 +26,7 @@ meta_tags:
 </section>
 
 <!-- Careers Content -->
-{% assign careers = site.data._models.careers %}
+{% assign careers = site.data._models.careers | sort: 'sort_order' %}
 <section class="careers-content">
   {% regionblock page_subtitle, type:header %}
    <h2 tabindex="0">Join us for these open positions</h2>
@@ -37,7 +37,7 @@ meta_tags:
   <ul class="job-positions">
     {% for career in careers %}
       <li>
-        <a href="{% if career.language == "ja" and site.active_lang == "en" %}/ja/careers/{{ career.url_friendly_name }}/{% elsif career.language == "en" and site.active_lang == "ja" %}/careers/{{ career.url_friendly_name }}/{% elsif career.language == "ja" and site.active_lang == "ja" %}/ja/careers/{{ career.url_friendly_name }}/{% else %}/careers/{{ career.url_friendly_name }}/{% endif %}">
+        <a href="{% if career.language == "ja" and site.active_lang == "en" %}/ja/careers/{% elsif career.language == "en" and site.active_lang == "ja" %}/careers/{% elsif career.language == "ja" and site.active_lang == "ja" %}/ja/careers/{% else %}/careers/{% endif %}{{ career.url_friendly_name }}/">
           <i class="fas fa-angle-right"></i>
           <span>{{ career.designation }}</span>
         </a>

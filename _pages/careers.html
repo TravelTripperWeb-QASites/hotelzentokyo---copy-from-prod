@@ -36,12 +36,14 @@ meta_tags:
   {% endregionblock %}
   <ul class="job-positions">
     {% for career in careers %}
-      <li>
-        <a href="{{ page | permalink }}{{ career.url_friendly_name }}/">
-          <i class="fas fa-angle-right"></i>
-          <span>{{ career.designation }}</span>
-        </a>
-      </li>
+      {% if career.language == site.active_lang %}
+        <li>
+          <a href="{{ page | permalink }}{{ career.url_friendly_name }}/">
+            <i class="fas fa-angle-right"></i>
+            <span>{{ career.designation }}</span>
+          </a>
+        </li>
+      {% endif %}
     {% endfor %}
   </ul>
 </section>

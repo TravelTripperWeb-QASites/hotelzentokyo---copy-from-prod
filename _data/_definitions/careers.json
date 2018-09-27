@@ -1,4 +1,10 @@
 {
+  "language": {
+    "required": true,
+    "label": "Select language",
+    "type": "select",
+    "options": ["en", "ja"]
+  },
   "title": {
     "required": true,
     "label": "Title",

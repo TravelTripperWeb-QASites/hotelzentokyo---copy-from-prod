@@ -1,10 +1,16 @@
 {
   "meta_description": "We are looking for individuals with a passion for Japanese history, culture and design to join our team as Global Marketing interns. As a core member of the founding team, you will be helping SEN establish its brand, conduct global marketing, and acquire customers for the hotel opening up in fall / winter 2018.",
   "language": "en",
-  "title": "Marketing Intern",
-  "designation": "Marketing Intern",
+  "designation_localized": {
+    "en": "Marketing Intern",
+    "ja": "Marketing Intern"
+  },
   "url_friendly_name": "marketing-intern",
   "job-description": "<p>We are looking for individuals with a passion for Japanese history, culture and design to join our team as Global Marketing interns. As a core member of the founding team, you will be helping SEN establish its brand, conduct global marketing, and acquire customers for the hotel opening up in fall / winter 2018.</p>\n<p>You will get your hands on all aspects of marketing and customer acquisition. There will be lots of reading and writing about Japanese tea houses, zen minimalism and Japanese architectural design - so passion for and some basic understanding of Japanese culture is a must.</p>",
   "qualifications": "<ul>\n<li>Developing its hotel customer experience and concept</li>\n<li>Creating and launching the hotel website</li>\n<li>Writing blog articles about the hotel and its central themes (Japanese culture, teahouses, zen minimalism)</li>\n<li>Social media marketing (e.g., Facebook, Twitter, Pinterest)</li>\n<li>Public Relations - Reaching out to travel bloggers and media</li>\n<li>Creating a communication kit for hotel visitors</li>\n<li>Helping set up / design the hotel</li>\n</ul>",
-  "requirements": "<ul>\n<li>***Excellent verbal and written communication skills in English</li>\n<li>***Able to be in Tokyo for at least a couple of months this summer (Summer 2018)</li>\n<li>Current enrollment in an undergraduate or a masters program</li>\n<li>Strong passion for Japanese history, culture and architecture</li>\n<li>Interest in hotel management a strong plus but not necessary</li>\n<li>Verbal and written communication skills in Japanese preferred</li>\n<li>Creative and/or photographic skills a plus but not necessary</li>\n</ul>"
+  "requirements": "<ul>\n<li>***Excellent verbal and written communication skills in English</li>\n<li>***Able to be in Tokyo for at least a couple of months this summer (Summer 2018)</li>\n<li>Current enrollment in an undergraduate or a masters program</li>\n<li>Strong passion for Japanese history, culture and architecture</li>\n<li>Interest in hotel management a strong plus but not necessary</li>\n<li>Verbal and written communication skills in Japanese preferred</li>\n<li>Creative and/or photographic skills a plus but not necessary</li>\n</ul>",
+  "title_localized": {
+    "en": "Marketing Intern",
+    "ja": "Marketing Intern"
+  }
 }

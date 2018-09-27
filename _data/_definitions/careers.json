@@ -12,7 +12,8 @@
   },
   "designation": {
     "label": "Designation",
-    "required": true
+    "required": true,
+    "localizable": true
   },
   "url_friendly_name": {
     "type": "url_slug",

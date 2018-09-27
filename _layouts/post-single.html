@@ -48,6 +48,10 @@ layout: default
           <img src="{{ blog.image.url_medium }}" alt="{{ post.title }}">
         </figure>
 
+        {% if blog.image.caption %}
+        <p><em>{{ blog.image.caption }}</em></p>
+        {% endif %}
+
         <div tabindex="0">
           {{ blog.post_content }}
         </div>

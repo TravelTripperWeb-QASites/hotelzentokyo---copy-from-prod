@@ -1,5 +1,30 @@
 <!-- Newletter Signup Form -->
 
+{% if site.active_lang == "ja" %}
+
+<div class="signup" style="background-image:url('/assets/images/newsletter-banner.jpg')">
+  <div class="wrapper">
+    <h2 tabindex="0">{% t 'stay_in_the_know' %}</h2>
+    <h3 tabindex="0">{% t 'newsletter_sign_text' %}</h3>
+    <form action="https://submit.jotform.me/submit/82683267382466/" method="post" name="form_82683267382466"
+        id="82683267382466" accept-charset="utf-8">
+        <input type="hidden" name="formID" value="82683267382466">
+        <div class="input-group">
+          <input type="email" id="signup-email" name="q1_email" class="form-control" placeholder="{% t 'email' %}" aria-label="Email Address" required>
+          <div class="input-group-append">
+            <button class="btn btn-outline-secondary" type="submit" title="Submit"><i class="fas fa-angle-right"></i></button>
+          </div>
+        </div>
+        <div class="custom-control custom-checkbox">
+          <input type="checkbox" name="q2_typeA[]" class="custom-control-input" id="signup-terms" required>
+          <label class="custom-control-label" for="signup-terms">{% t 'privacy_text' %}</label>
+        </div>
+    </form>
+  </div>
+</div>
+
+{% else %}
+
 <div class="signup" style="background-image:url('/assets/images/newsletter-banner.jpg')">
   <div class="wrapper">
     <h2 tabindex="0">{% t 'stay_in_the_know' %}</h2>
@@ -17,11 +42,8 @@
           <input type="checkbox" name="q2_typeA[]" class="custom-control-input" id="signup-terms" required>
           <label class="custom-control-label" for="signup-terms">{% t 'privacy_text' %}</label>
         </div>
-        <input type="hidden" id="simple_spc" name="simple_spc" value="{{ site.data.forms.jotform.newsletter-id }}">
-
-        <script type="text/javascript">
-            document.getElementById("si" + "mple" + "_spc").value = "{{ site.data.forms.jotform.newsletter-id }}-{{ site.data.forms.jotform.newsletter-id }}";
-        </script>
     </form>
   </div>
 </div>
+
+{% endif %}

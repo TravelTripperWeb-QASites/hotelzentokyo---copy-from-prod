@@ -270,6 +270,10 @@
         a {
           color: $primary-color;
         }
+        em {
+          font-size: $type-size-6;
+          font-style: italic;
+        }
       }
       // Blog share
       .blog-share {
@@ -397,9 +401,12 @@
     transition: $global-transition;
     &:hover {
       background-color: $white;
-      h5 {
-        a {
-          color: $primary-color;
+      .content-block {
+        h5 {
+          a {
+            color: $primary-color;
+            transition: $global-transition;
+          }
         }
       }
     }

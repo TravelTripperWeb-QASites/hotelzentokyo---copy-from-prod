@@ -18,7 +18,7 @@ layout: default
 <div class="inner-sub-nav text-center">
   <ul>
     {% for room in rooms %}
-    <li><a href="/rooms/{{ room.url_friendly_name }}/" class="{% if page.url_friendly_name == room.url_friendly_name %} active{% endif %}">{{ room.room_title }} - {{ page.room_type }}</a></li>
+    <li><a href="/rooms/{{ room.url_friendly_name }}/" class="{% if page.url_friendly_name == room.url_friendly_name %} active{% endif %}">{{ room.room_title }} - {{ room.room_type }}</a></li>
     {% endfor %}
   </ul>
 </div>

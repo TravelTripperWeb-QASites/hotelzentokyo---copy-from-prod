@@ -7,11 +7,13 @@
   },
   "title": {
     "required": true,
-    "label": "Title"
+    "label": "Title",
+    "localizable": true
   },
   "designation": {
     "label": "Designation",
-    "required": true
+    "required": true,
+    "localizable": true
   },
   "url_friendly_name": {
     "type": "url_slug",
@@ -34,6 +36,10 @@
   },
   "meta_description": {
     "label": "Meta Description",
+    "required": true
+  },
+  "sort_order": {
+    "type": "integer",
     "required": true
   }
 }

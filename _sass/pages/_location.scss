@@ -137,3 +137,13 @@
 #leaflet-map {
   height: 500px;
 }
+
+.leaflet-popup-content {
+  h4 {
+    a {
+      display: block;
+      padding: 10px 0;
+      color: $primary-color;
+    }
+  }
+}

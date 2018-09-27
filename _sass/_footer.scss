@@ -36,6 +36,7 @@ footer {
 
     h4 {
       margin-bottom: 20px;
+      color: $grey;
     }
 
     p {
@@ -67,6 +68,7 @@ footer {
 
     h4 {
       margin-bottom: 20px;
+      color: $grey;
     }
 
     ul {
@@ -111,7 +113,12 @@ footer {
     .social-icons {
       margin-bottom: 10px;
       text-align: center;
-
+      a {
+        color: $grey;
+        &:hover {
+          color: $white;
+        }
+      }
       @include media-breakpoint-up(lg) {
         margin-bottom: 0;
         text-align: left;

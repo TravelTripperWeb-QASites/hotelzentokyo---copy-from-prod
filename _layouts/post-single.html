@@ -99,12 +99,12 @@ layout: default
   </div>
 </section>
 
-<section class="more-blogs">
+{% assign moreblogs = site.data._models.blog | sort: 'date' | reverse %}
+{% assign count = 0 %}
+<section class="more-blogs" style="display: none;">
   <div class="more-blogs-container">
     <h4 tabindex="0">Related Stories</h4>
     <div class="more-blogs-row">
-      {% assign moreblogs = site.data._models.blog | sort: 'date' | reverse %}
-      {% assign count = 0 %}
       {% for moreblog in moreblogs %}
       <!-- Related blog items -->
         {% if moreblog.category.title == blog.category.title and count < 3 %}
@@ -141,6 +141,5 @@ layout: default
     </div>
   </div>
 </section>
-
 <!-- Newsletter signup here -->
 {% include forms/jotform/newsletter.html %}

@@ -56,6 +56,12 @@ $(document).ready(function () {
     // immediately fire it to initialize buttons state
     .keyup();
 
+   // show more blog on detail page if related blog item is greater than 0
+   var moreblog_container =  $('.more-blogs');
+   if( moreblog_container && $('.more-blogs .more-blogs-item').length > 0 ) {
+      moreblog_container.show();
+   }
+
 });
 
 //scroll navigation changes function

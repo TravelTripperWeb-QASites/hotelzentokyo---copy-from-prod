@@ -34,7 +34,7 @@
       }
     }
     .blog-lead-image {
-      margin: 0 0 35px;
+      margin: 0 0 10px;
       img {
         width: 100%;
       }
@@ -261,7 +261,8 @@
 
       h4 {
         margin-bottom: 10px;
-        font-size: $type-size-4;
+        padding-top: 15px;
+        font-size: $type-size-3;
         font-weight: 400;
         color: $black;
         text-transform: none;

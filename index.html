@@ -28,10 +28,11 @@ meta_tags:
  {% endif %}
 <section class="banner">
   <div id="home-carousel" class="carousel slide" data-ride="carousel">
+  <div id="home-carousel" class="carousel slide" data-ride="carousel">
     <div class="indicators-control">
       <ol class="carousel-indicators">
         {% for banner in banners %}
-          <li data-target="#home-carousel" data-slide-to="{{ forloop.index0 }}" {% if forloop.first %}class="active"{% endif %}>{{ forloop.index }}</li>
+          <li data-target="#home-carousel" data-slide-to="{{ forloop.index0 }}" {% if forloop.first %}class="active"{% endif %}></li>
         {% endfor %}
       </ol>
       <a class="carousel-control-prev primary-btn previous" href="#home-carousel" data-slide="prev" title="Previous Slide" aria-label="Previous slide">

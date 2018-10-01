@@ -79,10 +79,13 @@
 
     h2 {
       display: inline-block;
-      padding: 40px 50px;
+      padding: 20px;
       color: $white;
       text-transform: uppercase;
       background-color: $black;
+      @include media-breakpoint-up(md) {
+        padding: 40px 50px;
+      }
     }
 
     h3 {

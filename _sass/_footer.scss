@@ -45,7 +45,9 @@ footer {
       color: $white;
 
       a {
+        display: block;
         color: $white;
+        transition: $global-transition;
 
         &:hover {
           color: $dark-gray;
@@ -72,20 +74,21 @@ footer {
     }
 
     ul {
+      float: left;
+      width: 50%;
       margin: 0;
       padding: 0;
-
       @include media-breakpoint-down(lg) {
         justify-content: center;
       }
 
       li {
+        flex: 1 0 auto;
         min-width: auto;
         padding: 0 15px;
         text-align: center;
 
         @include media-breakpoint-up(lg) {
-          flex-direction: column;
           min-width: 95px;
           padding: 0 15px 0 0;
           text-align: left;

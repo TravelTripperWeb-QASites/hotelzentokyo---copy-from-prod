@@ -6,8 +6,8 @@ main_localized:
       url: /location/
     - title: Blog
       url: /blog/
-    - title: Contact
-      url: /contact/
+    - title: faq
+      url: /faq/
   ja:
     - title: ご宿泊
       url: /ja/rooms/
@@ -15,41 +15,44 @@ main_localized:
       url: /ja/location/
     - title: ブログ
       url: /blog/
-    - title: 接触
-      url: /ja/contact/
+    - title: よくあるご質問
+      url: /ja/faq/
 
-footer_localized:
+footer_left_localized:
   en:
     - title: Rooms
       url: /rooms/
-    - title: Blog
-      url: /blog/
-    - title: Careers
-      url: /careers/
-    - title: Privacy Policy
-      url: /privacy/
     - title: Location
       url: /location/
-    - title: Contact
-      url: /contact/
+    - title: Blog
+      url: /blog/
     - title: FAQ
       url: /faq/
-    - title: Terms of Use
-      url: /terms/
   ja:
     - title: 客室
       url: /ja/rooms/
-    - title: ブログ
-      url: /ja/blog/
-    - title: 採用情報
-      url: /ja/careers/
-    - title: プライバシーポリシー
-      url: /ja/privacy/
     - title: ロケーション
       url: /ja/location/
-    - title: 接触
-      url: /ja/contact/
+    - title: ブログ
+      url: /ja/blog/
     - title: よくあるご質問
       url: /ja/faq/
+footer_right_localized:
+  en:
+    - title: Contact
+      url: /contact/
+    - title: Careers
+      url: /careers/
+    - title: Terms of Use
+      url: /terms/
+    - title: Privacy Policy
+      url: /privacy/
+  ja:
+    - title: 接触
+      url: /ja/contact/
+    - title: 採用情報
+      url: /ja/careers/
     - title: 利用規約・宿泊約款
       url: /ja/terms/
+    - title: プライバシーポリシー
+      url: /ja/privacy/

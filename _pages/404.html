@@ -20,7 +20,6 @@ meta_tags:
 </section>
 
 {% assign links = site.data.navigation.main %}
-{% assign footer-links = site.data.navigation.footer %}
 <!-- Page not found -->
 <section class="static-page-wrap text-center">
   <div class="sitemap">
@@ -28,11 +27,13 @@ meta_tags:
       <h3 tabindex="0">Sitemap</h3>
     {% endregionblock %}
     <ul>
+      {% assign footer-links = site.data.navigation.footer_left %}
       {% for link in links %}
         <li>
           <a href="{{ link.url | absolute_url }}">{{ link.title }}{% if page.url == link.url %}<span class="sr-only">(current)</span>{% endif%}</a>
         </li>
       {% endfor %}
+      {% assign footer-links = site.data.navigation.footer_right %}
       {% for link in footer-links %}
         <li>
           <a href="{{ link.url | absolute_url }}">{{ link.title }}</a>

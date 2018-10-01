@@ -14,14 +14,13 @@
       z-index: 1;
       background-color: rgba($black, .2);
     }
-
-    .banner-content {
-      @include absolute-position(50%,0,auto,0,auto,auto);
-      z-index: 5;
-      margin: 0 auto;
-      text-align: center;
-      transform: translateY(-50%);
-    }
+  }
+  .banner-content {
+    @include absolute-position(50%,0,auto,0,auto,auto);
+    z-index: 5;
+    margin: 0 auto;
+    text-align: center;
+    transform: translateY(-50%);
   }
   .indicators-control {
     position: absolute;

@@ -22,15 +22,10 @@ meta_tags:
 <!-- Location page banner -->
 <section class="banner-fullscreen" style="background-image:url('/assets/images/location/location-banner.jpg')">
   <div class="wrapper">
-    {% regionblock location_tagline, type:header %}
-      <h6 tabindex="0">Hotel Zen Tokyo</h6>
-    {% endregionblock %}
     {% regionblock location_title, type:header %}
       <h1 class="lowercase" tabindex="0">{% t 'location' %}</h1>
     {% endregionblock %}
-    {% regionblock location_url, type:html %}
-      <a class="primary-btn" href="https://goo.gl/maps/3VwoSMEa5Wo" target="_blank" rel="nofollow"><span>{% t 'direction' %}</span><i class="fas fa-angle-right"></i></a>
-    {% endregionblock %}
+    <a class="primary-btn" href="#findus" rel="nofollow"><span>{% t 'direction' %}</span><i class="fas fa-angle-right"></i></a>
   </div>
 </section>
 
@@ -81,7 +76,7 @@ meta_tags:
 </section>
 
 <!-- Directions section -->
-<section class="directions">
+<section class="directions" id="findus">
   <div class="wrapper">
     <div class="content">
       {% regionblock directions_title, type:header %}

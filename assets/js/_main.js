@@ -56,11 +56,11 @@ $(document).ready(function () {
     // immediately fire it to initialize buttons state
     .keyup();
 
-   // show more blog on detail page if related blog item is greater than 0
-   var moreblog_container =  $('.more-blogs');
-   if( moreblog_container && $('.more-blogs .more-blogs-item').length > 0 ) {
-      moreblog_container.show();
-   }
+  // show more blog on detail page if related blog item is greater than 0
+  var moreblog_container = $('.more-blogs');
+  if (moreblog_container && $('.more-blogs .more-blogs-item').length > 0) {
+    moreblog_container.show();
+  }
 
 });
 
@@ -101,9 +101,31 @@ $('.card-header').keypress(function (event) {
 // Pinterest
 
 function pinterestShare(img, desc) {
-    window.open("//www.pinterest.com/pin/create/button/" +
-        "?url=" + window.location.href +
-        "&media=" + img +
-        "&description=" + desc, "pinIt", "toolbar=no, scrollbars=no, resizable=no, top=0, right=0");
-    return false;
+  window.open("//www.pinterest.com/pin/create/button/" +
+    "?url=" + window.location.href +
+    "&media=" + img +
+    "&description=" + desc, "pinIt", "toolbar=no, scrollbars=no, resizable=no, top=0, right=0");
+  return false;
 }
+
+//Smooth scroll within page
+$(".banner-fullscreen .primary-btn").on('click', function (e) {
+
+  // prevent default anchor click behavior
+  e.preventDefault();
+
+  // store hash
+  var hash = this.hash;
+
+  // animate
+  $('html, body').animate({
+    scrollTop: $(hash).offset().top - 70
+  }, 1000, function () {
+
+    // when done, add hash to url
+    // (default click behaviour)
+    //window.location.hash = hash;
+
+  });
+
+});

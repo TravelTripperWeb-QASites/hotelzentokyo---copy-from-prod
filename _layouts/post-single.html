@@ -79,7 +79,7 @@ layout: default
 
         <a href="https://twitter.com/intent/tweet?{% if site.data.social.twitter.username %}via={{ site.data.social.twitter.username }}&{% endif %}text={{ page.title }} {{site.url}}{{ page.url }}" title="Share on Twitter" onClick="window.open(this.href,'targetWindow','toolbar=no,location=0,status=no,menubar=no,scrollbars=yes,resizable=yes,width=600,height=250'); return false;"><i class="fab fa-twitter"></i></a>
 
-        <a href="https://plus.google.com/share?url={{site.url}}{{ page.url }}" class="fa fa-google-plus" onClick="window.open(this.href,'targetWindow','toolbar=no,location=0,status=no,menubar=no,scrollbars=yes,resizable=yes,width=600,height=250'); return false;" title="Share on Google plus"><i class="fab fa-google-plus-g"></i></a>
+        <a href="https://plus.google.com/share?url={{site.url}}{{ page.url }}" onClick="window.open(this.href,'targetWindow','toolbar=no,location=0,status=no,menubar=no,scrollbars=yes,resizable=yes,width=600,height=250'); return false;" title="Share on Google plus"><i class="fab fa-google-plus-g"></i></a>
 
         {% assign title = blog.title | replace: "'", "" %}
 

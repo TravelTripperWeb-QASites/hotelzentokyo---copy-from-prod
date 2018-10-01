@@ -15,8 +15,8 @@ main_localized:
       url: /ja/location/
     - title: ブログ
       url: /blog/
-    - title: 接触
-      url: /ja/contact/
+    - title: よくあるご質問
+      url: /ja/faq/
 
 footer_left_localized:
   en:

@@ -43,23 +43,35 @@ h1 {
 }
 
 h2 {
-  font-size: $type-size-2;
+  font-size: $type-size-3;
   font-weight: 400;
-  line-height: 2.5rem;
+  line-height: 1.5rem;
   color: $secondary-color;
   letter-spacing: 1px;
+
+  @include media-breakpoint-up(sm) {
+    font-size: $type-size-2;
+    font-weight: 400;
+    line-height: 2.5rem;
+  }
 }
 
 h3 {
-  font-size: $type-size-3;
+  font-size: $type-size-4;
   font-weight: 400;
-  line-height: 2rem;
+  line-height: 1.25rem;
   color: $primary-color;
   letter-spacing: 1px;
 
   &.italic {
     font-style: italic;
     font-weight: 500;
+  }
+
+  @include media-breakpoint-up(sm) {
+    font-size: $type-size-3;
+    font-weight: 400;
+    line-height: 2rem;
   }
 }
 

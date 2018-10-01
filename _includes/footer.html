@@ -1,4 +1,4 @@
-{% assign footer-links = site.data.navigation.footer %}
+
 
 <div class="wrapper d-flex justify-content-between">
   <div class="footer-logo">
@@ -6,12 +6,21 @@
   </div>
   <div class="contact">
     <h4 tabindex="0">{% t 'contact' %}</h4>
-    <p tabindex="0">{% t 'address' %}</p>
+    <p tabindex="0"><a href="https://goo.gl/maps/3VwoSMEa5Wo" target="_blank" rel="nofollow">{% t 'address' %}</a></p>
     <p><a href="mailto:{{ site.email }}" title="{% t 'email' %}">{{ site.email }}</a></p>
   </div>
   <div class="links">
     <h4 tabindex="0">{% t 'links' %}</h4>
-    <ul class="d-flex flex-wrap">
+    {% assign footer-links = site.data.navigation.footer_left %}
+    <ul class="d-flex flex-column">
+      {% for link in footer-links %}
+        <li>
+          <a href="{{ link.url | absolute_url }}">{{ link.title }}</a>
+        </li>
+      {% endfor %}
+    </ul>
+    {% assign footer-links = site.data.navigation.footer_right %}
+    <ul class="d-flex flex-column">
       {% for link in footer-links %}
         <li>
           <a href="{{ link.url | absolute_url }}">{{ link.title }}</a>

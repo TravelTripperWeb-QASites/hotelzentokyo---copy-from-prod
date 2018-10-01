@@ -2,20 +2,23 @@
 
 <header>
   <nav class="navbar navbar-expand-lg navbar-light">
-    <a class="navbar-brand" href="/"><img class="w-100" src="/assets/images/logo.png" alt="Hotel Zen Tokyo" /></a>
+    <a class="navbar-brand" {% if site.active_lang == "en" %}href="/"{% else %}href="/ja"{% endif %}><img class="w-100" src="/assets/images/logo.png" alt="Hotel Zen Tokyo" /></a>
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav justify-content-center">
-      {% for link in links %}
-        <li class="nav-item{% if page.url == link.url %} active{% endif%}">
-          <a class="nav-link" href="{{ link.url | absolute_url }}">{{ link.title }}{% if page.url == link.url %}<span class="sr-only">(current)</span>{% endif%}</a>
+        <li class="form-select d-xs-block d-md-none">
+          <select class="selectpicker" data-width="fit" id="language1" onchange="location = this.options[this.selectedIndex].value;" aria-label="Select Language">
+            <option {% if site.active_lang == "en" %} selected="true" {% endif %} value="{{ page | permalink: locale: lang }}">English</option>
+            <option {% if site.active_lang == "ja" %} selected="true" {% endif %} value="/ja{{ page | permalink: locale: lang }}">日本語</option>
+          </select>
         </li>
-      {% endfor %}
-        <li>
-          <a class="secondary-btn d-block d-md-none" href="javascript:void(0)" show-booking-widget>Book Now</a>
-        </li>
+        {% for link in links %}
+          <li class="nav-item{% if page.url == link.url %} active{% endif%}">
+            <a class="nav-link" href="{{ link.url | absolute_url }}">{{ link.title }}{% if page.url == link.url %}<span class="sr-only">(current)</span>{% endif%}</a>
+          </li>
+        {% endfor %}
       </ul>
     </div>
-    <div class="form-select">
+    <div class="form-select d-none d-md-block">
       <select class="selectpicker" data-width="fit" id="language1" onchange="location = this.options[this.selectedIndex].value;" aria-label="Select Language">
         <option {% if site.active_lang == "en" %} selected="true" {% endif %} value="{{ page | permalink: locale: lang }}">English</option>
         <option {% if site.active_lang == "ja" %} selected="true" {% endif %} value="/ja{{ page | permalink: locale: lang }}">日本語</option>
@@ -26,6 +29,6 @@
       <span> </span>
       <span> </span>
   	</button>
-    <a class="secondary-btn d-none d-md-block" href="javascript:void(0)" show-booking-widget>{% t 'book_now' %}</a>
+    <a class="secondary-btn" href="javascript:void(0)" show-booking-widget>{% t 'book_now' %}</a>
   </nav>
 </header>

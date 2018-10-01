@@ -20,37 +20,58 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  font-size: $type-size-1;
-  font-weight: 400;
-  line-height: 5rem;
+  font-size: $type-size-2;
+  font-weight: 300;
+  line-height: 2.5rem;
   color: $white;
   text-transform: uppercase;
   letter-spacing: 3px;
 
   &.lowercase {
-    font-size: $type-size-0;
     text-transform: lowercase;
+  }
+
+  @include media-breakpoint-up(sm) {
+    font-size: $type-size-1;
+    line-height: 4.5rem;
+  }
+
+  @include media-breakpoint-up(md) {
+    font-size: $type-size-0;
+    line-height: 5rem;
   }
 }
 
 h2 {
-  font-size: $type-size-2;
+  font-size: $type-size-3;
   font-weight: 400;
-  line-height: 2.5rem;
+  line-height: 1.5rem;
   color: $secondary-color;
   letter-spacing: 1px;
+
+  @include media-breakpoint-up(sm) {
+    font-size: $type-size-2;
+    font-weight: 400;
+    line-height: 2.5rem;
+  }
 }
 
 h3 {
-  font-size: $type-size-3;
+  font-size: $type-size-4;
   font-weight: 400;
-  line-height: 2rem;
+  line-height: 1.25rem;
   color: $primary-color;
   letter-spacing: 1px;
 
   &.italic {
     font-style: italic;
     font-weight: 500;
+  }
+
+  @include media-breakpoint-up(sm) {
+    font-size: $type-size-3;
+    font-weight: 400;
+    line-height: 2rem;
   }
 }
 
@@ -155,7 +176,7 @@ svg:not(:root) {
 }
 
 #main {
-  margin-top: 63px;
+  margin-top: 61px;
 
   @include media-breakpoint-up(lg) {
     margin-top: 128px;

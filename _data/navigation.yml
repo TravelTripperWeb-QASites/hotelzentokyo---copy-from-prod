@@ -9,7 +9,7 @@ main_localized:
     - title: faq
       url: /faq/
   ja:
-    - title: ご宿泊
+    - title: 客室
       url: /ja/rooms/
     - title: ロケーション
       url: /ja/location/
@@ -29,7 +29,7 @@ footer_left_localized:
     - title: FAQ
       url: /faq/
   ja:
-    - title: ご宿泊
+    - title: 客室
       url: /ja/rooms/
     - title: ロケーション
       url: /ja/location/

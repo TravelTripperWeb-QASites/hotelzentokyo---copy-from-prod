@@ -7,7 +7,7 @@
         hotelTitle: 'Hotel Zen Tokyo',
         hotelAddress: '1-5-8 Nihonbashi Ningyocho, Chuo-ku, Tokyo',
         getDirections: 'Get Directions',
-        getDirectionsLink: 'https://goo.gl/maps/3VwoSMEa5Wo',
+        getDirectionsLink: 'https://goo.gl/maps/WYEmF4h2EEw',
         hotelLat: 35.7219034,
         hotelLong: 139.78093109999998,
         hotelMarker: '/assets/images/map-marker.png',

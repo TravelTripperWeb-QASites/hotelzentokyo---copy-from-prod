@@ -62,6 +62,16 @@ $(document).ready(function () {
     moreblog_container.show();
   }
 
+  //Slick Carousel
+  //Image collage
+  $('.collage').slick({
+    dots: true,
+    infinite: true,
+    speed: 300,
+    slidesToShow: 1,
+    variableWidth: true
+  });
+
 });
 
 //scroll navigation changes function

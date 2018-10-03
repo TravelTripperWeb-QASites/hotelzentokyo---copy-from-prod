@@ -1,28 +1,46 @@
-<form action="https://submit.jotform.me/submit/{{ site.data.forms.jotform.contact-id }}/" method="post" name="form_{{ site.data.forms.jotform.contact-id }}"
-    id="{{ site.data.forms.jotform.contact-id }}" accept-charset="utf-8">
+<form class="needs-validation" action="https://submit.jotform.me/submit/{{ site.data.forms.jotform.contact-id }}/" method="post" name="form_{{ site.data.forms.jotform.contact-id }}"
+    id="{{ site.data.forms.jotform.contact-id }}" accept-charset="utf-8" novalidate>
     <input type="hidden" name="formID" value="{{ site.data.forms.jotform.contact-id }}">
     <div class="form-group two">
       <div class="input-block">
-        <input type="text" class="form-control" placeholder="{% t 'first_name' %} *" aria-label="First Name" title="First Name" id="input_3" name="q3_firstName" required>
+        <input type="text" class="form-control" placeholder="{% t 'first_name' %} *" aria-label="First Name" title="First Name" id="validationUsername" name="q3_firstName" required>
+        <div class="invalid-feedback">
+          Please enter first name.
+        </div>
       </div>
       <div class="input-block">
-        <input type="text" class="form-control" placeholder="{% t 'surname' %} *" aria-label="Please enter your Surname" title="Please enter your Surname" id="input_6" name="q6_enterYour" required>
+        <input type="text" class="form-control" placeholder="{% t 'surname' %} *" aria-label="Please enter your Surname" title="Please enter your Surname" id="validationSurnname" name="q6_enterYour" required>
+        <div class="invalid-feedback">
+          Please enter surname.
+        </div>
       </div>
       <div class="input-block">
-        <input type="email" class="form-control" placeholder="{% t 'email' %} *" aria-label="Please enter your Email" title="Please enter your Email" id="input_4" name="q4_email" required>
+        <input type="email" class="form-control" placeholder="{% t 'email' %} *" aria-label="Please enter your Email" title="Please enter your Email" id="validationEmail" name="q4_email" required>
+        <div class="invalid-feedback">
+          Please enter your email.
+        </div>
       </div>
       <div class="input-block">
-        <input type="text" class="form-control" placeholder="{% t 'subject' %} *" aria-label="Subject" title="Subject" id="input_7" name="q7_subject" required>
+        <input type="text" class="form-control" placeholder="{% t 'subject' %} *" aria-label="Subject" title="Subject" id="validationSubject" name="q7_subject" required>
+        <div class="invalid-feedback">
+          Please enter subject.
+        </div>
       </div>
     </div>
     <div class="form-group">
-      <textarea placeholder="{% t 'your_message' %} *" id="input_5" name="q5_message" aria-label="Enter your message" required></textarea>
+      <textarea placeholder="{% t 'your_message' %} *" id="validationMessage" name="q5_message" aria-label="Enter your message" required></textarea>
+      <div class="invalid-feedback">
+        Please enter your message.
+      </div>
     </div>
     <div class="form-check custom-checkbox">
       <input class="custom-control-input" type="checkbox" value="Accept" id="tnc" name="q8_terms[]" required>
       <label class="custom-control-label" for="tnc">
        {% t 'privacy_text' %}
       </label>
+      <div class="invalid-feedback">
+        You must agree before submitting.
+      </div>
     </div>
     <button class="primary-btn" id="contact-btn" type="submit" disabled><span>Submit</span><i class="fas fa-angle-right"></i></button>
     <input type="hidden" id="simple_spc" name="simple_spc" value="{{ site.data.forms.jotform.contact-id }}">

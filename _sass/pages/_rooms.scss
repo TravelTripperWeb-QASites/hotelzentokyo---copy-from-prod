@@ -89,12 +89,14 @@
   @include make-row();
   .content {
     padding-bottom: 40px;
+    order: 2;
     @include make-col-ready();
     @include media-breakpoint-up(lg) {
       @include make-col(6);
       padding-right: 90px;
       padding-bottom: 0;
       padding-left: 110px;
+      order: 1;
     }
     .content-inner {
       @include media-breakpoint-up(lg) {
@@ -116,11 +118,21 @@
     }
   }
   .image {
+    margin-bottom: 40px;
     @include make-col-ready();
+    padding-right: 0;
+    padding-left: 0;
     @include media-breakpoint-up(lg) {
       @include make-col(6);
+      margin-bottom: 0;
+      order: 2;
     }
-    height: 560px;
+    .carousel-item {
+      height: 280px;
+      @include media-breakpoint-up(md) {
+        height: 560px;
+      }
+    }
   }
 }
 
@@ -186,12 +198,19 @@
     }
   }
   .image {
-    height: 500px;
     margin-bottom: 40px;
     @include make-col-ready();
+    padding-right: 0;
+    padding-left: 0;
     @include media-breakpoint-up(lg) {
       @include make-col(6);
       margin-bottom: 0;
+    }
+    .carousel-item {
+      height: 270px;
+      @include media-breakpoint-up(md) {
+        height: 500px;
+      }
     }
   }
 }

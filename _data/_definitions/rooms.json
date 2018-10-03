@@ -26,12 +26,14 @@
   "intro_image": {
     "label": "Intro Image",
     "type": "image",
-    "required": true
+    "required": true,
+		"multiple": true
   },
   "amenities_image": {
     "label": "Amenities Image",
     "type": "image",
-    "required": true
+    "required": true,
+		"multiple": true
   },
 	"short_info":{
 		"label": "Short Description",
@@ -45,7 +47,7 @@
   },
   "book_room": {
     "label": "Book Room URL",
-    "type": "url_slug",
+		"localizable": true,
     "required": false
   },
   "bed_info":{

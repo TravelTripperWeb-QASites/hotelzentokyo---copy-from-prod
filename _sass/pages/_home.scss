@@ -55,27 +55,11 @@
     background-color: $black;
 
     li {
-      width: 24px;
-      height: auto;
-      margin: 0;
-      font-size: $type-size-5;
-      line-height: normal;
-      color: $white;
-      text-align: center;
-      text-indent: 0;
+      width: 10px;
+      height: 10px;
+      margin: 0 5px;
       cursor: pointer;
-      background-color: transparent;
-      transition: $global-transition;
-
-      &.active {
-        position: relative;
-        margin-right: 40px;
-
-        &:after {
-          @include absolute-position(14px,auto,auto,24px,40px,1px);
-          background-color: $white;
-        }
-      }
+      border-radius: 50%;
     }
   }
   .carousel-control-prev {

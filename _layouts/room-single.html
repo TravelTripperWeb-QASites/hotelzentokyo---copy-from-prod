@@ -37,13 +37,47 @@ layout: default
     <a class="primary-btn" href="{{ page.book_room }}" target="_blank"><span>{% t 'book_room' %}</span><i class="fas fa-angle-right"></i></a>
     {% endif %}
   </div>
-  <div class="image bg-cover" style="background-image:url('{{ page.intro_image.url }}');">
+  <div class="image">
+    <div id="intro-carousel" class="carousel slide" data-ride="carousel">
+      <div class="indicators-control">
+        <ol class="carousel-indicators">
+          {% for introimage in page.intro_image %}
+            {% if page.intro_image.size > 1 %}
+              <li data-target="#intro-carousel" data-slide-to="{{ forloop.index0 }}" {% if forloop.first %}class="active"{% endif %}></li>
+            {% endif %}
+          {% endfor %}
+        </ol>
+      </div>
+      <div class="carousel-inner" role="tablist">
+        {% for introimage in page.intro_image %}
+          <div class="carousel-item bg-cover {% if forloop.first %}active{% endif %}" style="background-image: url('{{ introimage.url_medium }}');" role="option">
+          </div>
+        {% endfor %}
+      </div>
+    </div>
   </div>
 </section>
 
 <!-- Room Amenities -->
 <section class="room-details-amenities d-flex align-items-center">
-  <div class="image bg-cover" style="background-image:url('{{ page.amenities_image.url }}');">
+  <div class="image">
+    <div id="amenities-carousel" class="carousel slide" data-ride="carousel">
+      <div class="indicators-control">
+        <ol class="carousel-indicators">
+          {% for amenitiesimage in page.amenities_image %}
+            {% if page.intro_image.size > 1 %}
+              <li data-target="#amenities-carousel" data-slide-to="{{ forloop.index0 }}" {% if forloop.first %}class="active"{% endif %}></li>
+            {% endif %}
+          {% endfor %}
+        </ol>
+      </div>
+      <div class="carousel-inner" role="tablist">
+        {% for amenitiesimage in page.amenities_image %}
+          <div class="carousel-item bg-cover {% if forloop.first %}active{% endif %}" style="background-image: url('{{ amenitiesimage.url_medium }}');" role="option">
+          </div>
+        {% endfor %}
+      </div>
+    </div>
   </div>
   <div class="content">
     <h4 tabindex="0">{% t 'amenities' %}</h4>

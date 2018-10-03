@@ -98,11 +98,13 @@
 {% for lang in site.languages %}
   {% unless lang == site.default_lang %}
     {% if page.url contains 'blog' and lang == 'ja' %}
+      {% comment %}
        {% if page.permalink contains "/blog" %}
         <link rel="alternate" hreflang="{{ lang }}" href="{{ site.url }}{{ page.permalink }}">
        {% else %}
         <link rel="alternate" hreflang="{{ lang }}" href="{{ site.url }}/blog/">
        {% endif %}
+       {% endcomment %}
     {% else %}
      <link rel="alternate" hreflang="{{ lang }}" href="{{ site.url }}/{{ lang }}{{ page.permalink }}">
     {% endif %}

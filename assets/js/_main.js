@@ -62,16 +62,6 @@ $(document).ready(function () {
     moreblog_container.show();
   }
 
-  //Slick Carousel
-  //Image collage
-  $('.collage').slick({
-    dots: true,
-    infinite: true,
-    speed: 300,
-    slidesToShow: 1,
-    variableWidth: true
-  });
-
 });
 
 //scroll navigation changes function
@@ -151,9 +141,11 @@ $(".banner-fullscreen .primary-btn").on('click', function (e) {
     var validation = Array.prototype.filter.call(forms, function (form) {
       form.addEventListener('submit', function (event) {
         if (form.checkValidity() === false) {
-          $('.needs-validation').find('.form-control:invalid').focus(function () {
-            $(window).scrollTop($(this).offset().top - 100);
-          });
+
+          $('.needs-validation').find('.form-control:invalid').focus();
+          $('.needs-validation').find('.form-control:invalid').focus();
+          $(window).scrollTop($('.needs-validation').find('.form-control:invalid').offset().top - 100);
+
           event.preventDefault();
           event.stopPropagation();
         }

@@ -161,3 +161,17 @@
 .pushleft {
   margin-left: -6px;
 }
+
+// Carousel indicators
+.carousel-indicators {
+  bottom: 30px;
+  align-items: center;
+  margin: 0 auto;
+  li {
+    width: 10px;
+    height: 10px;
+    margin: 0 5px;
+    cursor: pointer;
+    border-radius: 50%;
+  }
+}

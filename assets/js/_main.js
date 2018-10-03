@@ -56,11 +56,21 @@ $(document).ready(function () {
     // immediately fire it to initialize buttons state
     .keyup();
 
-   // show more blog on detail page if related blog item is greater than 0
-   var moreblog_container =  $('.more-blogs');
-   if( moreblog_container && $('.more-blogs .more-blogs-item').length > 0 ) {
-      moreblog_container.show();
-   }
+  // show more blog on detail page if related blog item is greater than 0
+  var moreblog_container = $('.more-blogs');
+  if (moreblog_container && $('.more-blogs .more-blogs-item').length > 0) {
+    moreblog_container.show();
+  }
+
+  //Slick Carousel
+  //Image collage
+  $('.collage').slick({
+    dots: true,
+    infinite: true,
+    speed: 300,
+    slidesToShow: 1,
+    variableWidth: true
+  });
 
 });
 
@@ -101,9 +111,54 @@ $('.card-header').keypress(function (event) {
 // Pinterest
 
 function pinterestShare(img, desc) {
-    window.open("//www.pinterest.com/pin/create/button/" +
-        "?url=" + window.location.href +
-        "&media=" + img +
-        "&description=" + desc, "pinIt", "toolbar=no, scrollbars=no, resizable=no, top=0, right=0");
-    return false;
+  window.open("//www.pinterest.com/pin/create/button/" +
+    "?url=" + window.location.href +
+    "&media=" + img +
+    "&description=" + desc, "pinIt", "toolbar=no, scrollbars=no, resizable=no, top=0, right=0");
+  return false;
 }
+
+//Smooth scroll within page
+$(".banner-fullscreen .primary-btn").on('click', function (e) {
+
+  // prevent default anchor click behavior
+  e.preventDefault();
+
+  // store hash
+  var hash = this.hash;
+
+  // animate
+  $('html, body').animate({
+    scrollTop: $(hash).offset().top - 70
+  }, 1000, function () {
+
+    // when done, add hash to url
+    // (default click behaviour)
+    //window.location.hash = hash;
+
+  });
+
+});
+
+
+//Contact Form Validations
+(function () {
+  'use strict';
+  window.addEventListener('load', function () {
+    // Fetch all the forms we want to apply custom Bootstrap validation styles to
+    var forms = document.getElementsByClassName('needs-validation');
+    // Loop over them and prevent submission
+    var validation = Array.prototype.filter.call(forms, function (form) {
+      form.addEventListener('submit', function (event) {
+        if (form.checkValidity() === false) {
+          $('.needs-validation').find('.form-control:invalid').focus(function () {
+            $(window).scrollTop($(this).offset().top - 100);
+          });
+          event.preventDefault();
+          event.stopPropagation();
+        }
+        form.classList.add('was-validated');
+      }, false);
+    });
+  }, false);
+})();

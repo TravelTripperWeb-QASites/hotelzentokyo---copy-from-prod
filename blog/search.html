@@ -5,7 +5,10 @@ meta_description: Blog Search Results
 meta_tags:
   robots:
 ---
-
+{% assign blogpage = '/blog/'%}
+{% if site.active_lang == 'ja' %}
+ {% assign blogpage = '/ja/blog/'%}
+{% endif %}
 <!-- Blog landing banner here -->
 {% include blog-banner.html %}
 

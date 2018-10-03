@@ -30,7 +30,11 @@
   {% if site.active_lang == site.default_lang %}
     <link rel="canonical" href="{{ page.url | prepend: seo_url | replace: "/index.html", "/" }}">
   {% else %}
-    <link rel="canonical" href="{{ page.url | prepend: site.active_lang | prepend: "/" | prepend: seo_url | replace: "/index.html", "/" }}">
+    {% if page.url contains 'blog' and site.active_lang == "ja" %}
+     <link rel="canonical" href="{{ page.url | prepend: seo_url | replace: "/index.html", "/" }}">
+    {% else %}
+     <link rel="canonical" href="{{ page.url | prepend: site.active_lang | prepend: "/" | prepend: seo_url | replace: "/index.html", "/" }}">
+    {% endif %}
   {% endif %}
   <meta property="og:url" content="{{ page.url | prepend: seo_url | replace: "/index.html", "/" }}">
 {% endif %}
@@ -90,10 +94,18 @@
 {% endif %}
 
 <meta http-equiv="Content-Language" content="{{ site.active_lang }}">
-<link rel="alternate" hreflang="{{ site.default_lang }}" href="{{ site.url }}{{ page.permalink }}">
+<link rel="alternate" hreflang="{{ site.default_lang }}" href="{{ page.url | prepend: seo_url }}">
 {% for lang in site.languages %}
   {% unless lang == site.default_lang %}
-    <link rel="alternate" hreflang="{{ lang }}" href="{{ site.url }}/{{ lang }}{{ page.permalink }}">
+    {% if page.url contains 'blog' and lang == 'ja' %}
+       {% if page.permalink contains "/blog" %}
+        <link rel="alternate" hreflang="{{ lang }}" href="{{ site.url }}{{ page.permalink }}">
+       {% else %}
+        <link rel="alternate" hreflang="{{ lang }}" href="{{ site.url }}/blog/">
+       {% endif %}
+    {% else %}
+     <link rel="alternate" hreflang="{{ lang }}" href="{{ site.url }}/{{ lang }}{{ page.permalink }}">
+    {% endif %}
   {% endunless %}
 {% endfor %}
 

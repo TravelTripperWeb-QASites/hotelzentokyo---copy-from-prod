@@ -124,7 +124,7 @@
       }
     }
     .image-wrap {
-      height: 300px;
+      height: 220px;
       @include media-breakpoint-up(md) {
         height: 432px;
       }
@@ -148,6 +148,12 @@
     @include media-breakpoint-up(md) {
       @include make-col(6);
       height: auto;
+    }
+    &.image-tall {
+      height: 500px;
+      @include media-breakpoint-up(md) {
+        height: auto;
+      }
     }
   }
 }

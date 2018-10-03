@@ -74,10 +74,12 @@ footer {
     }
 
     ul {
-      float: left;
-      width: 50%;
       margin: 0;
       padding: 0;
+      @include media-breakpoint-up(md) {
+        float: left;
+        width: 50%;
+      }
       @include media-breakpoint-down(lg) {
         justify-content: center;
       }
@@ -89,7 +91,7 @@ footer {
         text-align: center;
 
         @include media-breakpoint-up(lg) {
-          min-width: 95px;
+          min-width: 170px;
           padding: 0 15px 0 0;
           text-align: left;
         }

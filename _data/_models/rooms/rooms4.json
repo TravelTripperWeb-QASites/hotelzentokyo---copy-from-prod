@@ -84,8 +84,11 @@
     "caption": ""
   },
   "url_friendly_name": "ume-single-bed-pod",
-  "book_room": "/rooms/",
-  "title_localized": {
+  "book_room_localized": {
+    "en": "https://hotels.cloudbeds.com/en/reservation/yvrDGL",
+    "ja": "https://hotels.cloudbeds.com/ja/reservation/yvrDGL"
+  },
+  "title_localized_localized": {
     "en": "UME - SINGLE BED POD",
     "ja": "UME - SINGLE BED POD"
   },

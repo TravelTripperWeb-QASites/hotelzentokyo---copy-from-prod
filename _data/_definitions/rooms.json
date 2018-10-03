@@ -45,7 +45,6 @@
   },
   "book_room": {
     "label": "Book Room URL",
-    "type": "url_slug",
 		"localizable": true,
     "required": false
   },

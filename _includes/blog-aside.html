@@ -1,8 +1,11 @@
-
+{% assign blogpage = '/blog/'%}
+{% if site.active_lang == 'ja' %}
+ {% assign blogpage = '/ja/blog/'%}
+{% endif %}
 <div class="sps sps--abv">
   <!-- Blog search here -->
   <div class="blog-search">
-    <form class="search-form" action="/blog/search/" method="get">
+    <form class="search-form" action="{{ blogpage }}search/" method="get">
       <input type="text" class="search-box" name="query" id="search-box" value="" placeholder="Search" aria-label="Search blogs">
       <button class="search-btn" aria-label="Search blogs"><i class="fa fa-search"></i></button>
     </form>
@@ -15,7 +18,7 @@
       {% assign recentblogs = site.data._models.blog | sort: 'date' | reverse %}
       {% for recentblog in recentblogs | limit: 5 %}
         <div class="blog-recent-item">
-          <a href="/blog/{{ recentblog.url_friendly_name }}/" tabindex="-1">
+          <a href="{{ blogpage }}{{ recentblog.url_friendly_name }}/" tabindex="-1">
             <figure style="background-image:url('{{ recentblog.image.url_small }}');"></figure>
             <div class="recent-item-content">
               <h5 tabindex="0">{{ recentblog.title | truncate: 28 }}</h5>
@@ -41,7 +44,7 @@
       {% assign category = site.data._models.categories | sort:'order' %}
       {% for categorylist in category %}
         <li>
-          <a href="/blog/category/{{ categorylist.url_friendly_name }}/">{{ categorylist.title }}
+          <a href="{{ blogpage }}category/{{ categorylist.url_friendly_name }}/">{{ categorylist.title }}
             {% assign count = 0 %}
             {% for postcount in site.data._models.blog %}
               {% if postcount.category.title == categorylist.title%}

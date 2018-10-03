@@ -1,14 +1,22 @@
 ---
 layout: default
-title: zen hotel tokyo - blog
+title: hotel zen tokyo - blog
 meta_description: Blog Posts
+published_localized:
+  en: true
+  ja: true
 meta_tags:
   robots:
 ---
 
+
 <!-- Blog landing banner here -->
 {% include blog-banner.html %}
 
+{% assign blogpage = '/blog/'%}
+{% if site.active_lang == 'ja' %}
+ {% assign blogpage = '/ja/blog/'%}
+{% endif %}
 <!-- Blog content here -->
 <section class="blog">
   <div class="blog-row">
@@ -17,11 +25,11 @@ meta_tags:
       {% for post in data_paginator.posts %}
       <div class="blog-item">
         <figure class="blog-lead-image">
-          <a href="/blog/{{ post.url_friendly_name }}/" tabindex="-1">
+          <a href="{{ blogpage }}{{ post.url_friendly_name }}/" tabindex="-1">
             <img src="{{ post.image.url_medium }}" alt="{{ post.title }}">
           </a>
         </figure>
-        <h2><a href="/blog/{{ post.url_friendly_name }}/">{{ post.title }}</a></h2>
+        <h2><a href="{{ blogpage }}{{ post.url_friendly_name }}/">{{ post.title }}</a></h2>
         <div class="blog-info">
           <span class="date" tabindex="0">
             {% assign d = post.date | date: "%-d" %}
@@ -30,12 +38,12 @@ meta_tags:
             {{ post.date | date: "%Y" }}
           </span>
           <span class="cat">
-            <a href="/blog/category/{{ post.category.url_friendly_name }}/" aria-label="Category {{ post.category.title }}">{{ post.category.title }}</a>
+            <a href="{{ blogpage }}category/{{ post.category.url_friendly_name }}/" aria-label="Category {{ post.category.title }}">{{ post.category.title }}</a>
           </span>
         </div>
         <p tabindex="0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras dapibus vulputate diam eu pretium. Mauris elit orci, ultricies id fermentum vel, porta et eros.</p>
         <div class="btn-holder">
-          <a class="primary-btn inverse" href="/blog/{{ post.url_friendly_name }}/"><span>Read More</span><i class="fas fa-angle-right"></i></a>
+          <a class="primary-btn inverse" href="{{ blogpage }}{{ post.url_friendly_name }}/"><span>Read More</span><i class="fas fa-angle-right"></i></a>
         </div>
       </div>
       {% endfor %}

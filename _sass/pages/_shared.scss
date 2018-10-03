@@ -115,7 +115,7 @@
     }
 
     .custom-checkbox {
-      max-width: 248px;
+      max-width: 150px;
       margin: 10px auto;
       font-family: $header-font-family;
       font-size: $type-size-7;
@@ -129,6 +129,7 @@
     }
 
     .custom-control-label {
+      text-align: left;
       &::before {
         background-color: transparent;
         border: solid 1px $white;

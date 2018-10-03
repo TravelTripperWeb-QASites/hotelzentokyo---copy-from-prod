@@ -5,9 +5,9 @@
 
 .banner {
   .carousel-item {
-    min-height: 400px;
-    @include media-breakpoint-up(md) {
-      min-height: 688px;
+    height: calc(100vh - 63px);
+    @include media-breakpoint-up(lg) {
+      height: calc(100vh - 128px);
     }
     &:after {
       @include absolute-position(0,0,0,0,auto,auto);

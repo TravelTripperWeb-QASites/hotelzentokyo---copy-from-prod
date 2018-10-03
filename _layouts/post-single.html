@@ -22,6 +22,10 @@ layout: default
     {% endif %}
 {% endfor %}
 
+{% assign blogpage = '/blog/'%}
+{% if site.active_lang == 'ja' %}
+ {% assign blogpage = '/ja/blog/'%}
+{% endif %}
 <!-- Blog landing banner here -->
 {% include blog-banner.html %}
 
@@ -40,7 +44,7 @@ layout: default
             {{ blog.date | date: "%Y" }}
           </span>
           <span class="cat">
-            <a href="/blog/category/{{ blog.category.url_friendly_name }}/" aria-label="Category {{ blog.category.title }}">{{ blog.category.title }}</a>
+            <a href="{{ blogpage }}category/{{ blog.category.url_friendly_name }}/" aria-label="Category {{ blog.category.title }}">{{ blog.category.title }}</a>
           </span>
         </div>
 
@@ -89,10 +93,10 @@ layout: default
 
       <div class="blog-prev-next">
         {% if prevPostUrl %}
-          <a class="primary-btn inverse previous" href="/blog/{{prevPostUrl}}/" title="Previous blog post" aria-label="Previous blog post"><i class="fas fa-angle-left" aria-hidden="true" aria-label="Previous post"></i><span>Prev</span></a>
+          <a class="primary-btn inverse previous" href="{{ blogpage }}{{prevPostUrl}}/" title="Previous blog post" aria-label="Previous blog post"><i class="fas fa-angle-left" aria-hidden="true" aria-label="Previous post"></i><span>Prev</span></a>
         {% endif %}
         {% if nextPostUrl %}
-          <a class="primary-btn inverse pushleft" href="/blog/{{nextPostUrl}}/" title="Next blog post" aria-label="Next blog post"><span>Next</span> <i class="fas fa-angle-right" aria-hidden="true"></i></a>
+          <a class="primary-btn inverse pushleft" href="{{ blogpage }}{{nextPostUrl}}/" title="Next blog post" aria-label="Next blog post"><span>Next</span> <i class="fas fa-angle-right" aria-hidden="true"></i></a>
         {% endif %}
       </div>
 
@@ -117,11 +121,11 @@ layout: default
           {% assign count = count | plus: 1 %}
             <div class="more-blogs-item">
               <div class="more-blogs-content">
-                <a href="/blog/{{ moreblog.url_friendly_name }}/" title="{{ moreblog.title }}" tabindex="-1">
+                <a href="{{ blogpage }}{{ moreblog.url_friendly_name }}/" title="{{ moreblog.title }}" tabindex="-1">
                   <figure class="more-blogs-image bg-cover" style="background-image:url('{{ moreblog.image.url_medium }}');"></figure>
                 </a>
                 <div class="content-block">
-                  <h5><a href="/blog/{{ moreblog.url_friendly_name }}">{{ moreblog.title }}</a></h5>
+                  <h5><a href="{{ blogpage }}{{ moreblog.url_friendly_name }}">{{ moreblog.title }}</a></h5>
                   <div class="blog-info">
                     <span class="date" tabindex="0">
                       {% assign d = moreblog.date | date: "%-d" %}
@@ -130,7 +134,7 @@ layout: default
                       {{ moreblog.date | date: "%Y" }}
                     </span>
                     <span class="cat">
-                      <a href="/blog/category/{{ blog.category.url_friendly_name }}/" aria-label="Category {{ moreblog.category.title }}">{{ moreblog.category.title }}</a>
+                      <a href="{{ blogpage }}category/{{ blog.category.url_friendly_name }}/" aria-label="Category {{ moreblog.category.title }}">{{ moreblog.category.title }}</a>
                     </span>
                   </div>
                 </div>
@@ -141,7 +145,7 @@ layout: default
       {% endfor %}
     </div>
     <div class="btn-holder">
-      <a class="primary-btn" href="/blog/category/{{ blog.category.url_friendly_name }}/"><span>View All Blog Posts</span><i class="fas fa-angle-right"></i></a>
+      <a class="primary-btn" href="{{ blogpage }}category/{{ blog.category.url_friendly_name }}/"><span>View All Blog Posts</span><i class="fas fa-angle-right"></i></a>
     </div>
   </div>
 </section>

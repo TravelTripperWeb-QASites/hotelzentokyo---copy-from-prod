@@ -7,8 +7,8 @@
 
       for (var i = 0; i < results.length; i++) {  // Iterate over the results
         var item = store[results[i].ref];
-        appendString += '<li><a href="/blog/' + item.url + '/"><h5>' + item.title + '</h5></a>';
-        appendString += '<p tabindex="0">' + item.content.substring(0, 150) + '...</p> <div class="btn-holder"><a href="/blog/' + item.url + '/" class="primary-btn inverse"><span>Continue</span><i class="fas fa-angle-right"></i></a> </div></li>';
+        appendString += '<li><a href="../' + item.url + '/"><h5>' + item.title + '</h5></a>';
+        appendString += '<p tabindex="0">' + item.content.substring(0, 150) + '...</p> <div class="btn-holder"><a href="../' + item.url + '/" class="primary-btn inverse"><span>Continue</span><i class="fas fa-angle-right"></i></a> </div></li>';
       }
 
       searchResults.innerHTML = appendString;

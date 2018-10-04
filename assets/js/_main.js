@@ -155,7 +155,7 @@ $(".banner-fullscreen .primary-btn").on('click', function (e) {
   }, false);
 })();
 
-//
+// Bootstrap Carousel Mobile Swipe Script
 
 (function ($) {
 // Mobile swipe if more than 5 pixels moved

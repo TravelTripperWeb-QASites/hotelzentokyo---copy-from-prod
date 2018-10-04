@@ -3,23 +3,8 @@
     "label": "Title",
     "required": true
   },
-  "location_image_1": {
-    "label": "Location Image 1",
-    "type": "image",
-    "required": true
-  },
-  "location_image_2": {
-    "label": "Location Image 2",
-    "type": "image",
-    "required": true
-  },
-  "location_image_3": {
-    "label": "Location Image 3",
-    "type": "image",
-    "required": true
-  },
-  "location_image_4": {
-    "label": "Location Image 4",
+  "image": {
+    "label": "Add Image",
     "type": "image",
     "required": true
   }

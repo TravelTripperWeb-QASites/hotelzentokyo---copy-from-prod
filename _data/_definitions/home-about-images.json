@@ -1,0 +1,16 @@
+{
+  "name": {
+    "label": "Title",
+    "required": true
+  },
+  "home_about_image_1": {
+    "label": "Home Page About Image 1",
+    "type": "image",
+    "required": true
+  },
+  "home_about_image_2": {
+    "label": "Home Page About Image 2",
+    "type": "image",
+    "required": true
+  }
+}

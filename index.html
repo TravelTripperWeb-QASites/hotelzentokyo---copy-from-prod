@@ -59,6 +59,7 @@ meta_tags:
 
 <!--About content here -->
 {% assign pageimages = site.data._models.page-images %}
+
 <section class="twocol">
   <div class="twocol-row">
     <div class="content">
@@ -79,12 +80,14 @@ meta_tags:
         {% endregionblock %}
       </div> -->
       <!-- Can be hidden in mobile -->
-      <div class="image-wrap bg-bottom d-sm-none d-md-block" style="background-image: url('/assets/images/room.jpg');"></div>
+      <div class="image-wrap bg-bottom d-sm-none d-md-block" style="background-image: url('{{ pageimages[0].home_about[1].url_medium }}');"></div>
     </div>
+
     <!-- Can be hidden in mobile -->
-    <div class="image image-tall bg-bottom d-sm-none d-md-block" style="background-image: url('/assets/images/exterior.jpg');"></div>
+    <div class="image image-tall bg-bottom d-sm-none d-md-block" style="background-image: url('{{ pageimages[0].home_about[0].url_medium }}');"></div>
+
     <!-- Carousel for Mobile  -->
-      <div id="home-about-carousel" class="carousel slide" data-ride="carousel">
+      <div id="home-about-carousel" class="carousel slide d-block d-md-none" data-ride="carousel">
         <div class="indicators-control">
           <ol class="carousel-indicators">
             {% for banner in banners %}
@@ -93,10 +96,12 @@ meta_tags:
           </ol>
         </div>
         <div class="carousel-inner" role="tablist">
-          {% for banner in banners %}
-            <div class="carousel-item bg-cover {% if forloop.first %}active{% endif %}" style="background-image: url('{{ banner.url_large }}');" role="option">
-            </div>
-          {% endfor %}
+          <div class="carousel-item bg-cover active" role="option">
+            <img src="{{ pageimages[0].home_about[1].url_medium }}" alt="">
+          </div>
+          <div class="carousel-item bg-cover" role="option">
+            <img src="{{ pageimages[0].home_about[0].url_medium }}" alt="">
+          </div>
         </div>
         <div class="banner-content">
           <h1 class="lowercase" tabindex="0">

@@ -58,6 +58,7 @@ meta_tags:
 </section>
 
 <!--About content here -->
+{% assign pageimages = site.data._models.page-images %}
 <section class="twocol">
   <div class="twocol-row">
     <div class="content">
@@ -77,9 +78,34 @@ meta_tags:
         <a class="primary-btn" href="#"><span>{% t 'discover_more' %}</span><i class="fas fa-angle-right"></i></a>
         {% endregionblock %}
       </div> -->
-      <div class="image-wrap bg-bottom" style="background-image: url('/assets/images/room.jpg');"></div>
+      <!-- Can be hidden in mobile -->
+      <div class="image-wrap bg-bottom d-sm-none d-md-block" style="background-image: url('/assets/images/room.jpg');"></div>
     </div>
-    <div class="image image-tall bg-bottom" style="background-image: url('/assets/images/exterior.jpg');"></div>
+    <!-- Can be hidden in mobile -->
+    <div class="image image-tall bg-bottom d-sm-none d-md-block" style="background-image: url('/assets/images/exterior.jpg');"></div>
+    <!-- Carousel for Mobile  -->
+      <div id="home-about-carousel" class="carousel slide" data-ride="carousel">
+        <div class="indicators-control">
+          <ol class="carousel-indicators">
+            {% for banner in banners %}
+              <li data-target="#home-about-carousel" data-slide-to="{{ forloop.index0 }}" {% if forloop.first %}class="active"{% endif %}></li>
+            {% endfor %}
+          </ol>
+        </div>
+        <div class="carousel-inner" role="tablist">
+          {% for banner in banners %}
+            <div class="carousel-item bg-cover {% if forloop.first %}active{% endif %}" style="background-image: url('{{ banner.url_large }}');" role="option">
+            </div>
+          {% endfor %}
+        </div>
+        <div class="banner-content">
+          <h1 class="lowercase" tabindex="0">
+            {% regionblock banner_header, type:header %}
+              stay zen
+            {% endregionblock %}
+          </h1>
+        </div>
+      </div>
   </div>
 </section>
 

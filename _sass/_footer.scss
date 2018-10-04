@@ -76,10 +76,6 @@ footer {
     ul {
       margin: 0;
       padding: 0;
-      @include media-breakpoint-up(lg) {
-        float: left;
-        width: 50%;
-      }
       @include media-breakpoint-down(lg) {
         justify-content: center;
       }

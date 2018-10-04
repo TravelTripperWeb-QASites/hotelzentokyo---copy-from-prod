@@ -6,7 +6,7 @@ ja:
   book_now: 空室検索
   book_room: 空室検索
   contact: お問い合わせ
-  discover_more: 詳細へ 
+  discover_more: 詳細へ
   stay_in_the_know: stay in the know
   newsletter_sign_text: 当ホテルからの季節のお知らせやイベント、お得な情報などをメールで差し上げております。
   privacy_text: <a href="/ja/privacy/" target="_blank">プライバシーポリシ</a>ーに同意します。
@@ -18,6 +18,8 @@ ja:
   your_message: メッセージをご入力ください
   address: 〒103-0013 東京都中央区 <br/>日本橋人形町1-5-8
   links: Links
+  about_links: 約
+  culture: 文化
   location: ロケーション
   direction: アクセス
   faq: よくあるご質問
@@ -35,3 +37,4 @@ ja:
   prerequisite: 必須条件
   qualifications: 資格
   submit: 送信
+  booking_engine_url: https://hotels.cloudbeds.com/ja/reservation/yvrDGL

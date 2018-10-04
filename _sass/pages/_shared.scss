@@ -115,10 +115,10 @@
     }
 
     .custom-checkbox {
-      max-width: 150px;
+      max-width: 270px;
       margin: 10px auto;
       font-family: $header-font-family;
-      font-size: $type-size-7;
+      font-size: $type-size-5;
       color: $white;
 
       input[type='checkbox'] {
@@ -127,9 +127,13 @@
         border-radius: 0;
       }
     }
-
+    .custom-control {
+      padding-left: 0;
+    }
     .custom-control-label {
-      text-align: left;
+      position: relative;
+      padding-left: 25px;
+      text-align: center;
       &::before {
         background-color: transparent;
         border: solid 1px $white;

@@ -10,15 +10,18 @@
     <p><a href="mailto:{{ site.email }}" title="{% t 'email' %}">{{ site.email }}</a></p>
   </div>
   <div class="links">
-    <h4 tabindex="0">{% t 'links' %}</h4>
+    <h4 tabindex="0">{% t 'about_links' %}</h4>
     {% assign footer-links = site.data.navigation.footer_left %}
-    <ul class="d-flex flex-column">
+    <ul class="d-flex flex-column pb-sm-down">
       {% for link in footer-links %}
         <li>
           <a href="{{ link.url | absolute_url }}">{{ link.title }}</a>
         </li>
       {% endfor %}
     </ul>
+  </div>
+  <div class="links">
+    <h4 tabindex="0">{% t 'links' %}</h4>
     {% assign footer-links = site.data.navigation.footer_right %}
     <ul class="d-flex flex-column">
       {% for link in footer-links %}

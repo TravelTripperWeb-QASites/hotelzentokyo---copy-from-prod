@@ -1,6 +1,6 @@
 [
   {
-    "content": "<h1 tabindex=\"0\">faq</h1>",
+    "content": "<h1 tabindex=\"0\"><span style=\"vertical-align: inherit;\"><span style=\"vertical-align: inherit;\"><span style=\"vertical-align: inherit;\"><span style=\"vertical-align: inherit;\">frequently asked questions</span></span></span></span></h1>",
     "_template": "header"
   }
 ]

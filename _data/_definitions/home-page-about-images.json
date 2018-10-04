@@ -3,9 +3,22 @@
     "label": "Title",
     "required": true
   },
-  "image": {
-    "label": "Add Image",
+  "home_about": {
+    "label": "Home Page About Image",
     "type": "image",
+    "multiple": true,
+    "required": true
+  },
+  "home_dining": {
+    "label": "Home Page Dining Image",
+    "type": "image",
+    "multiple": true,
+    "required": true
+  },
+  "location": {
+    "label": "Location Page Image",
+    "type": "image",
+    "multiple": true,
     "required": true
   }
 }

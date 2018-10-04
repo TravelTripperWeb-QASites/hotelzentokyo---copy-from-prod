@@ -34,7 +34,7 @@
       }
     }
     .blog-lead-image {
-      margin: 0 0 10px;
+      margin: 0 0 30px;
       img {
         width: 100%;
       }
@@ -224,7 +224,9 @@
       .blog-info {
         margin-bottom: 35px;
       }
-
+      .blog-lead-image {
+        margin: 0 0 10px;
+      }
       .blog-image-twocol {
         @include make-row;
         padding-top: 20px;
@@ -274,6 +276,9 @@
         em {
           font-size: $type-size-6;
           font-style: italic;
+        }
+        img {
+          margin-bottom: -14px;
         }
       }
       // Blog share

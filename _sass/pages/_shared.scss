@@ -14,9 +14,12 @@
 
 // Inner banner styles
 .inner-banner {
-  height: 344px;
+  height: 150px;
   margin-bottom: 24px;
   @include bg-cover;
+  @include media-breakpoint-up(sm) {
+    height: 344px;
+  }
   .inner-banner-content {
     @include vertical-center;
     padding: 0 15px;
@@ -36,10 +39,12 @@
 .banner-fullscreen {
   @include fluid-layout;
   position: relative;
-  height: calc(100vh - 63px);
+  height: 200px;
   padding: 0;
   @include bg-cover;
-
+  @include media-breakpoint-up(md) {
+    height: calc(100vh - 63px);
+  }
   @include media-breakpoint-up(lg) {
     height: calc(100vh - 128px);
   }
@@ -178,5 +183,25 @@
     margin: 0 5px;
     cursor: pointer;
     border-radius: 50%;
+  }
+}
+
+// Mobile carousel styles
+.m-hide {
+  @include media-breakpoint-down(sm) {
+    display: none;
+  }
+}
+.mobile-carousel {
+  display: block;
+  width: 100%;
+  @include media-breakpoint-up(md) {
+    display: none;
+  }
+  .carousel-item {
+    height: 300px;
+  }
+  .carousel-indicators {
+    background-color: transparent;
   }
 }

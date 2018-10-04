@@ -25,11 +25,13 @@ meta_tags:
     {% regionblock location_title, type:header %}
       <h1 class="lowercase" tabindex="0">{% t 'location' %}</h1>
     {% endregionblock %}
-    <a class="primary-btn" href="#findus" rel="nofollow"><span>{% t 'direction' %}</span><i class="fas fa-angle-right"></i></a>
+    <a class="primary-btn" href="#findus" rel="nofollow"><span>Get Directions</span><i class="fas fa-angle-right"></i></a>
   </div>
 </section>
 
 <!--About content here -->
+{% assign pageimages = site.data._models.page-images %}
+
 <section class="twocol">
   <div class="twocol-row">
     <div class="content">
@@ -50,28 +52,49 @@ meta_tags:
         {% endregionblock %}
       </div> -->
     </div>
-    <div class="image bg-bottom" style="background-image: url('/assets/images/location/mifune.jpg');"></div>
+    <!-- Can be hidden in mobile -->
+    <div class="image bg-bottom m-hide" style="background-image: url('/assets/images/location/mifune.jpg');"></div>
   </div>
 </section>
 
 <!--Editable Image collage -->
 <section class="image-collage">
   <div class="wrapper">
-    <div class="item-half">
+    <!-- Can be hidden in mobile -->
+    <div class="item-half m-hide">
       {% regionblock location_image_one, type:image %}
         <img src="/assets/images/location/loc-pic-2.jpg" alt="Ningyocho neighborhood">
       {% endregionblock %}
     </div>
-    <div class="item-onefourth">
+    <!-- Can be hidden in mobile -->
+    <div class="item-onefourth m-hide">
       {% regionblock location_image_two, type:image %}
         <img src="/assets/images/location/loc-pic-3.jpg" alt="Ningyocho neighborhood">
       {% endregionblock %}
     </div>
-    <div class="item-onefourth">
+    <!-- Can be hidden in mobile -->
+    <div class="item-onefourth m-hide">
       {% regionblock location_image_three, type:image %}
         <img src="/assets/images/location/loc-pic-4.jpg" alt="Ningyocho neighborhood">
       {% endregionblock %}
     </div>
+
+    <!-- Carousel for Mobile  -->
+    <div id="location-carousel" class="carousel slide mobile-carousel" data-ride="carousel">
+      <div class="indicators-control">
+        <ol class="carousel-indicators">
+          {% for pageimage in pageimages[0].location | limit: 4 %}
+            <li data-target="#location-carousel" data-slide-to="{{ forloop.index0 }}" {% if forloop.first %}class="active"{% endif %}></li>
+          {% endfor %}
+        </ol>
+      </div>
+      <div class="carousel-inner" role="tablist">
+        {% for pageimage in pageimages[0].location | limit: 4 %}
+        <div class="carousel-item bg-cover {% if forloop.first %}active{% endif %}" role="option" style="background-image: url('{{ pageimage.url_medium }}');"></div>
+        {% endfor %}
+      </div>
+    </div>
+
   </div>
 </section>
 

@@ -58,6 +58,8 @@ meta_tags:
 </section>
 
 <!--About content here -->
+{% assign pageimages = site.data._models.page-images %}
+
 <section class="twocol">
   <div class="twocol-row">
     <div class="content">
@@ -77,9 +79,29 @@ meta_tags:
         <a class="primary-btn" href="#"><span>{% t 'discover_more' %}</span><i class="fas fa-angle-right"></i></a>
         {% endregionblock %}
       </div> -->
-      <div class="image-wrap bg-bottom" style="background-image: url('/assets/images/room.jpg');"></div>
+
+      <!-- Can be hidden in mobile -->
+      <div class="image-wrap bg-bottom m-hide" style="background-image: url('{{ pageimages[0].home_about[1].url_medium }}');"></div>
     </div>
-    <div class="image image-tall bg-bottom" style="background-image: url('/assets/images/exterior.jpg');"></div>
+
+    <!-- Can be hidden in mobile -->
+    <div class="image image-tall bg-bottom m-hide" style="background-image: url('{{ pageimages[0].home_about[0].url_medium }}');"></div>
+
+    <!-- Carousel for Mobile  -->
+    <div id="about-carousel" class="carousel slide mobile-carousel" data-ride="carousel">
+      <div class="indicators-control">
+        <ol class="carousel-indicators">
+          {% for pageimage in pageimages[0].home_about | limit: 2 %}
+            <li data-target="#about-carousel" data-slide-to="{{ forloop.index0 }}" {% if forloop.first %}class="active"{% endif %}></li>
+          {% endfor %}
+        </ol>
+      </div>
+      <div class="carousel-inner" role="tablist">
+        {% for pageimage in pageimages[0].home_about | limit: 2 %}
+        <div class="carousel-item bg-cover {% if forloop.first %}active{% endif %}" role="option" style="background-image: url('{{ pageimage.url_medium }}');"></div>
+        {% endfor %}
+      </div>
+    </div>
   </div>
 </section>
 
@@ -132,9 +154,31 @@ meta_tags:
 <!--Dining content here -->
 <section class="twocol">
   <div class="twocol-row">
-    <div class="image bg-bottom" style="background-image: url('/assets/images/common-room-1.jpg');"></div>
+
+    <!-- Carousel for Mobile  -->
+    <div id="dining-carousel" class="carousel slide mobile-carousel" data-ride="carousel">
+      <div class="indicators-control">
+        <ol class="carousel-indicators">
+          {% for pageimage in pageimages[0].home_dining | limit: 2 %}
+            <li data-target="#dining-carousel" data-slide-to="{{ forloop.index0 }}" {% if forloop.first %}class="active"{% endif %}></li>
+          {% endfor %}
+        </ol>
+      </div>
+      <div class="carousel-inner" role="tablist">
+        {% for pageimage in pageimages[0].home_dining | limit: 2 %}
+        <div class="carousel-item bg-cover {% if forloop.first %}active{% endif %}" role="option" style="background-image: url('{{ pageimage.url_medium }}');"></div>
+        {% endfor %}
+      </div>
+    </div>
+
+    <!-- Can be hidden in mobile -->
+    <div class="image bg-bottom m-hide" style="background-image: url('{{ pageimages[0].home_dining[0].url_medium }}');"></div>
+
     <div class="content">
-      <div class="image-wrap bg-bottom overlap" style="background-image: url('/assets/images/common-room-2.jpg');"></div>
+
+      <!-- Can be hidden in mobile -->
+      <div class="image-wrap bg-center overlap m-hide" style="background-image: url('{{ pageimages[0].home_dining[1].url_medium }}');"></div>
+
       <div class="content-wrap">
         {% regionblock cafe_title_subtitle, type:header %}
          <h4 tabindex="0">Food & Live Music at Downstairs Bar / Cafe</h4>

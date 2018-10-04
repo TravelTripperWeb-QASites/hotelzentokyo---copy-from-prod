@@ -18,6 +18,7 @@ en:
   your_message: Your message
   address: 1-5-8 Nihonbashi Ningyocho, Chuo-ku,<br>Tokyo, Japan 103-0013
   links: Links
+  about_links: About
   location: Location
   direction: Get Direction
   faq: frequently asked questions
@@ -35,3 +36,4 @@ en:
   prerequisite: Prerequisite
   qualifications: Qualifications
   submit: Submit
+  booking_engine_url: https://hotels.cloudbeds.com/en/reservation/yvrDGL

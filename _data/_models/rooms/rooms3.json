@@ -66,27 +66,6 @@
       "path": "//cdn.traveltripper.io/site-assets/32_913_19441/media/2018-10-03-040027/matsu-featured.jpg",
       "alt": "MATSU",
       "caption": ""
-    },
-    {
-      "name": "matsu-featured-2",
-      "file_name": "matsu-featured-2.jpg",
-      "url": "//cdn.traveltripper.io/site-assets/32_913_19441/media/2018-10-03-040028/matsu-featured-2.jpg",
-      "tags": "",
-      "description": "",
-      "date_added": "2018-10-03-040028",
-      "file_type": "image/jpeg",
-      "width": 1000,
-      "height": 1208,
-      "file_size": 145747,
-      "url_large": "//cdn.traveltripper.io/site-assets/32_913_19441/media/2018-10-03-040028/large_matsu-featured-2.jpg",
-      "url_medium": "//cdn.traveltripper.io/site-assets/32_913_19441/media/2018-10-03-040028/medium_matsu-featured-2.jpg",
-      "url_small": "//cdn.traveltripper.io/site-assets/32_913_19441/media/2018-10-03-040028/small_matsu-featured-2.jpg",
-      "url_xsmall": "//cdn.traveltripper.io/site-assets/32_913_19441/media/2018-10-03-040028/xsmall_matsu-featured-2.jpg",
-      "url_thumb": "//cdn.traveltripper.io/site-assets/32_913_19441/media/2018-10-03-040028/thumb_matsu-featured-2.jpg",
-      "git_file_name": "_assets/image_data/matsu-featured-2.json",
-      "path": "//cdn.traveltripper.io/site-assets/32_913_19441/media/2018-10-03-040028/matsu-featured-2.jpg",
-      "alt": "MATSU",
-      "caption": ""
     }
   ],
   "amenities_image": [
@@ -108,27 +87,6 @@
       "url_thumb": "//cdn.traveltripper.io/site-assets/32_913_19441/media/2018-10-03-040030/thumb_matsu-featured-3.jpg",
       "git_file_name": "_assets/image_data/matsu-featured-3.json",
       "path": "//cdn.traveltripper.io/site-assets/32_913_19441/media/2018-10-03-040030/matsu-featured-3.jpg",
-      "alt": "MATSU",
-      "caption": ""
-    },
-    {
-      "name": "matsu-featured-4",
-      "file_name": "matsu-featured-4.jpg",
-      "url": "//cdn.traveltripper.io/site-assets/32_913_19441/media/2018-10-03-040031/matsu-featured-4.jpg",
-      "tags": "",
-      "description": "",
-      "date_added": "2018-10-03-040031",
-      "file_type": "image/jpeg",
-      "width": 1000,
-      "height": 1208,
-      "file_size": 159660,
-      "url_large": "//cdn.traveltripper.io/site-assets/32_913_19441/media/2018-10-03-040031/large_matsu-featured-4.jpg",
-      "url_medium": "//cdn.traveltripper.io/site-assets/32_913_19441/media/2018-10-03-040031/medium_matsu-featured-4.jpg",
-      "url_small": "//cdn.traveltripper.io/site-assets/32_913_19441/media/2018-10-03-040031/small_matsu-featured-4.jpg",
-      "url_xsmall": "//cdn.traveltripper.io/site-assets/32_913_19441/media/2018-10-03-040031/xsmall_matsu-featured-4.jpg",
-      "url_thumb": "//cdn.traveltripper.io/site-assets/32_913_19441/media/2018-10-03-040031/thumb_matsu-featured-4.jpg",
-      "git_file_name": "_assets/image_data/matsu-featured-4.json",
-      "path": "//cdn.traveltripper.io/site-assets/32_913_19441/media/2018-10-03-040031/matsu-featured-4.jpg",
       "alt": "MATSU",
       "caption": ""
     }

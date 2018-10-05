@@ -59,7 +59,8 @@
     }
     .category-intro {
       padding-bottom: 30px;
-      h2 {
+      h1 {
+        @extend h2;
         margin-bottom: 20px;
         padding-bottom: 0;
         text-transform: uppercase;
@@ -260,7 +261,10 @@
         font-size: $type-size-6;
         color: $black;
       }
-
+      h1 {
+        @extend h2;
+        text-transform: none;
+      }
       h4 {
         margin-bottom: 10px;
         padding-top: 15px;

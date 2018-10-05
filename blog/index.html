@@ -41,7 +41,7 @@ meta_tags:
             <a href="{{ blogpage }}category/{{ post.category.url_friendly_name }}/" aria-label="Category {{ post.category.title }}">{{ post.category.title }}</a>
           </span>
         </div>
-        <p tabindex="0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras dapibus vulputate diam eu pretium. Mauris elit orci, ultricies id fermentum vel, porta et eros.</p>
+        <p tabindex="0">{{ post.short_description }}</p>
         <div class="btn-holder">
           <a class="primary-btn inverse" href="{{ blogpage }}{{ post.url_friendly_name }}/"><span>Read More</span><i class="fas fa-angle-right"></i></a>
         </div>

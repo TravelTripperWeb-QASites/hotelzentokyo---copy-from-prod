@@ -59,7 +59,8 @@
     }
     .category-intro {
       padding-bottom: 30px;
-      h2 {
+      h1 {
+        @extend h2;
         margin-bottom: 20px;
         padding-bottom: 0;
         text-transform: uppercase;
@@ -225,7 +226,7 @@
         margin-bottom: 35px;
       }
       .blog-lead-image {
-        margin: 0 0 10px;
+        margin: 0 0 5px;
       }
       .blog-image-twocol {
         @include make-row;
@@ -260,7 +261,10 @@
         font-size: $type-size-6;
         color: $black;
       }
-
+      h1 {
+        @extend h2;
+        text-transform: none;
+      }
       h4 {
         margin-bottom: 10px;
         padding-top: 15px;
@@ -278,7 +282,7 @@
           font-style: italic;
         }
         img {
-          margin-bottom: -14px;
+          margin-bottom: -20px;
         }
       }
       // Blog share

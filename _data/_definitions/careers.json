@@ -1,10 +1,4 @@
 {
-  "language": {
-    "required": true,
-    "label": "Select language",
-    "type": "select",
-    "options": ["en", "ja"]
-  },
   "title": {
     "required": true,
     "label": "Title",
@@ -22,21 +16,25 @@
   "job-description": {
     "label": "Job description",
     "type": "richtext",
-    "required": true
+    "required": true,
+    "localizable": true
   },
   "requirements": {
     "label": "Requirements",
     "type": "richtext",
-    "required": true
+    "required": true,
+    "localizable": true
   },
   "qualifications": {
     "label": "Qualifications",
     "type": "richtext",
-    "required": true
+    "required": true,
+    "localizable": true
   },
   "meta_description": {
     "label": "Meta Description",
-    "required": true
+    "required": true,
+    "localizable": true
   },
   "sort_order": {
     "type": "integer",

@@ -20,7 +20,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  font-size: $type-size-2;
+  font-size: $type-size-10;
   font-weight: 300;
   line-height: 2.5rem;
   color: $white;
@@ -76,7 +76,8 @@ h3 {
 }
 
 h4 {
-  font-size: $type-size-6;
+  font-family: $global-font-family;
+  font-size: $type-size-7;
   font-weight: 500;
   color: $dark-gray;
   text-transform: uppercase;

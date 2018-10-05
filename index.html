@@ -81,23 +81,23 @@ meta_tags:
       </div> -->
 
       <!-- Can be hidden in mobile -->
-      <div class="image-wrap bg-bottom m-hide" style="background-image: url('{{ pageimages[0].home_about[1].url_medium }}');"></div>
+      <div class="image-wrap bg-bottom m-hide" style="background-image: url('{{ pageimages[0].home_about[0].url_medium }}');"></div>
     </div>
 
     <!-- Can be hidden in mobile -->
-    <div class="image image-tall bg-bottom m-hide" style="background-image: url('{{ pageimages[0].home_about[0].url_medium }}');"></div>
+    <div class="image image-tall bg-bottom m-hide" style="background-image: url('{{ pageimages[0].home_about[2].url_medium }}');"></div>
 
     <!-- Carousel for Mobile  -->
     <div id="about-carousel" class="carousel slide mobile-carousel" data-ride="carousel">
       <div class="indicators-control">
         <ol class="carousel-indicators">
-          {% for pageimage in pageimages[0].home_about | limit: 2 %}
+          {% for pageimage in pageimages[0].home_about | limit: 3 %}
             <li data-target="#about-carousel" data-slide-to="{{ forloop.index0 }}" {% if forloop.first %}class="active"{% endif %}></li>
           {% endfor %}
         </ol>
       </div>
       <div class="carousel-inner" role="tablist">
-        {% for pageimage in pageimages[0].home_about | limit: 2 %}
+        {% for pageimage in pageimages[0].home_about | limit: 3 %}
         <div class="carousel-item bg-cover {% if forloop.first %}active{% endif %}" role="option" style="background-image: url('{{ pageimage.url_medium }}');"></div>
         {% endfor %}
       </div>

@@ -3,7 +3,9 @@
   {% assign seo_url = site.url %}
 {% endif %}
 
-{% if page.title %}
+{% if page.meta_title %}
+  {% assign seo_title = page.meta_title | normalize_whitespace | escape_once %}
+{% elsif page.title %}
   {% assign seo_title = page.title | normalize_whitespace | escape_once %}
 {% else %}
   {% assign seo_title = site.title | append: " " | append: site.title_separator | append: " " | append: site.name %}

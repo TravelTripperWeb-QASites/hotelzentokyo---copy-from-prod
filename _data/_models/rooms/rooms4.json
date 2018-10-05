@@ -124,5 +124,17 @@
     "en": "SINGLE BED POD",
     "ja": "SINGLE BED POD"
   },
-  "order": 1
+  "order": 1,
+  "title_localized": {
+    "en": "UME - SINGLE BED POD",
+    "ja": "ume - single bed pod"
+  },
+  "meta_title_localized": {
+    "en": "ume - single bed pod | hotel zen tokyo - zen pods & rooms",
+    "ja": "ume - single bed pod | hotel zen tokyo - zen pods & rooms"
+  },
+  "meta_description_localized": {
+    "en": "Spacious pod with a comfortable, western-style Single-sized (100cm) bed for one person only. Pod height reaches all the way to the ceiling. Comes with a safe, free-wifi, clothes hanger, towel and full amenities. ",
+    "ja": "天井まで届く広々としたカプセルに、シングル（100cm）のSimmonsベッド。カプセル内金庫、フリーWifi、ハンガー、タオル、 フル・アメニティセットが付いています"
+  }
 }

@@ -25,25 +25,25 @@
     text-align: center;
     transform: translateY(-50%);
   }
-  .carousel-control-prev {
-    top: 0;
-    bottom: 0;
-    left: 0;
-    z-index: 99;
-    width: auto;
-    border: 0;
-    opacity: 1;
-  }
-  .carousel-control-next {
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: auto;
-    z-index: 99;
-    width: auto;
-    border: 0;
-    opacity: 1;
-  }
+  // .carousel-control-prev {
+  //   top: 0;
+  //   bottom: 0;
+  //   left: 0;
+  //   z-index: 99;
+  //   width: auto;
+  //   border: 0;
+  //   opacity: 1;
+  // }
+  // .carousel-control-next {
+  //   top: 0;
+  //   right: 0;
+  //   bottom: 0;
+  //   left: auto;
+  //   z-index: 99;
+  //   width: auto;
+  //   border: 0;
+  //   opacity: 1;
+  // }
 }
 
 .indicators-control {
@@ -72,13 +72,9 @@
 
 .carousel-indicators {
   position: relative;
-  bottom: 0;
+  bottom: 30px;
   align-items: center;
-  height: 48px;
   margin: 0 auto;
-  font-family: $header-font-family;
-  background-color: $black;
-
   li {
     width: 10px;
     height: 10px;

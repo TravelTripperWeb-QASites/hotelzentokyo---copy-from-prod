@@ -37,7 +37,7 @@ meta_tags:
   <ul class="job-positions">
     {% for career in careers %}
       <li>
-        <a href="/careers/{{ career.url_friendly_name }}/">
+        <a href="{{ page | permalink }}{{ career.url_friendly_name }}/">
           <i class="fas fa-angle-right"></i>
           <span>{{ career.designation }}</span>
         </a>

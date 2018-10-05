@@ -11,8 +11,7 @@
   },
   "url_friendly_name": {
     "type": "url_slug",
-    "required": true,
-    "localizable": true
+    "required": true
   },
   "job-description": {
     "label": "Job description",

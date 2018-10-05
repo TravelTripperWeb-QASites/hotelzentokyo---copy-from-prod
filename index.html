@@ -97,7 +97,7 @@ meta_tags:
         </ol>
       </div>
       <div class="carousel-inner" role="tablist">
-        {% for pageimage in pageimages[0].home_about | limit: 2 %}
+        {% for pageimage in pageimages[0].home_about | limit: 3 %}
         <div class="carousel-item bg-cover {% if forloop.first %}active{% endif %}" role="option" style="background-image: url('{{ pageimage.url_medium }}');"></div>
         {% endfor %}
       </div>

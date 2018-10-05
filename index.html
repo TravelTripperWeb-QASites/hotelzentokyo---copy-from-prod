@@ -91,7 +91,7 @@ meta_tags:
     <div id="about-carousel" class="carousel slide mobile-carousel" data-ride="carousel">
       <div class="indicators-control">
         <ol class="carousel-indicators">
-          {% for pageimage in pageimages[0].home_about | limit: 2 %}
+          {% for pageimage in pageimages[0].home_about | limit: 3 %}
             <li data-target="#about-carousel" data-slide-to="{{ forloop.index0 }}" {% if forloop.first %}class="active"{% endif %}></li>
           {% endfor %}
         </ol>

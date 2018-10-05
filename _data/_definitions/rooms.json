@@ -3,6 +3,16 @@
 		"required":true,
     "localizable": true
 	},
+	"seo_title": {
+		"label": "Meta Title",
+		"type": "text",
+		"localizable": true
+	},
+	"seo_description": {
+		"label": "Meta Description",
+		"type": "text",
+		"localizable": true
+	},
   "room_title":{
     "label": "Room Title",
 		"required":true,

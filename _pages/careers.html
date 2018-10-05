@@ -37,7 +37,7 @@ meta_tags:
   <ul class="job-positions">
     {% for career in careers %}
       <li>
-        <a href="{% if career.language == "ja" and site.active_lang == "en" %}/ja/careers/{% elsif career.language == "en" and site.active_lang == "ja" %}/careers/{% elsif career.language == "ja" and site.active_lang == "ja" %}/ja/careers/{% else %}/careers/{% endif %}{{ career.url_friendly_name }}/">
+        <a href="/careers/{{ career.url_friendly_name }}/">
           <i class="fas fa-angle-right"></i>
           <span>{{ career.designation }}</span>
         </a>

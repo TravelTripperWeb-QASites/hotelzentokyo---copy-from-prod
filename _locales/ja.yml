@@ -38,3 +38,9 @@ ja:
   qualifications: 資格
   submit: 送信
   booking_engine_url: https://hotels.cloudbeds.com/ja/reservation/yvrDGL
+  validation_firstname: 名をご記入ください
+  validation_surname: 姓をご記入ください
+  validation_email: メールアドレスをご記入ください
+  validation_subject: 件名をご記入ください
+  validation_message: メッセージをご記入ください
+  validation_agree: You must agree before submitting.

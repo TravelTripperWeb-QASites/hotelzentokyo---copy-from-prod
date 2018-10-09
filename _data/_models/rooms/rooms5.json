@@ -128,5 +128,13 @@
     "en": " DELUXE ROOM TYPE A ",
     "ja": "DELUXE ROOM TYPE A"
   },
-  "order": 4
+  "order": 4,
+  "meta_title_localized": {
+    "en": "Asa - Deluxe Room Type A in Tokyo | Hotel Zen Tokyo",
+    "ja": "hotel zen tokyo | 客室紹介 - asa - "
+  },
+  "meta_description_localized": {
+    "en": "Spacious pod with a comfortable, western-style semi-double (120cm) bed for one person only. Pod height reaches all the way to the ceiling.",
+    "ja": "カプセル部屋よりもゆとりがある、コーナールームです。天井まで届く広々とした部屋に、セミダブル（120cm）のベッド。フリーWifi、ハンガー、タオル、 フル・アメニティセットが付いています。"
+  }
 }

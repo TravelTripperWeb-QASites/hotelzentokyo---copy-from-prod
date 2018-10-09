@@ -1,7 +1,7 @@
-# Analytics
+---
 analytics:
-  provider: false # false (default), "google", "gtm", "custom"
+  provider: gtm
   google:
-    tracking_id:
+    tracking_id: 
   gtm:
-    tracking_id:
+    tracking_id: GTM-WBZP9FT

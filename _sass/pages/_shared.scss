@@ -54,6 +54,12 @@
     z-index: 2;
     color: $white;
     text-align: center;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    @include media-breakpoint-up(lg) {
+      -webkit-transform: translateY(-40px);
+      transform: translateY(-40px);
+    }
 
     h6 {
       margin-bottom: 40px;

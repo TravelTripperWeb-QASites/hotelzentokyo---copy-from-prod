@@ -128,5 +128,13 @@
     "en": "SEMIDOUBLE BED WITH EXTRA ROOM",
     "ja": "SEMIDOUBLE BED WITH EXTRA ROOM"
   },
-  "order": 3
+  "order": 3,
+  "meta_title_localized": {
+    "en": "Matsu - Semi Double Bed Pod in Tokyo | Hotel Zen Tokyo",
+    "ja": "hotel zen tokyo | 客室紹介 - matsu - "
+  },
+  "meta_description_localized": {
+    "en": "Spacious pod with a comfortable, western-style semi-double (120cm) bed for one person only. Comes with extra floor space for small luggages. Pod height reaches all the way to the ceiling.",
+    "ja": "天井まで届く広々としたカプセルに、セミダブル（120cm）のベッド。他のカプセルよりも面積が広く、床は畳になっています。フリーWifi、ハンガー、タオル、 フル・アメニティセットが付いています。"
+  }
 }

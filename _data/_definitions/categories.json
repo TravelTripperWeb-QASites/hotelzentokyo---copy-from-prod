@@ -2,9 +2,17 @@
   "title": {
     "label": "Category Name",
     "required": true
+  },  
+  "meta_title": {
+    "label": "Meta Title",
+    "required": true
   },
   "description": {
     "label": "Category Description",
+    "required": true
+  },  
+  "meta_description": {
+    "label": "Meta Description",
     "required": true
   },
   "url_friendly_name": {

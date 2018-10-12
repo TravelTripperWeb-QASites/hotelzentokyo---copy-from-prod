@@ -40,7 +40,7 @@ meta_tags:
 </div>
 
 <!-- Gallery start here-->
-{% assign categories = site.data._galleries %}
+{% assign categories = site.data._galleries | sort: sort_order %}
 <section class="gallery standard-margin">
   <div class="gallery-listing" id="lightgallery">
     {% for category in categories %}

@@ -1,5 +1,11 @@
 {
   "name": "Neighborhood",
+  "name_localized":
+  {
+    "en": "Neighborhood",
+    "ja": "ご近所"
+  },
+  "sort_order": 3,
   "photos": [
     {
       "name": "location1",

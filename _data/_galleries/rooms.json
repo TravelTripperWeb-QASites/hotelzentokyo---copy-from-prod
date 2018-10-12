@@ -1,5 +1,11 @@
 {
   "name": "Rooms",
+  "name_localized":
+  {
+    "en": "Rooms",
+    "ja": "部屋"
+  },
+  "sort_order": 2,
   "photos": [
     {
       "name": "room1",

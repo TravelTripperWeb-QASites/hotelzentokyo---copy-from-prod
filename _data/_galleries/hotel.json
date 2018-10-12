@@ -1,5 +1,11 @@
 {
   "name": "Hotel",
+  "name_localized":
+  {
+    "en": "Hotel",
+    "ja": "ホテル"
+  },
+  "sort_order": 1,
   "photos": [
     {
       "name": "hotel1",

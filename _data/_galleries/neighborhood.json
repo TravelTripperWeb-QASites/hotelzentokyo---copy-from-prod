@@ -38,6 +38,25 @@
       "url_thumb": "//cdn.traveltripper.io/site-assets/32_913_19932/media/2018-10-12-062813/thumb_location2.jpg",
       "path": "//cdn.traveltripper.io/site-assets/32_913_19932/media/2018-10-12-062813/location2.jpg",
       "alt": "Neighborhood"
+    },
+    {
+      "name": "location3",
+      "file_name": "location3.jpg",
+      "url": "//cdn.traveltripper.io/site-assets/32_913_19932/media/2018-10-12-063337/location3.jpg",
+      "tags": "",
+      "description": "",
+      "date_added": "2018-10-12-063337",
+      "file_type": "image/jpeg",
+      "width": 800,
+      "height": 864,
+      "file_size": 152998,
+      "url_large": "//cdn.traveltripper.io/site-assets/32_913_19932/media/2018-10-12-063337/large_location3.jpg",
+      "url_medium": "//cdn.traveltripper.io/site-assets/32_913_19932/media/2018-10-12-063337/medium_location3.jpg",
+      "url_small": "//cdn.traveltripper.io/site-assets/32_913_19932/media/2018-10-12-063337/small_location3.jpg",
+      "url_xsmall": "//cdn.traveltripper.io/site-assets/32_913_19932/media/2018-10-12-063337/xsmall_location3.jpg",
+      "url_thumb": "//cdn.traveltripper.io/site-assets/32_913_19932/media/2018-10-12-063337/thumb_location3.jpg",
+      "path": "//cdn.traveltripper.io/site-assets/32_913_19932/media/2018-10-12-063337/location3.jpg",
+      "alt": "Neighborhood"
     }
   ],
   "description": ""

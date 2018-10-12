@@ -31,7 +31,7 @@ meta_tags:
 <div class="inner-sub-nav text-center">
   {% assign categories = site.data._galleries | sort: sort_order %}
   <ul>
-    <li><a href="javascript:void(0);" class="filter active" data-filter="all">All</a></li>
+    <li><a href="javascript:void(0);" class="filter active" data-filter="all">{% t 'all' %}</a></li>
     {% for category in categories %}
     {% assign catname = category[0] %}
       <li><a href="javascript:void(0);" class="filter" data-filter="{{ catname }}">{{ site.data._galleries[catname].name  }}</a></li>

@@ -4,6 +4,8 @@ main_localized:
       url: /rooms/
     - title: Location
       url: /location/
+    - title: Gallery
+      url: /gallery/
     - title: Blog
       url: /blog/
     - title: faq
@@ -13,6 +15,8 @@ main_localized:
       url: /ja/rooms/
     - title: ロケーション
       url: /ja/location/
+    - title: 画廊
+      url: /ja/gallery/
     - title: ブログ
       url: /ja/blog/
     - title: よくあるご質問
@@ -24,6 +28,8 @@ footer_left_localized:
       url: /rooms/
     - title: Location
       url: /location/
+    - title: Gallery
+      url: /gallery/
     - title: Blog
       url: /blog/
     - title: FAQ
@@ -33,6 +39,8 @@ footer_left_localized:
       url: /ja/rooms/
     - title: ロケーション
       url: /ja/location/
+    - title: 画廊
+      url: /ja/gallery/
     - title: ブログ
       url: /ja/blog/
     - title: よくあるご質問

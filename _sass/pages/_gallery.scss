@@ -1,2 +1,65 @@
 // Gallery Page Elements
 // ==========================================================================
+.gallery {
+  @include fixed-width-layout;
+  margin-top: 21px;
+  @include media-breakpoint-up(md) {
+    margin-top: 44px;
+  }
+
+  .gallery-listing {
+    @include make-row;
+
+    .gallery-item {
+      position: relative;
+      @include make-col-ready;
+      @include media-breakpoint-up(md) {
+        @include make-col(4);
+      }
+      margin-bottom: 30px;
+
+      // img {
+      //   width: 100%;
+      //   height: auto;
+      // }
+      .g-pic {
+        width: 100%;
+        min-height: 260px;
+        @include media-breakpoint-up(md) {
+          min-height: 360px;
+        }
+      }
+      .overlay {
+        position: absolute;
+        top: 0;
+        right: 14px;
+        bottom: 0;
+        left: 14px;
+        cursor: pointer;
+        background: rgba($black,.5);
+        opacity: 0;
+        transition: $global-transition;
+
+        .icon {
+          position: absolute;
+          top: 0;
+          right: 0;
+          bottom: 0;
+          left: 0;
+          width: 98px;
+          height: 71px;
+          margin: auto;
+          img {
+            min-height: auto;
+          }
+        }
+      }
+
+      &:hover {
+        .overlay {
+          opacity: 1;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,64 @@
+---
+layout: default
+title_localized:
+  en: Gallery | Hotel Zen Tokyo
+  ja: 画廊 | ロケーション
+meta_description_localized:
+  en: Hotel Zen Tokyo's guest experience is crafted with the spirit of Japanese zen minimalism in mind. Experience authentic traditional design in the heart of Tokyo.
+  ja: Hotel Zen Tokyoは「泊まれる茶室」ー各部屋を千利休の茶室にみたてた新しい形のカプセルホテルです。Hotel Zen Tokyoはただ寝るだけのカプセル体験ではなく、ミニマルに日本の文化を体験できる、まるで都会の旅館のような体験を提供します。
+permalink_localized:
+  en: /gallery/
+  ja: /gallery/
+published_localized:
+  en: true
+  ja: true
+meta_tags:
+  robots:
+---
+
+{% if site.active_lang == "ja" %}
+ {% assign lang_url = "/ja" %}
+{% endif %}
+<!-- Gallery page banner -->
+<section class="inner-banner text-center bg-cover" style="background-image:url('//cdn.traveltripper.io/site-assets/32_913_18984/media/2018-09-20-031714/large_home-banner-3.jpg');">
+  <div class="inner-banner-content">
+    {% regionblock rooms_banner_heading, type:header %}
+      <h1 tabindex="0">{% t 'gallery_title' %}</h1>
+    {% endregionblock %}
+  </div>
+</section>
+
+<div class="inner-sub-nav text-center">
+  {% assign categories = site.data._galleries | sort: sort_order %}
+  <ul>
+    <li><a href="javascript:void(0);" class="filter active" data-filter="all">All</a></li>
+    {% for category in categories %}
+    {% assign catname = category[0] %}
+      <li><a href="javascript:void(0);" class="filter" data-filter="{{ catname }}">{{ site.data._galleries[catname].name  }}</a></li>
+    {% endfor %}
+  </ul>
+</div>
+
+<!-- Gallery start here-->
+{% assign categories = site.data._galleries %}
+<section class="gallery standard-margin">
+  <div class="gallery-listing" id="lightgallery">
+    {% for category in categories %}
+      {% assign catname = category[0] %}
+      {% for photo in site.data._galleries[catname].photos %}
+        <div class="gallery-item fancybox" data-filter="{{catname}}" data-src="{% if photo.url_large %}{{ photo.url_large }}{% else %}{{ photo.url }}{% endif %}" data-exthumbimage="{% if photo.url_medium %}{{ photo.url_medium }}{% else %}{{ photo.url }}{% endif %}">
+          <div class="g-pic bg-cover" style="background-image:url('{{ photo.url_small }}');"></div>
+          <!-- <img src="" alt="{{ photo.name }}" /> -->
+          <div class="overlay">
+            <div class="icon">
+              <img src="/assets/images/gallery/icon.png" alt="Enlarge">
+            </div>
+          </div>
+        </div>
+      {% endfor %}
+    {% endfor %}
+  </div>
+</section>
+
+<!-- Newsletter signup here -->
+{% include forms/jotform/newsletter.html %}

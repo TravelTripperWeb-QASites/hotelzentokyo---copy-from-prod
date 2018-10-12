@@ -1,6 +1,7 @@
 <form class="needs-validation" action="https://submit.jotform.me/submit/{{ site.data.forms.jotform.contact-id }}/" method="post" name="form_{{ site.data.forms.jotform.contact-id }}"
     id="{{ site.data.forms.jotform.contact-id }}" accept-charset="utf-8" novalidate>
     <input type="hidden" name="formID" value="{{ site.data.forms.jotform.contact-id }}">
+    <input type="hidden" name="q9_language" value="{{ site.active_lang }}">
     <div class="form-group two">
       <div class="input-block">
         <input type="text" class="form-control" placeholder="{% t 'first_name' %} *" aria-label="First Name" title="First Name" id="validationUsername" name="q3_firstName" required>

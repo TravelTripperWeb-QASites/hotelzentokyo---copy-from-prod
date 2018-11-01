@@ -16,6 +16,9 @@ main_localized:
   - title: faq
     url: "/faq/"
     __id__: 4
+  - __id__: 6
+    title: Test
+    url: "/test/"
   ja:
   - title: 客室
     url: "/ja/rooms/"

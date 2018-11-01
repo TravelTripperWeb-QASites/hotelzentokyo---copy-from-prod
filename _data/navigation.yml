@@ -1,12 +1,12 @@
 ---
 main_localized:
   en:
-  - title: Rooms
-    url: "/rooms/"
-    __id__: 0
   - title: Location
     url: "/location/"
     __id__: 1
+  - title: Rooms
+    url: "/rooms/"
+    __id__: 0
   - title: Gallery
     url: "/gallery/"
     __id__: 2

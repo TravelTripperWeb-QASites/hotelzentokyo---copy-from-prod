@@ -41,6 +41,26 @@
       "path": "//cdn.traveltripper.io/site-assets/32_913_19441/media/2018-10-04-034544/common-room-1.jpg",
       "alt": "common-room-1",
       "caption": "This is the lounge are with a large caption"
+    },
+    {
+      "name": "room1",
+      "file_name": "room1.jpg",
+      "url": "//cdn.traveltripper.io/site-assets/32_913_19932/media/2018-10-12-063359/room1.jpg",
+      "tags": "",
+      "description": "",
+      "date_added": "2018-10-12-063359",
+      "file_type": "image/jpeg",
+      "width": 784,
+      "height": 448,
+      "file_size": 49674,
+      "url_large": "//cdn.traveltripper.io/site-assets/32_913_19932/media/2018-10-12-063359/large_room1.jpg",
+      "url_medium": "//cdn.traveltripper.io/site-assets/32_913_19932/media/2018-10-12-063359/medium_room1.jpg",
+      "url_small": "//cdn.traveltripper.io/site-assets/32_913_19932/media/2018-10-12-063359/small_room1.jpg",
+      "url_xsmall": "//cdn.traveltripper.io/site-assets/32_913_19932/media/2018-10-12-063359/xsmall_room1.jpg",
+      "url_thumb": "//cdn.traveltripper.io/site-assets/32_913_19932/media/2018-10-12-063359/thumb_room1.jpg",
+      "git_file_name": "_assets/image_data/room1.json",
+      "path": "//cdn.traveltripper.io/site-assets/32_913_19932/media/2018-10-12-063359/room1.jpg",
+      "alt": "room1"
     }
   ],
   "description": "",

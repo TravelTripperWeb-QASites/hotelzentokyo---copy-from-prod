@@ -37,7 +37,8 @@
       "url_xsmall": "//cdn.traveltripper.io/site-assets/32_913_19932/media/2018-10-12-062633/xsmall_hotel3.jpg",
       "url_thumb": "//cdn.traveltripper.io/site-assets/32_913_19932/media/2018-10-12-062633/thumb_hotel3.jpg",
       "path": "//cdn.traveltripper.io/site-assets/32_913_19932/media/2018-10-12-062633/hotel3.jpg",
-      "alt": "Hotel"
+      "alt": "Hotel",
+      "caption": "Exterior"
     },
     {
       "name": "common-room-1",
@@ -80,5 +81,6 @@
       "alt": "common-room-2"
     }
   ],
-  "description": ""
+  "description": "",
+  "id": "hotel"
 }

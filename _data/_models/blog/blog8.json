@@ -25,6 +25,6 @@
     "alt": "room5",
     "caption": ""
   },
-  "post_content": "<p>Here's some post content!</p>",
-  "post_more_content": "<p>More content 2</p>"
+  "post_content": "<p>Here's some post content!</p>\n<p>Let's make the content longer with more content. It should have multiple lines that show up here.</p>\n<p>Not sure why it wouldn't show?</p>",
+  "post_more_content": "<p>More content 2</p>\n<p>Let's make the content longer with more content. It should have multiple lines that show up here.</p>\n<p>Not sure why it wouldn't show?</p>\n<p>No good reason for it.</p>"
 }

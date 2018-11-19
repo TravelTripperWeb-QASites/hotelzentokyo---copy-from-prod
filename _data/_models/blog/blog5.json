@@ -1,0 +1,29 @@
+{
+  "category": "",
+  "title": "Alex Test",
+  "short_description": "short description",
+  "url_friendly_name": "abc",
+  "date": "2018-11-08T05:00:00.000Z",
+  "image": {
+    "name": "room5",
+    "file_name": "room5.jpg",
+    "url": "//cdn.traveltripper.io/site-assets/32_913_19932/media/2018-10-12-063459/room5.jpg",
+    "tags": "",
+    "description": "",
+    "date_added": "2018-10-12-063459",
+    "file_type": "image/jpeg",
+    "width": 784,
+    "height": 448,
+    "file_size": 50941,
+    "url_large": "//cdn.traveltripper.io/site-assets/32_913_19932/media/2018-10-12-063459/large_room5.jpg",
+    "url_medium": "//cdn.traveltripper.io/site-assets/32_913_19932/media/2018-10-12-063459/medium_room5.jpg",
+    "url_small": "//cdn.traveltripper.io/site-assets/32_913_19932/media/2018-10-12-063459/small_room5.jpg",
+    "url_xsmall": "//cdn.traveltripper.io/site-assets/32_913_19932/media/2018-10-12-063459/xsmall_room5.jpg",
+    "url_thumb": "//cdn.traveltripper.io/site-assets/32_913_19932/media/2018-10-12-063459/thumb_room5.jpg",
+    "git_file_name": "_assets/image_data/room5.json",
+    "path": "//cdn.traveltripper.io/site-assets/32_913_19932/media/2018-10-12-063459/room5.jpg",
+    "alt": "room5",
+    "caption": ""
+  },
+  "post_content": "<p>Here's some post content!</p>"
+}

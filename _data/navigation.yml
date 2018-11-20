@@ -1,66 +1,97 @@
+---
 main_localized:
   en:
-    - title: Rooms
-      url: /rooms/
-    - title: Location
-      url: /location/
-    - title: Gallery
-      url: /gallery/
-    - title: Blog
-      url: /blog/
-    - title: faq
-      url: /faq/
+  - title: Rooms
+    url: "/rooms/"
+    __id__: 0
+  - title: Location
+    url: "/location/"
+    __id__: 1
+  - title: Gallery
+    url: "/gallery/"
+    __id__: 2
+  - title: Blog
+    url: "/blog/"
+    __id__: 3
+  - title: faq
+    url: "/faq/"
+    __id__: 4
+  - __id__: 6
+    title: Test
+    url: "/test/"
   ja:
-    - title: 客室
-      url: /ja/rooms/
-    - title: ロケーション
-      url: /ja/location/
-    - title: 画廊
-      url: /ja/gallery/
-    - title: ブログ
-      url: /ja/blog/
-    - title: よくあるご質問
-      url: /ja/faq/
-
+  - title: 客室
+    url: "/ja/rooms/"
+    __id__: 0
+  - title: ロケーション
+    url: "/ja/location/"
+    __id__: 1
+  - title: 画廊
+    url: "/ja/gallery/"
+    __id__: 2
+  - title: ブログ
+    url: "/ja/blog/"
+    __id__: 3
+  - title: よくあるご質問
+    url: "/ja/faq/"
+    __id__: 4
 footer_left_localized:
   en:
-    - title: Rooms
-      url: /rooms/
-    - title: Location
-      url: /location/
-    - title: Gallery
-      url: /gallery/
-    - title: Blog
-      url: /blog/
-    - title: FAQ
-      url: /faq/
+  - title: Rooms
+    url: "/rooms/"
+    __id__: 0
+  - title: Location
+    url: "/location/"
+    __id__: 1
+  - title: Gallery
+    url: "/gallery/"
+    __id__: 2
+  - title: Blog
+    url: "/blog/"
+    __id__: 3
+  - title: FAQ
+    url: "/faq/"
+    __id__: 4
   ja:
-    - title: 客室
-      url: /ja/rooms/
-    - title: ロケーション
-      url: /ja/location/
-    - title: 画廊
-      url: /ja/gallery/
-    - title: ブログ
-      url: /ja/blog/
-    - title: よくあるご質問
-      url: /ja/faq/
+  - title: 客室
+    url: "/ja/rooms/"
+    __id__: 0
+  - title: ロケーション
+    url: "/ja/location/"
+    __id__: 1
+  - title: 画廊
+    url: "/ja/gallery/"
+    __id__: 2
+  - title: ブログ
+    url: "/ja/blog/"
+    __id__: 3
+  - title: よくあるご質問
+    url: "/ja/faq/"
+    __id__: 4
 footer_right_localized:
   en:
-    - title: Contact
-      url: /contact/
-    - title: Careers
-      url: /careers/
-    - title: Terms of Use
-      url: /terms/
-    - title: Privacy Policy
-      url: /privacy/
+  - title: Contact
+    url: "/contact/"
+    __id__: 0
+  - title: Careers
+    url: "/careers/"
+    __id__: 1
+  - title: Terms of Use
+    url: "/terms/"
+    __id__: 2
+  - title: Privacy Policy
+    url: "/privacy/"
+    __id__: 3
   ja:
-    - title: お問い合わせ
-      url: /ja/contact/
-    - title: 採用情報
-      url: /ja/careers/
-    - title: 利用規約・宿泊約款
-      url: /ja/terms/
-    - title: プライバシーポリシー
-      url: /ja/privacy/
+  - title: お問い合わせ
+    url: "/ja/contact/"
+    __id__: 0
+  - title: 採用情報
+    url: "/ja/careers/"
+    __id__: 1
+  - title: 利用規約・宿泊約款
+    url: "/ja/terms/"
+    __id__: 2
+  - title: プライバシーポリシー
+    url: "/ja/privacy/"
+    __id__: 3

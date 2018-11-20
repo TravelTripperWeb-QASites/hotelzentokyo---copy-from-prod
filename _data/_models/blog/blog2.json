@@ -6,8 +6,8 @@
   "meta_description": "Kate Test",
   "url_friendly_name": "kate-blog-test",
   "date": "2018-11-07T06:00:00.000Z",
-  "post_content": "<p>test</p>\n<p>&nbsp;</p>\n<p>&nbsp;</p>",
-  "post_more_content": "<p>test 2</p>\n<p>&nbsp;</p>\n<p>&nbsp;</p>",
+  "post_content": "<p>test 2.1</p>\n<p>&nbsp;</p>\n<p>&nbsp;</p>",
+  "post_more_content": "<p>test 2.1</p>\n<p>&nbsp;</p>\n<p>&nbsp;</p>",
   "image": {
     "name": "location1",
     "file_name": "location1.jpg",

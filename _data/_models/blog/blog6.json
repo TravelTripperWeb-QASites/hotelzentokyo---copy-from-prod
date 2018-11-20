@@ -4,8 +4,8 @@
   "short_description": "blog description",
   "url_friendly_name": "testing-2-1",
   "date": "2018-11-20T06:00:00.000Z",
-  "post_content": "<p>blog testing 2.1 body content</p>",
-  "post_more_content": "<p>blog testing 2.1 more content</p>",
+  "post_content": "<p>blog testing 2.1 body content</p>\n<p>&nbsp;</p>\n<p>Lorem ipsum dolor sit amet, cu ius numquam percipit, an tation scripta cum, usu ad sonet nihil gubergren. Alienum maluisset per cu, elit probatus nec ei, vel ut aperiri sententiae. Salutatus tincidunt te vix, usu in tation dicunt delicatissimi. Ut sit nostrud accommodare. Ad nominavi scripserit delicatissimi est, in voluptua gubergren dissentias eos, ei viris aperiam maiestatis mei. An natum modus vulputate eos, eros oportere ut quo.</p>",
+  "post_more_content": "<p>blog testing 2.1 more content</p>\n<p>&nbsp;</p>\n<p>Putent fuisset quaestio in has. Ea placerat hendrerit assueverit vix, vim voluptua inciderint et, fastidii sapientem hendrerit ius ea. An viderer recusabo his. Erant utinam sapientem te vis, eum eruditi corrumpit an. Vero erant gubergren ne cum, ea quo novum nostrud reformidans, eum ne quot illum.</p>",
   "image": {
     "name": "hotel1",
     "file_name": "hotel1.jpg",

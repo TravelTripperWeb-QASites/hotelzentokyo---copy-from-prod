@@ -1,0 +1,30 @@
+{
+  "category": "categories3",
+  "title": "Testing 2.1",
+  "short_description": "blog description",
+  "url_friendly_name": "testing-2-1",
+  "date": "2018-11-20T06:00:00.000Z",
+  "post_content": "<p>blog testing 2.1 body content</p>\n<p>&nbsp;</p>\n<p>Lorem ipsum dolor sit amet, cu ius numquam percipit, an tation scripta cum, usu ad sonet nihil gubergren. Alienum maluisset per cu, elit probatus nec ei, vel ut aperiri sententiae. Salutatus tincidunt te vix, usu in tation dicunt delicatissimi. Ut sit nostrud accommodare. Ad nominavi scripserit delicatissimi est, in voluptua gubergren dissentias eos, ei viris aperiam maiestatis mei. An natum modus vulputate eos, eros oportere ut quo.</p>",
+  "post_more_content": "<p>blog testing 2.1 more content</p>\n<p>&nbsp;</p>\n<p>Putent fuisset quaestio in has. Ea placerat hendrerit assueverit vix, vim voluptua inciderint et, fastidii sapientem hendrerit ius ea. An viderer recusabo his. Erant utinam sapientem te vis, eum eruditi corrumpit an. Vero erant gubergren ne cum, ea quo novum nostrud reformidans, eum ne quot illum.</p>\n<p>Ea porro libris est, vim in esse tota mentitum. Sea libris posidonium te, graeco numquam in usu, vis volumus mentitum quaerendum cu. Sale tritani quaeque vix ad. Singulis molestiae ut qui. Ei impetus molestiae omittantur sit, ne eum dolores insolens.</p>",
+  "image": {
+    "name": "hotel1",
+    "file_name": "hotel1.jpg",
+    "url": "//cdn.traveltripper.io/site-assets/32_913_19932/media/2018-10-12-062522/hotel1.jpg",
+    "tags": "",
+    "description": "",
+    "date_added": "2018-10-12-062522",
+    "file_type": "image/jpeg",
+    "width": 1424,
+    "height": 1872,
+    "file_size": 581825,
+    "url_large": "//cdn.traveltripper.io/site-assets/32_913_19932/media/2018-10-12-062522/large_hotel1.jpg",
+    "url_medium": "//cdn.traveltripper.io/site-assets/32_913_19932/media/2018-10-12-062522/medium_hotel1.jpg",
+    "url_small": "//cdn.traveltripper.io/site-assets/32_913_19932/media/2018-10-12-062522/small_hotel1.jpg",
+    "url_xsmall": "//cdn.traveltripper.io/site-assets/32_913_19932/media/2018-10-12-062522/xsmall_hotel1.jpg",
+    "url_thumb": "//cdn.traveltripper.io/site-assets/32_913_19932/media/2018-10-12-062522/thumb_hotel1.jpg",
+    "git_file_name": "_assets/image_data/hotel1.json",
+    "path": "//cdn.traveltripper.io/site-assets/32_913_19932/media/2018-10-12-062522/hotel1.jpg",
+    "alt": "hotel1",
+    "caption": ""
+  }
+}

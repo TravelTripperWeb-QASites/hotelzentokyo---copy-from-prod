@@ -19,6 +19,9 @@ main_localized:
   - __id__: 5
     title: Test
     url: "/test/"
+  - __id__: 7
+    title: New Link
+    url: "#"
   ja:
   - title: 客室
     url: "/ja/rooms/"

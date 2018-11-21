@@ -2,25 +2,6 @@
   "name": "Hotel",
   "photos": [
     {
-      "name": "hotel1",
-      "file_name": "hotel1.jpg",
-      "url": "//cdn.traveltripper.io/site-assets/32_913_19932/media/2018-10-12-062522/hotel1.jpg",
-      "tags": "",
-      "description": "",
-      "date_added": "2018-10-12-062522",
-      "file_type": "image/jpeg",
-      "width": 1424,
-      "height": 1872,
-      "file_size": 581825,
-      "url_large": "//cdn.traveltripper.io/site-assets/32_913_19932/media/2018-10-12-062522/large_hotel1.jpg",
-      "url_medium": "//cdn.traveltripper.io/site-assets/32_913_19932/media/2018-10-12-062522/medium_hotel1.jpg",
-      "url_small": "//cdn.traveltripper.io/site-assets/32_913_19932/media/2018-10-12-062522/small_hotel1.jpg",
-      "url_xsmall": "//cdn.traveltripper.io/site-assets/32_913_19932/media/2018-10-12-062522/xsmall_hotel1.jpg",
-      "url_thumb": "//cdn.traveltripper.io/site-assets/32_913_19932/media/2018-10-12-062522/thumb_hotel1.jpg",
-      "path": "//cdn.traveltripper.io/site-assets/32_913_19932/media/2018-10-12-062522/hotel1.jpg",
-      "alt": "Hotel"
-    },
-    {
       "name": "hotel3",
       "file_name": "hotel3.jpg",
       "url": "//cdn.traveltripper.io/site-assets/32_913_19932/media/2018-10-12-062633/hotel3.jpg",
@@ -37,6 +18,25 @@
       "url_xsmall": "//cdn.traveltripper.io/site-assets/32_913_19932/media/2018-10-12-062633/xsmall_hotel3.jpg",
       "url_thumb": "//cdn.traveltripper.io/site-assets/32_913_19932/media/2018-10-12-062633/thumb_hotel3.jpg",
       "path": "//cdn.traveltripper.io/site-assets/32_913_19932/media/2018-10-12-062633/hotel3.jpg",
+      "alt": "Hotel"
+    },
+    {
+      "name": "hotel1",
+      "file_name": "hotel1.jpg",
+      "url": "//cdn.traveltripper.io/site-assets/32_913_19932/media/2018-10-12-062522/hotel1.jpg",
+      "tags": "",
+      "description": "",
+      "date_added": "2018-10-12-062522",
+      "file_type": "image/jpeg",
+      "width": 1424,
+      "height": 1872,
+      "file_size": 581825,
+      "url_large": "//cdn.traveltripper.io/site-assets/32_913_19932/media/2018-10-12-062522/large_hotel1.jpg",
+      "url_medium": "//cdn.traveltripper.io/site-assets/32_913_19932/media/2018-10-12-062522/medium_hotel1.jpg",
+      "url_small": "//cdn.traveltripper.io/site-assets/32_913_19932/media/2018-10-12-062522/small_hotel1.jpg",
+      "url_xsmall": "//cdn.traveltripper.io/site-assets/32_913_19932/media/2018-10-12-062522/xsmall_hotel1.jpg",
+      "url_thumb": "//cdn.traveltripper.io/site-assets/32_913_19932/media/2018-10-12-062522/thumb_hotel1.jpg",
+      "path": "//cdn.traveltripper.io/site-assets/32_913_19932/media/2018-10-12-062522/hotel1.jpg",
       "alt": "Hotel"
     },
     {
@@ -80,5 +80,6 @@
       "alt": "common-room-2"
     }
   ],
-  "description": ""
+  "description": "",
+  "id": "hotel"
 }

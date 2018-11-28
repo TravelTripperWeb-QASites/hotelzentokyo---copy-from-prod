@@ -1,0 +1,32 @@
+{
+  "category": "categories2",
+  "title": "Post Content vs. More Post Content",
+  "short_description": "test difference b/t post content and more post content",
+  "meta_title": "x",
+  "meta_description": "test difference b/t post content and more post content",
+  "url_friendly_name": "post-content-more-post-content",
+  "date": "2018-11-08T06:00:00.000Z",
+  "post_content": "<p>Checking to see the difference between 'post content' and 'more post content'</p>\n<p>&nbsp;</p>\n<h4>Can I use different headings here?</h4>\n<p>&nbsp;</p>",
+  "post_more_content": "<p><em>or what about italics?</em></p>\n<p>&nbsp;</p>\n<p>&nbsp;</p>\n<h1><em>or Heading 1?</em></h1>",
+  "image": {
+    "name": "common-room-2",
+    "file_name": "common-room-2.jpg",
+    "url": "//cdn.traveltripper.io/site-assets/32_913_19441/media/2018-10-04-034547/common-room-2.jpg",
+    "tags": "",
+    "description": "",
+    "date_added": "2018-10-04-034547",
+    "file_type": "image/jpeg",
+    "width": 1424,
+    "height": 608,
+    "file_size": 267460,
+    "url_large": "//cdn.traveltripper.io/site-assets/32_913_19441/media/2018-10-04-034547/large_common-room-2.jpg",
+    "url_medium": "//cdn.traveltripper.io/site-assets/32_913_19441/media/2018-10-04-034547/medium_common-room-2.jpg",
+    "url_small": "//cdn.traveltripper.io/site-assets/32_913_19441/media/2018-10-04-034547/small_common-room-2.jpg",
+    "url_xsmall": "//cdn.traveltripper.io/site-assets/32_913_19441/media/2018-10-04-034547/xsmall_common-room-2.jpg",
+    "url_thumb": "//cdn.traveltripper.io/site-assets/32_913_19441/media/2018-10-04-034547/thumb_common-room-2.jpg",
+    "git_file_name": "_assets/image_data/common-room-2.json",
+    "path": "//cdn.traveltripper.io/site-assets/32_913_19441/media/2018-10-04-034547/common-room-2.jpg",
+    "alt": "common-room-2",
+    "caption": ""
+  }
+}
